@@ -1,18 +1,6 @@
-Below is a whole bunch of information to help you prepare for GovHack!
+Below is a whole bunch of information to help you prepare mashups!
 
-Basically, the way your GovHack project is rated is based on your team page (where you register your team and project information, link to come) and on the presentation you give at the end of GovHack (Sunday 3pm). We don&#8217;t mind what developer, data or visualisation tools you use so long as the outcomes are awesome ![:)](http://www.govhack.org/wp-includes/images/smilies/icon_smile.gif) 
-
-We provide some development tools and access to virtual servers (if you want to roll your own). Otherwise below are links to other tools that you might want to use.
-
-Check out the [Data &amp; Comps page](/data-competitions) for information about data sets.
-
-Just remember, the competition judges will be focused on the outcomes of your project, so updating your team page with information and screenshots/screencasts of your project is really important, along with having an awesome presentation Sunday afternoon, so make sure you schedule some time to work on these before the 3pm deadline on Sunday ![:)](http://www.govhack.org/wp-includes/images/smilies/icon_smile.gif) 
-
-<div class="toggleItem">[<div class="icon1\. iconSymbol plus"></div>Hosted Developer Tools](#hosted-developer-tools)
-
-### Rewired State for GovHack
-
-Rewired State are providing a GitHub hosted service along with some Atlassian developer tools. To get access to this environment, email steve [at] rewiredstate.com.au
+# [Hosted Developer Tools](#hosted-developer-tools)
 
 ### Sourceforge
 
@@ -26,73 +14,17 @@ Git, Mercurial, and Subversion code. Issue tracker, wiki, release file downloads
 
 You can host your Google Code project and get access to developer tools, APIs and documentation at [http://code.google.com/](http://code.google.com/)
 
-</div></div><div class="toggleItem">[<div class="icon1\. iconSymbol plus"></div>Roll Your Own - Virtual Servers](#roll-your-own-virtual-servers)
 
-### Anchor
 
-Anchor have sponsored GovHack with virtual servers.
-
-Just contact [govhack@lambdacomplex.org](mailto:govhack@lambdacomplex.org) if you want an Anchor hosted server, which comes with LAMP stack ready to go ![:)](http://www.govhack.org/wp-includes/images/smilies/icon_smile.gif) 
-
-### Ninefold
-
-Ninefold have sponsored GovHack with virtual servers. To access a Ninefold hosted server, firstly check out [http://ninefold.com/virtual-servers/](http://ninefold.com/virtual-servers/) and there are specific lists of available templates at:
-
-*   [http://ninefold.com/virtual-servers/linux/](http://ninefold.com/virtual-servers/linux/)
-*   [http://ninefold.com/virtual-servers/windows/](http://ninefold.com/virtual-servers/windows/)
-
-To get your Ninefold hosted server, forward your GovHack Eventbrite registration confirmation along with your configuration requirements and please let them know if you will be in Canberra our Sydney.
-
-Please use the following format:
-
-[support@ninefold.com](mailto:support@ninefold.com) / Subject: “**GovHack VM Request**”
-
-<span style="font-size: xx-small;">Team Name:
-
-Contact Name:
-
-Contact Phone (mobile pref):
-
-Contact Email:
-
-Event Location: (Sydney/Canberra)</span><span style="font-size: xx-small;">**
-
-**</span><span style="font-size: xx-small;">Type of VM Required: [Select from: [https://ninefold.com/support/display/SPT/Ninefold+Templates](https://ninefold.com/support/display/SPT/Ninefold+Templates)]
-
-</span><span style="font-size: xx-small;">What you will be using the VM for?</span>
-
-<span style="font-size: xx-small;">What ports does your application need opened?</span>
-
-Please review the Ninefold terms and conditions and customer agreement [http://ninefold.com/legal/](http://ninefold.com/legal/)
-
-**VM Specifications**
-
-*   Compute Small &#8211\. 1 CPU [1.2GHz (Bursts 2.8GHz) / 1.7GB RAM]
-*   One (1\. External IP address provided
-*   4\. Megabits-capable connection to the Internet (Up to 300Megabits if required)
-
-Your VM will be provisioned in a VLAN associated with other VMs in the GovHack event in your area (Sydney/Canberra). Meaning other participants in the event will be able to view your VM in their local network.
-
-Please take the necessary steps to avoid leaking, losing or compromising any of your data as you would on a normal server – also, change your password that you are given as soon as possible as your VM will be accessible both externally and internally with the credentials we provide.
-
-Your access information will be sent to you via email and/or phone.
-
-**Need help with your Ninefold virtual server?**
-
-Call 130\. 04\. 61\. / Send a tweet to @ninefold / or send us an email to [support@ninefold.com](mailto:support@ninefold.com)
-
-Ninefold® is Australia’s largest public self service cloud provider — providing easy access to virtual servers and cloud storage — with locally stored and secure data, free local support, self service flexibility and low latency. Backed by Macquarie Telecom, Ninefold has the size and resources to offer a truly enterprise-grade cloud infrastructure.
-
-</div></div>
-
-# The basics &#8211\. being a data scientist
+# The basics of being a data scientist
 
 *   Have a hypothesis – even if you&#8217;re making a tool/api that helps people with their questions too, remember what the objective of that is.
 *   Find the people and tools you need to prove/show/find. This rest of this page will help with the latter.
 *   Analyse and present results – were they what you expected? Do they help explain to others what you have found out? Can present as a interactive data visualisation or a web/mobile application or just a infographic/motion graphics video that tells a story.
-<div>Please note, there are a combination of Analysis and Visualisation tools in each of the major categories below.</div>
-<div><div class="toggleItem">[<div class="icon1\. iconSymbol plus"></div>API Development](#api-development)</div>
-<div>
+Please note, there are a combination of Analysis and Visualisation tools in each of the major categories below.
+
+# [API Development](#api-development)
+
 
 So an API isn&#8217;t just an XML file ![;)](http://www.govhack.org/wp-includes/images/smilies/icon_wink.gif) 
 
@@ -110,11 +42,11 @@ Some people like sensis [http://](http://developers.sensis.com.au/)[developers.s
 
 Atlassian have a great page on what makes a good API [https](https://developer.atlassian.com/display/REST/Atlassian+REST+API+Design+Guidelines+version+1)[://](https://developer.atlassian.com/display/REST/Atlassian+REST+API+Design+Guidelines+version+1)[developer.atlassian.<wbr>com</wbr>](https://developer.atlassian.com/display/REST/Atlassian+REST+API+Design+Guidelines+version+1)[/display/REST/](https://developer.atlassian.com/display/REST/Atlassian+REST+API+Design+Guidelines+version+1)[Atlassian](https://developer.atlassian.com/display/REST/Atlassian+REST+API+Design+Guidelines+version+1)[+<wbr>REST+API+Design+Guidelines+<wbr>version+1</wbr></wbr>](https://developer.atlassian.com/display/REST/Atlassian+REST+API+Design+Guidelines+version+1)
 
-</div>
 
-</div></div>
 
-<div class="toggleItem">[<div class="icon1\. iconSymbol plus"></div>Data Visualisation](#data-visualisation)
+
+
+# [Data Visualisation](#data-visualisation)
 
 Most of the categories to follow have visualisation tools specific to their purpose.
 
@@ -124,9 +56,9 @@ You can find some data visualisation &#8220;essential&#8221\. tools below:
 
 Also check out [http://thejit.org](http://thejit.org/) &amp; [http://www.senchalabs.org/<wbr>philogl/</wbr>](http://www.senchalabs.org/philogl/) (contributed by Matt Adcock)
 
-</div></div>
 
-<div class="toggleItem">[<div class="icon1\. iconSymbol plus"></div>Augmented Reality Tools](#augmented-reality-tools)
+
+# [Augmented Reality Tools](#augmented-reality-tools)
 
 ### buildAR
 
@@ -176,7 +108,7 @@ Thad Starner &#8211\. Wearable Computing Pioneer [http://en.wikipedia.org/wiki/<
 
 Mark Weiser &#8211\. Father of Pervasive Computing [http://en.wikipedia.org/wiki/<wbr>Mark_Weiser</wbr>](http://en.wikipedia.org/wiki/Mark_Weiser)
 
-</div></div><div class="toggleItem">[<div class="icon1\. iconSymbol plus"></div>Geographical Data Tools](#geographical-data-tools)
+Geographical Data Tools](#geographical-data-tools)
 
 Check out the[ GeoRabble Boundary Mapper&#8217;s Cookbook](http://georabble.org/2012/05/31/the-boundary-mappers-cookbook/) to see how you can tie all these things together!
 
@@ -200,15 +132,7 @@ Check out the[ GeoRabble Boundary Mapper&#8217;s Cookbook](http://georabble.org/
 
 [![](http://www.govhack.org/wp-content/uploads/cartographerjs-300x187.png "cartographerjs screenshot")](http://www.govhack.org/wp-content/uploads/cartographerjs.png)Input data as JSON and maps are produced.
 
-### 
 
-### 
-
-### 
-
-### 
-
-### 
 
 ### OpenLayers/Google Maps/[Leaflet](http://leaflet.cloudmade.com/)
 
@@ -220,7 +144,7 @@ Check out the[ GeoRabble Boundary Mapper&#8217;s Cookbook](http://georabble.org/
 
 ### 
 
-</div></div><div class="toggleItem">[<div class="icon1\. iconSymbol plus"></div>Tabular Data Tools](#tabular-data-tools)
+Tabular Data Tools](#tabular-data-tools)
 
 ## Analysis
 
@@ -260,7 +184,7 @@ Create visualisations from various data formats by dragging and dropping. Free t
 
 ### Processing.js
 
-</div></div><div class="toggleItem">[<div class="icon1\. iconSymbol plus"></div>Graph (relationships and networks) Data Tools](#graph-relationships-and-networks-data-tools)
+Graph (relationships and networks) Data Tools](#graph-relationships-and-networks-data-tools)
 
 ## Analysis
 
@@ -296,11 +220,11 @@ Palantir make a good computer forensics tool, which they will showcase and give 
 
 [![](http://www.govhack.org/wp-content/uploads/How-to-participate-in-GovHack_html_m6006eaf3-300x130.jpg "Sigma.js Screenshot")](http://www.govhack.org/wp-content/uploads/How-to-participate-in-GovHack_html_m6006eaf3.jpg)Javascript graph viewer, can use GEXF files exported from tools like neo4j, gephi and NetworkX.
 
-</div></div>
+
 
 Below is some additional information including a few previous GovHack projects to get you thinking ![:)](http://www.govhack.org/wp-includes/images/smilies/icon_smile.gif)  More examples are available at [http://mashupaustralia.org/](http://mashupaustralia.org/).
 
-<div class="toggleItem">[<div class="icon1\. iconSymbol plus"></div>Previous Project Examples](#previous-project-examples)
+Previous Project Examples](#previous-project-examples)
 
 ## PlanningAlerts
 
@@ -336,14 +260,12 @@ Source Control: Git
 
 Issue Tracking: Github
 
-</div></div><div class="toggleItem">[<div class="icon1\. iconSymbol plus"></div>General Data Hacking and Programming References](#general-data-hacking-and-programming-references)
+# General Data Hacking and Programming References](#general-data-hacking-and-programming-references)
 
-<div>
-<dl id="attachment_3531">
-<dt>[![Diagram of different kinds of Data Journalism](http://www.govhack.org/wp-content/uploads/How-to-participate-in-GovHack_html_m6a65720f-300x199.gif "Data Journalism Diagram")](http://www.govhack.org/wp-content/uploads/How-to-participate-in-GovHack_html_m6a65720f.gif)</dt>
-<dd>Illustration from Data Journalism Handbook, CC BY-SA 3.0</dd>
-</dl>
-</div>
+
+[![](http://www.govhack.org/wp-content/uploads/How-to-participate-in-GovHack_html_m6a65720f-300x199.gif "Data Journalism Diagram")](http://www.govhack.org/wp-content/uploads/How-to-participate-in-GovHack_html_m6a65720f.gif)</dt>
+Illustration from Data Journalism Handbook, CC BY-SA 3.0</dd>
+
 
 The best high level reference is the “Understanding Data” and “Delivering Data” chapters of the Data Journalism Handbook which is available online for free at
 
@@ -375,9 +297,9 @@ interactively with websites like [http://www.codecademy.com/](http://www.codecad
 
 WCAG guidelines not only make a web app accessible but make it a better experience for all users! Even if not making an app, good to consider these things to do and not do: [http://www.w3.org/TR/WCAG/](http://www.w3.org/TR/WCAG/)
 
-</div></div>
 
-<div class="toggleItem">[<div class="icon1\. iconSymbol plus"></div>Developer Tools For Your Computer](#developer-tools-for-your-computer)</p>
+
+#[Developer Tools For Your Computer](#developer-tools-for-your-computer)
 
 ### Source Control &#8211\. Git / Subversion
 
