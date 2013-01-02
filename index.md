@@ -1,6 +1,51 @@
-Below is a whole bunch of information to help you prepare mashups!
+Below is a whole bunch of information to help you prepare hackfest entries. These tools can be used to make entries like: mobile apps, web apps, data visualisations/inforgraphics
 
-# [Hosted Developer Tools](#hosted-developer-tools)
+govhack library
+
+- http://hpneo.github.com/gmaps/examples.html 
+- android datviz
+  - http://code.google.com/p/afreechart/ http://code.google.com/p/snowdon/ http://code.google.com/p/chartdroid/ http://androidplot.com/ http://code.google.com/p/achartengine/
+- https://graphics.stanford.edu/wikis/cs448b-12-fall/ data viz theory
+- https://mixpanel.com/education/understanding-the-first-five-minutes
+- http://drawingbynumbers.org/toolsandresources
+- http://wmbriggs.com/blog/?p=6465
+- http://ofps.oreilly.com/titles/9781449339739/k_00000002.html list of d3 alternatives
+- http://craigkerstiens.com/2012/10/01/understanding-postgres-performance/
+- https://github.com/clips/pattern for easy NLP/network analysis/data mining
+- https://github.com/theodi/open-data-tech-review/wiki othr cleanup/linked data toola
+- http://www.opentripplanner.org/apidoc/rest.plan.html 
+- http://selection.datavisualization.ch/ data viz tools catalog
+- http://www.slideshare.net/OReillyStrata/visualizing-networks-beyond-the-hairball
+- http://blog.sciencenet.cn/blog-554179-622011.html SNA tools catalog
+- https://github.com/jacomyal/osdc2012-sigmajs-demo sigmajs filtering/searching
+- manipulating data - grep/find replace/sed/regex
+- d3 tools and tutorial http://enjalot.com/ http://news.ycombinator.com/item?id=4608440 
+  - Why d3 is the way it is and how to make charts http://bost.ocks.org/mike/chart/
+  - how to make an xkcd chart http://bl.ocks.org/3914862
+- http://blog.josephwilk.net/ruby/latent-semantic-analysis-in-ruby.html similar terms usually found together
+- data viz
+- http://k2company.com/blog/2012/09/06/toolbox-for-learning-machine-learning-and-data-science/
+- http://williamparry.blogspot.com.au/2011/04/putting-data-into-google-fusion-tables.html google fusion tutorial
+- andrewharvey4.wordpress.com postgis/asgs tutorial
+- http://www.slideshare.net/maxdemarzi/etl-into-neo4j 
+- http://www.twotorials.com/ for R
+  - http://www.r-bloggers.com/gradient-word-clouds/ http://www.rstudio.com/shiny/ http://blog.ouseful.info/2012/11/28/quick-shiny-demo-exploring-nhs-winter-sit-rep-data/ https://github.com/timelyportfolio/shiny-d3-plot https://github.com/trestletech/shiny-sandbox/tree/master/grn
+  - http://is-r.tumblr.com/post/38240018815/making-prettier-network-graphs-with-sna-and-igraph
+  - http://www.r-bloggers.com/video-simpler-tricks-and-tools-help-debugging-git-latex-and-workflow-with-r-by-prof-rob-hyndman/
+  - http://yihui.name/knitr/ makes reports including google widgets/charts/maps via http://www.r-bloggers.com/googlevis-0-3-2-is-released-better-integration-with-knitr/
+  - http://chartsnthings.tumblr.com/post/36978271916/r-tutorial-simple-charts http://flowingdata.com/2012/12/17/getting-started-with-charts-in-r/
+- http://dydra.com/ 
+- http://selection.datavisualization.ch/ data viz tools list
+- http://nodexl.codeplex.com/ network graphs for excel
+- http://sunfoundation.tumblr.com/ 
+- css framework like bootstrap or zurb foundation
+- analysing - linked data tools
+  - http://govcampau.wikispaces.com/useful+tools 
+  - http://linkeddata.org/home 
+- analysing - unstructured/nlp incl overviewer, opennlp/nltk, lucene/solr
+  - http://www.r-bloggers.com/simple-text-mining-with-r/ 
+
+# Hosted Developer Tools {#hosted-developer-tools}
 
 ### Sourceforge
 
@@ -23,7 +68,7 @@ You can host your Google Code project and get access to developer tools, APIs an
 *   Analyse and present results – were they what you expected? Do they help explain to others what you have found out? Can present as a interactive data visualisation or a web/mobile application or just a infographic/motion graphics video that tells a story.
 Please note, there are a combination of Analysis and Visualisation tools in each of the major categories below.
 
-# [API Development](#api-development)
+# API Development {#api-development}
 
 
 So an API isn&#8217;t just an XML file ![;)](http://www.govhack.org/wp-includes/images/smilies/icon_wink.gif) 
@@ -46,7 +91,7 @@ Atlassian have a great page on what makes a good API [https](https://developer.a
 
 
 
-# [Data Visualisation](#data-visualisation)
+# Data Visualisation {#data-visualisation}
 
 Most of the categories to follow have visualisation tools specific to their purpose.
 
@@ -58,7 +103,7 @@ Also check out [http://thejit.org](http://thejit.org/) &amp; [http://www.senchal
 
 
 
-# [Augmented Reality Tools](#augmented-reality-tools)
+# Augmented Reality Tools {#augmented-reality-tools}
 
 ### buildAR
 
@@ -108,7 +153,8 @@ Thad Starner &#8211\. Wearable Computing Pioneer [http://en.wikipedia.org/wiki/<
 
 Mark Weiser &#8211\. Father of Pervasive Computing [http://en.wikipedia.org/wiki/<wbr>Mark_Weiser</wbr>](http://en.wikipedia.org/wiki/Mark_Weiser)
 
-Geographical Data Tools](#geographical-data-tools)
+
+# Geographical Data Tools {#geographical-data-tools}
 
 Check out the[ GeoRabble Boundary Mapper&#8217;s Cookbook](http://georabble.org/2012/05/31/the-boundary-mappers-cookbook/) to see how you can tie all these things together!
 
@@ -144,7 +190,7 @@ Check out the[ GeoRabble Boundary Mapper&#8217;s Cookbook](http://georabble.org/
 
 ### 
 
-Tabular Data Tools](#tabular-data-tools)
+# Tabular Data Tools {#tabular-data-tools}
 
 ## Analysis
 
@@ -184,7 +230,7 @@ Create visualisations from various data formats by dragging and dropping. Free t
 
 ### Processing.js
 
-Graph (relationships and networks) Data Tools](#graph-relationships-and-networks-data-tools)
+# Graph (relationships and networks) Data Tools {#graph-relationships-and-networks-data-tools}
 
 ## Analysis
 
@@ -224,7 +270,7 @@ Palantir make a good computer forensics tool, which they will showcase and give 
 
 Below is some additional information including a few previous GovHack projects to get you thinking ![:)](http://www.govhack.org/wp-includes/images/smilies/icon_smile.gif)  More examples are available at [http://mashupaustralia.org/](http://mashupaustralia.org/).
 
-Previous Project Examples](#previous-project-examples)
+# Previous Project Examples {#previous-project-examples}
 
 ## PlanningAlerts
 
@@ -260,7 +306,7 @@ Source Control: Git
 
 Issue Tracking: Github
 
-# General Data Hacking and Programming References](#general-data-hacking-and-programming-references)
+# General Data Hacking and Programming References {#general-data-hacking-and-programming-references}
 
 
 [![](http://www.govhack.org/wp-content/uploads/How-to-participate-in-GovHack_html_m6a65720f-300x199.gif "Data Journalism Diagram")](http://www.govhack.org/wp-content/uploads/How-to-participate-in-GovHack_html_m6a65720f.gif)</dt>
@@ -299,7 +345,7 @@ WCAG guidelines not only make a web app accessible but make it a better experien
 
 
 
-#[Developer Tools For Your Computer](#developer-tools-for-your-computer)
+#[Developer Tools For Your Computer]{#developer-tools-for-your-computer}
 
 ### Source Control &#8211\. Git / Subversion
 
