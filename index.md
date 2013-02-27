@@ -1,49 +1,102 @@
-Below is a whole bunch of information to help you prepare hackfest entries. These tools can be used to make entries like: mobile apps, web apps, data visualisations/inforgraphics
+Welcome to the GovHack toolkit. This page provides all the information you need to prepare hackfest entries. 
+These tools can be used to make entries like: mobile apps, web apps, data visualisations/infographics
 
-govhack library
 
-- http://hpneo.github.com/gmaps/examples.html 
-- android datviz
-  - http://code.google.com/p/afreechart/ http://code.google.com/p/snowdon/ http://code.google.com/p/chartdroid/ http://androidplot.com/ http://code.google.com/p/achartengine/
-- https://graphics.stanford.edu/wikis/cs448b-12-fall/ data viz theory
-- https://mixpanel.com/education/understanding-the-first-five-minutes
-- http://drawingbynumbers.org/toolsandresources
-- http://wmbriggs.com/blog/?p=6465
-- http://ofps.oreilly.com/titles/9781449339739/k_00000002.html list of d3 alternatives
-- http://craigkerstiens.com/2012/10/01/understanding-postgres-performance/
-- https://github.com/clips/pattern for easy NLP/network analysis/data mining
-- https://github.com/theodi/open-data-tech-review/wiki othr cleanup/linked data toola
-- http://www.opentripplanner.org/apidoc/rest.plan.html 
-- http://selection.datavisualization.ch/ data viz tools catalog
-- http://www.slideshare.net/OReillyStrata/visualizing-networks-beyond-the-hairball
-- http://blog.sciencenet.cn/blog-554179-622011.html SNA tools catalog
-- https://github.com/jacomyal/osdc2012-sigmajs-demo sigmajs filtering/searching
-- manipulating data - grep/find replace/sed/regex
-- d3 tools and tutorial http://enjalot.com/ http://news.ycombinator.com/item?id=4608440 
-  - Why d3 is the way it is and how to make charts http://bost.ocks.org/mike/chart/
-  - how to make an xkcd chart http://bl.ocks.org/3914862
-- http://blog.josephwilk.net/ruby/latent-semantic-analysis-in-ruby.html similar terms usually found together
-- data viz
-- http://k2company.com/blog/2012/09/06/toolbox-for-learning-machine-learning-and-data-science/
-- http://williamparry.blogspot.com.au/2011/04/putting-data-into-google-fusion-tables.html google fusion tutorial
-- andrewharvey4.wordpress.com postgis/asgs tutorial
-- http://www.slideshare.net/maxdemarzi/etl-into-neo4j 
-- http://www.twotorials.com/ for R
-  - http://www.r-bloggers.com/gradient-word-clouds/ http://www.rstudio.com/shiny/ http://blog.ouseful.info/2012/11/28/quick-shiny-demo-exploring-nhs-winter-sit-rep-data/ https://github.com/timelyportfolio/shiny-d3-plot https://github.com/trestletech/shiny-sandbox/tree/master/grn
-  - http://is-r.tumblr.com/post/38240018815/making-prettier-network-graphs-with-sna-and-igraph
-  - http://www.r-bloggers.com/video-simpler-tricks-and-tools-help-debugging-git-latex-and-workflow-with-r-by-prof-rob-hyndman/
-  - http://yihui.name/knitr/ makes reports including google widgets/charts/maps via http://www.r-bloggers.com/googlevis-0-3-2-is-released-better-integration-with-knitr/
-  - http://chartsnthings.tumblr.com/post/36978271916/r-tutorial-simple-charts http://flowingdata.com/2012/12/17/getting-started-with-charts-in-r/
-- http://dydra.com/ 
-- http://selection.datavisualization.ch/ data viz tools list
-- http://nodexl.codeplex.com/ network graphs for excel
-- http://sunfoundation.tumblr.com/ 
-- css framework like bootstrap or zurb foundation
-- analysing - linked data tools
-  - http://govcampau.wikispaces.com/useful+tools 
-  - http://linkeddata.org/home 
-- analysing - unstructured/nlp incl overviewer, opennlp/nltk, lucene/solr
-  - http://www.r-bloggers.com/simple-text-mining-with-r/ 
+- govhack toolkit!!!!
+  - key datasets, directory.gov.au gazetter/AEC electorates/suburbs/postcodes/LGAs
+
+  - definitions, open licence reuse permissive hacker hack data journalism data bis UCX etc.
+ - what do govhack entries look like?
+  - roles; coder, designer UX/graphics
+
+server admin / technical tools
+many projects will require some kind of internet presence, webpage etc.
+video tools, youtube slideshow, FOSS video editing tools
+  - http://ubuntu-tutorials.com/2008/11/11/relaying-postfix-smtp-via-smtpgmailcom/ 
+  - amon
+
+geo
+  - http://converter.mygeodata.eu/vector kml exporter for shp
+  - http://bost.ocks.org/mike/map/ 
+
+R
+  - http://blog.yhathq.com/posts/10-R-packages-I-wish-I-knew-about-earlier.html
+        - excel -> R/rattle/ deducer? http://www.r-bloggers.com/updates-to-the-deducer-family-of-packages/
+
+d3
+  - http://datadrivenjournalism.net/resources/data_driven_documents_defined
+    - http://www.benmcmahen.com/blog/posts/50eb57d55a94d35262000001 d3 svg
+
+API
+  - howto.gov api tutorial
+  - http://shancarter.com/data_converter/
+  - http://training.sunlightfoundation.com/module/data-visualizations-google-docs/
+  - api documentation
+    - WSDL or http://swagger.wordnik.com/ or https://github.com/mashery/iodocs
+    - http://symfony.com/ https://github.com/FriendsOfSymfony/FOSRestBundle http://williamdurand.fr/2012/08/02/rest-apis-with-symfony2-the-right-way/ https://github.com/nelmio/NelmioApiDocBundle better apis https://github.com/liip/LiipHelloBundle
+      - https://github.com/elc/rapi_doc https://github.com/Pajk/apipie-rails
+      - 
+- tools.disclo.gs - how to use data
+  - https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#wiki-images reference style images?
+  - developer tools inc. linked data
+        - gephi -> neo4j
+          - neo4j lets you build on, do massive queries of who is friends with who
+          - don't use network viz if what you actually have is a tree/hierarchy with no interconnections http://www.randelshofer.ch/treeviz/ http://thejit.org/demos/ http://mbostock.github.com/protovis/ex/treemap.html http://blog.pixelingene.com/2011/07/building-a-tree-diagram-in-d3-js/
+          - http://mbostock.github.com/d3/ex/pack.html http://mbostock.github.com/d3/ex/tree.html
+        - postgis/quantum gis 
+          - (google earth is alright but many limitations) NASA World Wind?
+          - ABS statistical areas
+          - http://irs.gis-lab.info/ wms or http://www.gdal.org/frmt_wms_openstreetmap_tms.xml
+          - can do nearest/isin/union queries - personal geocoder
+          - cloudmade geocoder, google maps my maps
+          - base layers like agri or nearmap
+        - scraperwiki with new pytemplate libraries
+          - makes an API for your data to get in sqlite/json/csv
+        - three.js with cables vis? Overviewer from AP?
+  - govhack library
+    - http://hpneo.github.com/gmaps/examples.html 
+    - android datviz
+      - http://code.google.com/p/afreechart/ http://code.google.com/p/snowdon/ http://code.google.com/p/chartdroid/ http://androidplot.com/ http://code.google.com/p/achartengine/
+    - https://graphics.stanford.edu/wikis/cs448b-12-fall/ data viz theory
+    - https://mixpanel.com/education/understanding-the-first-five-minutes
+    - http://drawingbynumbers.org/toolsandresources
+    - http://wmbriggs.com/blog/?p=6465
+    - http://ofps.oreilly.com/titles/9781449339739/k_00000002.html list of d3 alternatives
+    - http://craigkerstiens.com/2012/10/01/understanding-postgres-performance/
+    - https://github.com/clips/pattern for easy NLP/network analysis/data mining
+    - https://github.com/theodi/open-data-tech-review/wiki othr cleanup/linked data toola
+    - http://www.opentripplanner.org/apidoc/rest.plan.html 
+    - http://selection.datavisualization.ch/ data viz tools catalog
+    - http://www.slideshare.net/OReillyStrata/visualizing-networks-beyond-the-hairball
+    - http://blog.sciencenet.cn/blog-554179-622011.html SNA tools catalog
+    - https://github.com/jacomyal/osdc2012-sigmajs-demo sigmajs filtering/searching
+    - manipulating data - grep/find replace/sed/regex
+    - d3 tools and tutorial http://enjalot.com/ http://news.ycombinator.com/item?id=4608440 
+      - Why d3 is the way it is and how to make charts http://bost.ocks.org/mike/chart/
+      - how to make an xkcd chart http://bl.ocks.org/3914862
+    - http://blog.josephwilk.net/ruby/latent-semantic-analysis-in-ruby.html similar terms usually found together
+    - data viz
+    - http://k2company.com/blog/2012/09/06/toolbox-for-learning-machine-learning-and-data-science/
+    - http://williamparry.blogspot.com.au/2011/04/putting-data-into-google-fusion-tables.html google fusion tutorial
+    - andrewharvey4.wordpress.com postgis/asgs tutorial
+    - http://www.slideshare.net/maxdemarzi/etl-into-neo4j 
+    - http://www.twotorials.com/ for R
+      - http://www.r-bloggers.com/gradient-word-clouds/ http://www.rstudio.com/shiny/ http://blog.ouseful.info/2012/11/28/quick-shiny-demo-exploring-nhs-winter-sit-rep-data/ https://github.com/timelyportfolio/shiny-d3-plot https://github.com/trestletech/shiny-sandbox/tree/master/grn
+      - http://is-r.tumblr.com/post/38240018815/making-prettier-network-graphs-with-sna-and-igraph
+      - http://www.r-bloggers.com/video-simpler-tricks-and-tools-help-debugging-git-latex-and-workflow-with-r-by-prof-rob-hyndman/
+      - http://yihui.name/knitr/ makes reports including google widgets/charts/maps via http://www.r-bloggers.com/googlevis-0-3-2-is-released-better-integration-with-knitr/
+      - http://chartsnthings.tumblr.com/post/36978271916/r-tutorial-simple-charts http://flowingdata.com/2012/12/17/getting-started-with-charts-in-r/
+    - http://dydra.com/ 
+    - http://selection.datavisualization.ch/ data viz tools list
+    - http://nodexl.codeplex.com/ network graphs for excel
+    - http://sunfoundation.tumblr.com/ 
+    - css framework like bootstrap or zurb foundation
+    - analysing - linked data tools
+      - http://govcampau.wikispaces.com/useful+tools 
+      - http://linkeddata.org/home 
+    - analysing - unstructured/nlp incl overviewer, opennlp/nltk, lucene/solr
+      - http://www.r-bloggers.com/simple-text-mining-with-r/ 
+
 
 # Hosted Developer Tools {#hosted-developer-tools}
 
@@ -103,56 +156,6 @@ Also check out [http://thejit.org](http://thejit.org/) &amp; [http://www.senchal
 
 
 
-# Augmented Reality Tools {#augmented-reality-tools}
-
-### buildAR
-
-buildAR was the world&#8217;s first AR Content Management System with the first early version launched back in 200\. as a bit of a test to see if people were interested in being able to create their own augmented experiences. MOB Labs officially launched the new improved buildAR at the Augmented Reality event in Silicon Valley in May 2011.
-
-[http://buildAR.com](http://buildar.com/) (normally a 1\. day free trial but GovHack attendees on the day will get a fully activated account for a month. If you are a GovHack attendee want full access now to play, just sign up for a trial and then forward your GovHack Eventbrite registration email to govhack [at] buildar.com and they&#8217;ll set you up for the free month fully activated account within a couple of days.
-
-### Other AR tools and references
-
-theAWEsomeWEB &#8211\. Future of the Augmented Web [http://theAWEsomeWEB.com](http://theawesomeweb.com/)
-
-Layar &#8211\. AR Browser - [http://layar.com](http://layar.com/)
-
-Junaio &#8211\. AR Browser - [http://junaio.com](http://junaio.com/)
-
-Aurasma &#8211\. AR Browser - [http://aurasma.com/](http://aurasma.com/)
-
-Vuforia &#8211\. NFT based AR SDK - [http://qualcomm.com/solutions/<wbr>augmented-reality</wbr>](http://qualcomm.com/solutions/augmented-reality)
-
-String &#8211\. Marker based AR SDK - [http://poweredbystring.com/](http://poweredbystring.com/)
-
-[pointcloud.io](http://pointcloud.io/) - SLAM based AR SDK - [http://pointcloud.io/](http://pointcloud.io/)
-
-ARToolkit &#8211\. Marker based AR SDK - [http://en.wikipedia.org/wiki/<wbr>ARToolKit</wbr>](http://en.wikipedia.org/wiki/ARToolKit)
-
-FLARToolkit &#8211\. Marker based AR SDK - [http://saqoo.sh/a/en/<wbr>flartoolkit/start-up-guide</wbr>](http://saqoo.sh/a/en/flartoolkit/start-up-guide)
-
-Kooaba &#8211\. Visual search platform - [http://kooaba.com](http://kooaba.com/)
-
-Catchoom &#8211\. Visual search platform - [http://catchoom.com/](http://catchoom.com/)
-
-Google Googles &#8211\. Visual search app - [http://www.google.com/mobile/<wbr>goggles/#text</wbr>](http://www.google.com/mobile/goggles/#text)
-
-Vuzix 920AR &#8211\. Wearable display - [http://www.vuzix.com/consumer/<wbr>products_wrap920ar.html</wbr>](http://www.vuzix.com/consumer/products_wrap920ar.html)
-
-Project Glass &#8211\. Googles wearable display project - [http://www.youtube.com/watch?<wbr>v=9c6W4CCU9M4</wbr>](http://www.youtube.com/watch?v=9c6W4CCU9M4)
-
-Mixed Reality &#8211\. Nokia&#8217;s vision for wearable displays [http://www.youtube.com/watch?<wbr>v=CGwvZWyLiBU</wbr>](http://www.youtube.com/watch?v=CGwvZWyLiBU)
-
-City Lens &#8211\. Nokia&#8217;s latest AR app - [http://www.youtube.com/watch?<wbr>v=63lNPkl-EPE&amp;feature=youtu.be</wbr>](http://www.youtube.com/watch?v=63lNPkl-EPE&amp;feature=youtu.be)
-
-AR &#8211\. Wikipedia page - [http://en.wikipedia.org/wiki/<wbr>Augmented_reality</wbr>](http://en.wikipedia.org/wiki/Augmented_reality)
-
-Steve Mann &#8211\. Wearable Computing Pioneer - [http://en.wikipedia.org/wiki/<wbr>Steve_Mann</wbr>](http://en.wikipedia.org/wiki/Steve_Mann)
-
-Thad Starner &#8211\. Wearable Computing Pioneer [http://en.wikipedia.org/wiki/<wbr>Thad_Starner</wbr>](http://en.wikipedia.org/wiki/Thad_Starner)
-
-Mark Weiser &#8211\. Father of Pervasive Computing [http://en.wikipedia.org/wiki/<wbr>Mark_Weiser</wbr>](http://en.wikipedia.org/wiki/Mark_Weiser)
-
 
 # Geographical Data Tools {#geographical-data-tools}
 
@@ -169,6 +172,8 @@ Check out the[ GeoRabble Boundary Mapper&#8217;s Cookbook](http://georabble.org/
 [![](http://www.govhack.org/wp-content/uploads/How-to-participate-in-GovHack_html_m50afbe88-300x160.jpg "QGIS Screenshot")](http://www.govhack.org/wp-content/uploads/How-to-participate-in-GovHack_html_m50afbe88.jpg)QGIS is a graphical desktop application that allows viewing and editing of geospatial data. Some good base maps are available by adding the WMS layer/server [http://irs.gis-lab.info/](http://irs.gis-lab.info/)
 
 ## Visualisation
+
+### Layar and other augmented reality tools
 
 ### Google Fusion Tables/ChartsBin/[OpenHeatMap](http://www.openheatmap.com/)
 
@@ -230,6 +235,13 @@ Create visualisations from various data formats by dragging and dropping. Free t
 
 ### Processing.js
 
+# Unstructured (text documents, webpages, metadata, tweets etc) Data Tools
+
+Scraperwiki
+Overviewer
+R
+
+
 # Graph (relationships and networks) Data Tools {#graph-relationships-and-networks-data-tools}
 
 ## Analysis
@@ -271,6 +283,10 @@ Palantir make a good computer forensics tool, which they will showcase and give 
 Below is some additional information including a few previous GovHack projects to get you thinking ![:)](http://www.govhack.org/wp-includes/images/smilies/icon_smile.gif)  More examples are available at [http://mashupaustralia.org/](http://mashupaustralia.org/).
 
 # Previous Project Examples {#previous-project-examples}
+
+## The Open Budget
+
+## WeatherTree weather API
 
 ## PlanningAlerts
 
@@ -345,7 +361,7 @@ WCAG guidelines not only make a web app accessible but make it a better experien
 
 
 
-#[Developer Tools For Your Computer]{#developer-tools-for-your-computer}
+# Developer Tools For Your Computer {#developer-tools-for-your-computer}
 
 ### Source Control &#8211\. Git / Subversion
 
