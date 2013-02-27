@@ -92,20 +92,77 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/* stoc http://www.1stwebdesigner.com/css/jquery-plugin-smooth-scrolling/ */
+#items {
+    float: right;
+    width: 260px;
+    padding-bottom: 10px;
+    margin:0 0 10px 20px;
+    /* rgba with ie compatibility */
+    background-color: transparent;
+    background-color: rgba(255,255,255,0.4);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#20ffffff,endColorstr=#20ffffff);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#20ffffff,endColorstr=#20ffffff)";
+}
+#items ul {
+    margin: 0 0 0 20px;
+    padding: 0 0 5px;
+    list-style-type: none;
+}
+#items ul ul {
+    font-size: 90%;
+}
+#items ul a {
+    font-family: "arial";
+    text-decoration: none;
+    color: #c10000;
+}
+#items ul a:hover { color: #ff0000 }
+ /* toc https://github.com/jgallen23/toc */
+#wrapper {
+    margin: 0 20px 0 170px;
+}
 
+#toc {
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    position: fixed;
+    background: #333;
+    box-shadow: inset -5px 0 5px 0px #000;
+    width: 150px;
+    padding-top: 20px;
+    color: #fff;
+}
 
+#toc ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 
+#toc li {
+    padding: 5px 10px;
+}
 
+#toc a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
 
+#toc .toc-h2 {
+    padding-left: 10px;
+}
 
+#toc .toc-h3 {
+    padding-left: 20px;
+}
 
-
-
-
-
-
-
-
+#toc .toc-active {
+    background: #336699;
+    box-shadow: inset -5px 0px 10px -5px #000;
+}
 
 
 

@@ -22,17 +22,31 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-   
+        <div id="toc"></div>
+        <div id="wrapper">
+            <div id="items">
+            </div>
 <?php
 include_once "php-markdown/markdown.php";
 echo Markdown(file_get_contents("index.md"));
 ?>
-
+</div>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
-
+        <script src="js/jquery.stoc.js"></script>
+        <script src="js/toc/dist/jquery.toc.min.js"></script>
+        <script>
+            $('#toc').toc({
+                'selectors': 'h1'
+            });
+            $(function(){
+                $("#items").stoc({
+                    search: "#wrapper"
+                });
+            });
+        </script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];

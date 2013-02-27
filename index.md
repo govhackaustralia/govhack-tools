@@ -116,9 +116,9 @@ You can host your Google Code project and get access to developer tools, APIs an
 
 # The basics of being a data scientist
 
-*   Have a hypothesis – even if you&#8217;re making a tool/api that helps people with their questions too, remember what the objective of that is.
+*   Have a hypothesis ï¿½ even if you&#8217;re making a tool/api that helps people with their questions too, remember what the objective of that is.
 *   Find the people and tools you need to prove/show/find. This rest of this page will help with the latter.
-*   Analyse and present results – were they what you expected? Do they help explain to others what you have found out? Can present as a interactive data visualisation or a web/mobile application or just a infographic/motion graphics video that tells a story.
+*   Analyse and present results ï¿½ were they what you expected? Do they help explain to others what you have found out? Can present as a interactive data visualisation or a web/mobile application or just a infographic/motion graphics video that tells a story.
 Please note, there are a combination of Analysis and Visualisation tools in each of the major categories below.
 
 # API Development {#api-development}
@@ -144,7 +144,9 @@ Atlassian have a great page on what makes a good API [https](https://developer.a
 
 
 
-# Data Visualisation {#data-visualisation}
+# Infographics and Data Visualisation {#data-visualisation}
+
+Infographics try to contextualise charts and graphs to tell a story. Data vis builds on this to find new ways to design insight.
 
 Most of the categories to follow have visualisation tools specific to their purpose.
 
@@ -213,7 +215,7 @@ Great basic analysis and viewing. Older versions can be limited to 6500\. or so 
 
 [Miso Dataset](http://misoproject.com/dataset/)
 
-[![](http://www.govhack.org/wp-content/uploads/How-to-participate-in-GovHack_html_m53b7ee38-293x300.png "miso screenshot")](http://www.govhack.org/wp-content/uploads/How-to-participate-in-GovHack_html_m53b7ee38.png)Javascript data transformation library – especially good if you want to use the output for javascript interactive visualisations because the transformations can be done on-the-fly by users.
+[![](http://www.govhack.org/wp-content/uploads/How-to-participate-in-GovHack_html_m53b7ee38-293x300.png "miso screenshot")](http://www.govhack.org/wp-content/uploads/How-to-participate-in-GovHack_html_m53b7ee38.png)Javascript data transformation library ï¿½ especially good if you want to use the output for javascript interactive visualisations because the transformations can be done on-the-fly by users.
 
 ### R Statistical Language
 
@@ -238,7 +240,8 @@ Create visualisations from various data formats by dragging and dropping. Free t
 # Unstructured (text documents, webpages, metadata, tweets etc) Data Tools
 
 Scraperwiki
-Overviewer
+Overviewer/ Jigsaw
+http://www.cc.gatech.edu/gvu/ii/jigsaw/
 R
 
 
@@ -248,7 +251,7 @@ R
 
 ### Neo4j
 
-[![](http://www.govhack.org/wp-content/uploads/webadmin-data-300x127.png "Neo4\. web admin screenshot")](http://www.govhack.org/wp-content/uploads/webadmin-data.png)Help understand relationships – how is X connected to Y and via what other entities they both are connected to. Imports and exports
+[![](http://www.govhack.org/wp-content/uploads/webadmin-data-300x127.png "Neo4\. web admin screenshot")](http://www.govhack.org/wp-content/uploads/webadmin-data.png)Help understand relationships ï¿½ how is X connected to Y and via what other entities they both are connected to. Imports and exports
 
 can be done using a preexisting tool like Gremlin or by writing a simple Java/Python/Ruby application. Queries can be tested in the built in data browser.
 
@@ -268,7 +271,7 @@ Palantir make a good computer forensics tool, which they will showcase and give 
 
 ### [Graphviz](http://www.graphviz.org/)
 
-[![](http://www.govhack.org/wp-content/uploads/How-to-participate-in-GovHack_html_7579906d-300x184.png "Graphviz Screenshot")](http://www.govhack.org/wp-content/uploads/How-to-participate-in-GovHack_html_7579906d.png)Classic directed graph visualisation tool, can even [generate images online without installing](http://ashitani.jp/gv/) or use in webpages with [javascript port of software](http://code.google.com/p/canviz/). File format [“dot” very easy to learn](http://en.wikipedia.org/wiki/DOT_language)
+[![](http://www.govhack.org/wp-content/uploads/How-to-participate-in-GovHack_html_7579906d-300x184.png "Graphviz Screenshot")](http://www.govhack.org/wp-content/uploads/How-to-participate-in-GovHack_html_7579906d.png)Classic directed graph visualisation tool, can even [generate images online without installing](http://ashitani.jp/gv/) or use in webpages with [javascript port of software](http://code.google.com/p/canviz/). File format [ï¿½dotï¿½ very easy to learn](http://en.wikipedia.org/wiki/DOT_language)
 
 ### Gephi
 
@@ -329,7 +332,7 @@ Issue Tracking: Github
 Illustration from Data Journalism Handbook, CC BY-SA 3.0</dd>
 
 
-The best high level reference is the “Understanding Data” and “Delivering Data” chapters of the Data Journalism Handbook which is available online for free at
+The best high level reference is the ï¿½Understanding Dataï¿½ and ï¿½Delivering Dataï¿½ chapters of the Data Journalism Handbook which is available online for free at
 
 [datajournalismhandbook.org](http://datajournalismhandbook.org/)
 
