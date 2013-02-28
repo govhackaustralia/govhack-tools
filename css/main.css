@@ -93,7 +93,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 /* stoc http://www.1stwebdesigner.com/css/jquery-plugin-smooth-scrolling/ */
-#items {
+.items {
     float: right;
     width: 260px;
     padding-bottom: 10px;
@@ -104,20 +104,20 @@ textarea {
     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#20ffffff,endColorstr=#20ffffff);
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#20ffffff,endColorstr=#20ffffff)";
 }
-#items ul {
+.items ul {
     margin: 0 0 0 20px;
     padding: 0 0 5px;
     list-style-type: none;
 }
-#items ul ul {
+.items ul ul {
     font-size: 90%;
 }
-#items ul a {
+.items ul a {
     font-family: "arial";
     text-decoration: none;
     color: #c10000;
 }
-#items ul a:hover { color: #ff0000 }
+.items ul a:hover { color: #ff0000 }
  /* toc https://github.com/jgallen23/toc */
 #wrapper {
     margin: 0 20px 0 170px;

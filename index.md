@@ -9,11 +9,7 @@ These tools can be used to make entries like: mobile apps, web apps, data visual
  - what do govhack entries look like?
   - roles; coder, designer UX/graphics
 
-server admin / technical tools
-many projects will require some kind of internet presence, webpage etc.
-video tools, youtube slideshow, FOSS video editing tools
-  - http://ubuntu-tutorials.com/2008/11/11/relaying-postfix-smtp-via-smtpgmailcom/ 
-  - amon
+
 
 geo
   - http://converter.mygeodata.eu/vector kml exporter for shp
@@ -23,21 +19,9 @@ R
   - http://blog.yhathq.com/posts/10-R-packages-I-wish-I-knew-about-earlier.html
         - excel -> R/rattle/ deducer? http://www.r-bloggers.com/updates-to-the-deducer-family-of-packages/
 
-d3
-  - http://datadrivenjournalism.net/resources/data_driven_documents_defined
-    - http://www.benmcmahen.com/blog/posts/50eb57d55a94d35262000001 d3 svg
 
-API
-  - howto.gov api tutorial
-  - http://shancarter.com/data_converter/
-  - http://training.sunlightfoundation.com/module/data-visualizations-google-docs/
-  - api documentation
-    - WSDL or http://swagger.wordnik.com/ or https://github.com/mashery/iodocs
-    - http://symfony.com/ https://github.com/FriendsOfSymfony/FOSRestBundle http://williamdurand.fr/2012/08/02/rest-apis-with-symfony2-the-right-way/ https://github.com/nelmio/NelmioApiDocBundle better apis https://github.com/liip/LiipHelloBundle
-      - https://github.com/elc/rapi_doc https://github.com/Pajk/apipie-rails
-      - 
+
 - tools.disclo.gs - how to use data
-  - https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#wiki-images reference style images?
   - developer tools inc. linked data
         - gephi -> neo4j
           - neo4j lets you build on, do massive queries of who is friends with who
@@ -55,8 +39,6 @@ API
         - three.js with cables vis? Overviewer from AP?
   - govhack library
     - http://hpneo.github.com/gmaps/examples.html 
-    - android datviz
-      - http://code.google.com/p/afreechart/ http://code.google.com/p/snowdon/ http://code.google.com/p/chartdroid/ http://androidplot.com/ http://code.google.com/p/achartengine/
     - https://graphics.stanford.edu/wikis/cs448b-12-fall/ data viz theory
     - https://mixpanel.com/education/understanding-the-first-five-minutes
     - http://drawingbynumbers.org/toolsandresources
@@ -65,37 +47,32 @@ API
     - http://craigkerstiens.com/2012/10/01/understanding-postgres-performance/
     - https://github.com/clips/pattern for easy NLP/network analysis/data mining
     - https://github.com/theodi/open-data-tech-review/wiki othr cleanup/linked data toola
-    - http://www.opentripplanner.org/apidoc/rest.plan.html 
     - http://selection.datavisualization.ch/ data viz tools catalog
-    - http://www.slideshare.net/OReillyStrata/visualizing-networks-beyond-the-hairball
-    - http://blog.sciencenet.cn/blog-554179-622011.html SNA tools catalog
-    - https://github.com/jacomyal/osdc2012-sigmajs-demo sigmajs filtering/searching
     - manipulating data - grep/find replace/sed/regex
     - d3 tools and tutorial http://enjalot.com/ http://news.ycombinator.com/item?id=4608440 
       - Why d3 is the way it is and how to make charts http://bost.ocks.org/mike/chart/
       - how to make an xkcd chart http://bl.ocks.org/3914862
-    - http://blog.josephwilk.net/ruby/latent-semantic-analysis-in-ruby.html similar terms usually found together
+
     - data viz
     - http://k2company.com/blog/2012/09/06/toolbox-for-learning-machine-learning-and-data-science/
     - http://williamparry.blogspot.com.au/2011/04/putting-data-into-google-fusion-tables.html google fusion tutorial
     - andrewharvey4.wordpress.com postgis/asgs tutorial
     - http://www.slideshare.net/maxdemarzi/etl-into-neo4j 
+
     - http://www.twotorials.com/ for R
       - http://www.r-bloggers.com/gradient-word-clouds/ http://www.rstudio.com/shiny/ http://blog.ouseful.info/2012/11/28/quick-shiny-demo-exploring-nhs-winter-sit-rep-data/ https://github.com/timelyportfolio/shiny-d3-plot https://github.com/trestletech/shiny-sandbox/tree/master/grn
       - http://is-r.tumblr.com/post/38240018815/making-prettier-network-graphs-with-sna-and-igraph
       - http://www.r-bloggers.com/video-simpler-tricks-and-tools-help-debugging-git-latex-and-workflow-with-r-by-prof-rob-hyndman/
       - http://yihui.name/knitr/ makes reports including google widgets/charts/maps via http://www.r-bloggers.com/googlevis-0-3-2-is-released-better-integration-with-knitr/
       - http://chartsnthings.tumblr.com/post/36978271916/r-tutorial-simple-charts http://flowingdata.com/2012/12/17/getting-started-with-charts-in-r/
-    - http://dydra.com/ 
+
+    - http://dydra.com/
     - http://selection.datavisualization.ch/ data viz tools list
     - http://nodexl.codeplex.com/ network graphs for excel
-    - http://sunfoundation.tumblr.com/ 
-    - css framework like bootstrap or zurb foundation
+    - http://sunfoundation.tumblr.com/
     - analysing - linked data tools
       - http://govcampau.wikispaces.com/useful+tools 
       - http://linkeddata.org/home 
-    - analysing - unstructured/nlp incl overviewer, opennlp/nltk, lucene/solr
-      - http://www.r-bloggers.com/simple-text-mining-with-r/ 
 
 
 # Hosted Developer Tools {#hosted-developer-tools}
@@ -140,7 +117,15 @@ Some people like sensis [http://](http://developers.sensis.com.au/)[developers.s
 
 Atlassian have a great page on what makes a good API [https](https://developer.atlassian.com/display/REST/Atlassian+REST+API+Design+Guidelines+version+1)[://](https://developer.atlassian.com/display/REST/Atlassian+REST+API+Design+Guidelines+version+1)[developer.atlassian.<wbr>com</wbr>](https://developer.atlassian.com/display/REST/Atlassian+REST+API+Design+Guidelines+version+1)[/display/REST/](https://developer.atlassian.com/display/REST/Atlassian+REST+API+Design+Guidelines+version+1)[Atlassian](https://developer.atlassian.com/display/REST/Atlassian+REST+API+Design+Guidelines+version+1)[+<wbr>REST+API+Design+Guidelines+<wbr>version+1</wbr></wbr>](https://developer.atlassian.com/display/REST/Atlassian+REST+API+Design+Guidelines+version+1)
 
-
+API
+  - howto.gov api tutorial
+  - http://shancarter.com/data_converter/
+  - http://training.sunlightfoundation.com/module/data-visualizations-google-docs/
+  - api documentation
+    - WSDL or http://swagger.wordnik.com/ or https://github.com/mashery/iodocs
+    - http://symfony.com/ https://github.com/FriendsOfSymfony/FOSRestBundle http://williamdurand.fr/2012/08/02/rest-apis-with-symfony2-the-right-way/ https://github.com/nelmio/NelmioApiDocBundle better apis https://github.com/liip/LiipHelloBundle
+      - https://github.com/elc/rapi_doc https://github.com/Pajk/apipie-rails
+      -
 
 
 
@@ -156,6 +141,10 @@ You can find some data visualisation &#8220;essential&#8221\. tools below:
 
 Also check out [http://thejit.org](http://thejit.org/) &amp; [http://www.senchalabs.org/<wbr>philogl/</wbr>](http://www.senchalabs.org/philogl/) (contributed by Matt Adcock)
 
+# Mobile
+html5 jquery mobile like directory.gov.au
+    - android datviz
+      - http://code.google.com/p/afreechart/ http://code.google.com/p/snowdon/ http://code.google.com/p/chartdroid/ http://androidplot.com/ http://code.google.com/p/achartengine/
 
 
 
@@ -234,6 +223,9 @@ Create visualisations from various data formats by dragging and dropping. Free t
 ### D3.js (Data-Driven Documents)
 
 [![](http://www.govhack.org/wp-content/uploads/How-to-participate-in-GovHack_html_m90d8020-300x277.jpg "d3 screenshot")](http://www.govhack.org/wp-content/uploads/How-to-participate-in-GovHack_html_m90d8020.jpg)Javascript visualisations that are more interactive or intricate than charts. Can be hard to learn but there are examples and easier to use premade visualisations such as [word clouds](http://www.jasondavies.com/wordcloud/), [realtime filtering of barcharts](http://square.github.com/crossfilter/), or [bubble trees for comparing amount sizes](https://github.com/okfn/bubbletree).
+d3
+  - http://datadrivenjournalism.net/resources/data_driven_documents_defined
+    - http://www.benmcmahen.com/blog/posts/50eb57d55a94d35262000001 d3 svg
 
 ### Processing.js
 
@@ -242,10 +234,18 @@ Create visualisations from various data formats by dragging and dropping. Free t
 Scraperwiki
 Overviewer/ Jigsaw
 http://www.cc.gatech.edu/gvu/ii/jigsaw/
-R
+    -  opennlp/nltk, lucene/solr
+      - http://www.r-bloggers.com/simple-text-mining-with-r/
 
+R
+    - http://blog.josephwilk.net/ruby/latent-semantic-analysis-in-ruby.html similar terms usually found together
 
 # Graph (relationships and networks) Data Tools {#graph-relationships-and-networks-data-tools}
+
+    - http://www.slideshare.net/OReillyStrata/visualizing-networks-beyond-the-hairball
+    - http://blog.sciencenet.cn/blog-554179-622011.html SNA tools catalog
+    - https://github.com/jacomyal/osdc2012-sigmajs-demo sigmajs filtering/searching
+
 
 ## Analysis
 
@@ -365,6 +365,13 @@ WCAG guidelines not only make a web app accessible but make it a better experien
 
 
 # Developer Tools For Your Computer {#developer-tools-for-your-computer}
+
+server admin / technical tools
+many projects will require some kind of internet presence, webpage etc.
+    - css framework like bootstrap or zurb foundation
+    video tools, youtube video editor/slideshow, FOSS video editing tools
+  - http://ubuntu-tutorials.com/2008/11/11/relaying-postfix-smtp-via-smtpgmailcom/
+  - amon
 
 ### Source Control &#8211\. Git / Subversion
 

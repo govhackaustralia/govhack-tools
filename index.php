@@ -24,13 +24,13 @@
         <!-- Add your site or application content here -->
         <div id="toc"></div>
         <div id="wrapper">
-            <div id="items">
-            </div>
+        <section>
 <?php
 include_once "php-markdown/markdown.php";
 echo Markdown(file_get_contents("index.md"));
 ?>
 </div>
+        </section>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
@@ -41,11 +41,13 @@ echo Markdown(file_get_contents("index.md"));
             $('#toc').toc({
                 'selectors': 'h1'
             });
-            $(function(){
-                $("#items").stoc({
-                    search: "#wrapper"
+            /*$(function(){
+
+                $('<div class="items"></div>').insertAfter('h1');
+                $(".items").each(function() {
+                    $(this).stoc();
                 });
-            });
+            });*/
         </script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
