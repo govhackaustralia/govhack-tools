@@ -1,42 +1,3 @@
-- tools.disclo.gs - how to use data
-  - developer tools inc. linked data
-        - gephi -> neo4j
-          - neo4j lets you build on, do massive queries of who is friends with who
-          -
-        - postgis/quantum gis 
-          - (google earth is alright but many limitations) NASA World Wind?
-          - ABS statistical areas
-
-        - scraperwiki with new pytemplate libraries
-          - makes an API for your data to get in sqlite/json/csv
-
-  - govhack library
-    - https://graphics.stanford.edu/wikis/cs448b-12-fall/ data viz theory
-    - http://drawingbynumbers.org/toolsandresources
-    - http://wmbriggs.com/blog/?p=6465
-    - http://ofps.oreilly.com/titles/9781449339739/k_00000002.html list of d3 alternatives
-    - http://craigkerstiens.com/2012/10/01/understanding-postgres-performance/
-    - https://github.com/clips/pattern for easy NLP/network analysis/data mining
-    - https://github.com/theodi/open-data-tech-review/wiki othr cleanup/linked data toola
-    - http://selection.datavisualization.ch/ data viz tools catalog
-    - manipulating data - grep/find replace/sed/regex
-
-    - data viz
-    - http://k2company.com/blog/2012/09/06/toolbox-for-learning-machine-learning-and-data-science/
-    - http://williamparry.blogspot.com.au/2011/04/putting-data-into-google-fusion-tables.html google fusion tutorial
-
-    - http://www.slideshare.net/maxdemarzi/etl-into-neo4j 
-
-
-    - http://dydra.com/
-    - http://selection.datavisualization.ch/ data viz tools list
-    - http://nodexl.codeplex.com/ network graphs for excel
-    - http://sunfoundation.tumblr.com/
-    - analysing - linked data tools
-      - http://govcampau.wikispaces.com/useful+tools 
-      - http://linkeddata.org/home 
-
-
 Welcome to the GovHack toolkit. This page provides all the information you need to prepare hackfest entries.
 These tools can be used to make entries like: mobile apps, web apps, data visualisations/infographics
 
@@ -65,7 +26,6 @@ practical advice check out Data Analysis with Open Source Tools by Philipp K. Ja
 For further reading in this space
 
 [http://flowingdata.com/2012/04/27/data-and-visualization-blogs-worth-following/](http://flowingdata.com/2012/04/27/data-and-visualization-blogs-worth-following/)
-
 
 
 **Statistics**
@@ -230,6 +190,15 @@ Also check out [http://thejit.org](http://thejit.org/) &amp; [http://www.senchal
 
 Have to use visual art concepts, good color schemes http://www.r-bloggers.com/the-paul-tol-21-color-salute/
 
+
+    - https://graphics.stanford.edu/wikis/cs448b-12-fall/ data viz theory
+    - http://drawingbynumbers.org/toolsandresources
+
+examples    - http://sunfoundation.tumblr.com/
+tools     - http://selection.datavisualization.ch/ data viz tools catalog
+
+
+
 # Mobile
 html5 jquery mobile like directory.gov.au
     - android datviz
@@ -255,6 +224,8 @@ or locally using GDAL
 
 ### geocoding
 cloudmade, google (but you must display on a Google Map).
+
+Easiest way to do is with a Google Spreadsheet/Fusion Table http://williamparry.blogspot.com.au/2011/04/putting-data-into-google-fusion-tables.htm
 
 
 ## Analysis
@@ -303,6 +274,9 @@ Tabular data may have duplicate entries or incorrect formats (varying ways to en
 [DataWrangler](http://vis.stanford.edu/wrangler/)/[Google Refine](http://code.google.com/p/google-refine/)
 
 [![](http://www.govhack.org/wp-content/uploads/google_refine_interface.png "google_refine_interface")](http://www.govhack.org/wp-content/uploads/google_refine_interface.png)Clean up duplicate or inconsistent data entries.
+
+Can also use general purpose tools; grep/awk/sed
+regex http://www.regexper.com/ http://www.debuggex.com/?re=&str=
 
 ## Analysis
 
@@ -356,13 +330,14 @@ d3
 
 # Unstructured (text documents, webpages, metadata, tweets etc) Data Tools
 
-Scraperwiki
+## wranglying
+Scraperwiki pytemplate scrapy
+
 Overviewer/ Jigsaw
 http://www.cc.gatech.edu/gvu/ii/jigsaw/
-    -  opennlp/nltk, lucene/solr
-      - http://www.r-bloggers.com/simple-text-mining-with-r/
-
-R
+    - opennlp/nltk / https://github.com/clips/pattern
+    - lucene/solr
+    - http://www.r-bloggers.com/simple-text-mining-with-r/
     - http://blog.josephwilk.net/ruby/latent-semantic-analysis-in-ruby.html similar terms usually found together
 
 # Graph (relationships and networks) Data Tools {#graph-relationships-and-networks-data-tools}
@@ -379,11 +354,17 @@ R
 - http://is-r.tumblr.com/post/38240018815/making-prettier-network-graphs-with-sna-and-igraph
 
 
-### Neo4j
+### Neo4j / OrientDB
 
 [![](http://www.govhack.org/wp-content/uploads/webadmin-data-300x127.png "Neo4\. web admin screenshot")](http://www.govhack.org/wp-content/uploads/webadmin-data.png)Help understand relationships � how is X connected to Y and via what other entities they both are connected to. Imports and exports
 
-can be done using a preexisting tool like Gremlin or by writing a simple Java/Python/Ruby application. Queries can be tested in the built in data browser.
+    - http://www.slideshare.net/maxdemarzi/etl-into-neo4j
+
+http://www.orientdb.org/
+
+Both can be accessed using a preexisting tool like Gremlin or by writing a simple Java/Python/Ruby application. Queries can be tested in the built in data browser.
+
+
 
 ### [NetworkX](http://networkx.lanl.gov/index.html)
 
@@ -393,9 +374,12 @@ NetworkX is a social network analysis library for python. Many advanced analyses
 
 
 ## Visualisation
-###
+###  Tree/Hierarchy visualisation
           - don't use network viz if what you actually have is a tree/hierarchy with no interconnections http://www.randelshofer.ch/treeviz/ http://thejit.org/demos/ http://mbostock.github.com/protovis/ex/treemap.html http://blog.pixelingene.com/2011/07/building-a-tree-diagram-in-d3-js/d3 for Trees and Hierarchies
  http://mbostock.github.com/d3/ex/pack.html http://mbostock.github.com/d3/ex/tree.html
+
+### NodeXL for Microsoft Excel
+    - http://nodexl.codeplex.com/ network graphs for excel
 
 ### [Graphviz](http://www.graphviz.org/)
 
