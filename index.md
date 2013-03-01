@@ -1,19 +1,11 @@
-geo
-
-R
-
 - tools.disclo.gs - how to use data
   - developer tools inc. linked data
         - gephi -> neo4j
           - neo4j lets you build on, do massive queries of who is friends with who
-          - don't use network viz if what you actually have is a tree/hierarchy with no interconnections http://www.randelshofer.ch/treeviz/ http://thejit.org/demos/ http://mbostock.github.com/protovis/ex/treemap.html http://blog.pixelingene.com/2011/07/building-a-tree-diagram-in-d3-js/
-          - http://mbostock.github.com/d3/ex/pack.html http://mbostock.github.com/d3/ex/tree.html
+          -
         - postgis/quantum gis 
           - (google earth is alright but many limitations) NASA World Wind?
           - ABS statistical areas
-          - base layers like agri, http://irs.gis-lab.info/ wms or http://www.gdal.org/frmt_wms_openstreetmap_tms.xml
-          - can do nearest/isin/union queries - personal geocoder
-          - cloudmade geocoder, google maps my maps
 
         - scraperwiki with new pytemplate libraries
           - makes an API for your data to get in sqlite/json/csv
@@ -28,22 +20,13 @@ R
     - https://github.com/theodi/open-data-tech-review/wiki othr cleanup/linked data toola
     - http://selection.datavisualization.ch/ data viz tools catalog
     - manipulating data - grep/find replace/sed/regex
-    - d3 tools and tutorial http://enjalot.com/ http://news.ycombinator.com/item?id=4608440 
-      - Why d3 is the way it is and how to make charts http://bost.ocks.org/mike/chart/
-      - how to make an xkcd chart http://bl.ocks.org/3914862
 
     - data viz
     - http://k2company.com/blog/2012/09/06/toolbox-for-learning-machine-learning-and-data-science/
     - http://williamparry.blogspot.com.au/2011/04/putting-data-into-google-fusion-tables.html google fusion tutorial
-    - andrewharvey4.wordpress.com postgis/asgs tutorial
+
     - http://www.slideshare.net/maxdemarzi/etl-into-neo4j 
 
-    - http://www.twotorials.com/ for R
-      - http://www.r-bloggers.com/gradient-word-clouds/ http://www.rstudio.com/shiny/ http://blog.ouseful.info/2012/11/28/quick-shiny-demo-exploring-nhs-winter-sit-rep-data/ https://github.com/timelyportfolio/shiny-d3-plot https://github.com/trestletech/shiny-sandbox/tree/master/grn
-      - http://is-r.tumblr.com/post/38240018815/making-prettier-network-graphs-with-sna-and-igraph
-      - http://www.r-bloggers.com/video-simpler-tricks-and-tools-help-debugging-git-latex-and-workflow-with-r-by-prof-rob-hyndman/
-      - http://yihui.name/knitr/ makes reports including google widgets/charts/maps via http://www.r-bloggers.com/googlevis-0-3-2-is-released-better-integration-with-knitr/
-      - http://chartsnthings.tumblr.com/post/36978271916/r-tutorial-simple-charts http://flowingdata.com/2012/12/17/getting-started-with-charts-in-r/
 
     - http://dydra.com/
     - http://selection.datavisualization.ch/ data viz tools list
@@ -181,7 +164,12 @@ Issue/task trackers allow you to outline the tasks required for your project and
 
 [Trello](https://trello.com/) and [Workflowy](https://workflowy.com/) are free, lightweight project management tools suitable for a rapid project!
 
-# Hosted Developer Tools {#hosted-developer-tools}
+## Hosted Developer Tools {#hosted-developer-tools}
+
+Can get many tools (source control, issue tracking) combined into one service cloud hosted so no setup required.
+
+### Github
+Git obviously but svn/hg interfaces are possible. Provide their own GUI for Windows/OSX or use the variety of Git capable tools
 
 ### Sourceforge
 
@@ -253,15 +241,19 @@ html5 jquery mobile like directory.gov.au
 
 Check out the[ GeoRabble Boundary Mapper&#8217;s Cookbook](http://georabble.org/2012/05/31/the-boundary-mappers-cookbook/) to see how you can tie all these things together!
 
+## Key datasets
+          - base layers like agri http://agri.openstreetmap.org/, http://irs.gis-lab.info/ wms or http://www.gdal.org/frmt_wms_openstreetmap_tms.xml
+           ASGS including suburbs/postcodes
+                   - andrewharvey4.wordpress.com postgis/asgs tutorial
 ## Wrangling
 
-## Converting
+### Converting
 There are many spatial data formats and often the one your tool requires is not the one the dataset is provided in
 Online
   - http://converter.mygeodata.eu/vector kml exporter for shp
 or locally using GDAL
 
-## geocoding
+### geocoding
 cloudmade, google (but you must display on a Google Map).
 
 
@@ -333,6 +325,11 @@ Great basic analysis and viewing. Older versions can be limited to 6500\. or so 
 
   - http://blog.yhathq.com/posts/10-R-packages-I-wish-I-knew-about-earlier.html
         - excel -> R/rattle/ deducer? http://www.r-bloggers.com/updates-to-the-deducer-family-of-packages/
+    - http://www.twotorials.com/ for R
+      - http://www.r-bloggers.com/gradient-word-clouds/ http://www.rstudio.com/shiny/ http://blog.ouseful.info/2012/11/28/quick-shiny-demo-exploring-nhs-winter-sit-rep-data/ https://github.com/timelyportfolio/shiny-d3-plot https://github.com/trestletech/shiny-sandbox/tree/master/grn
+         - http://www.r-bloggers.com/video-simpler-tricks-and-tools-help-debugging-git-latex-and-workflow-with-r-by-prof-rob-hyndman/
+      - http://yihui.name/knitr/ makes reports including google widgets/charts/maps via http://www.r-bloggers.com/googlevis-0-3-2-is-released-better-integration-with-knitr/
+      - http://chartsnthings.tumblr.com/post/36978271916/r-tutorial-simple-charts http://flowingdata.com/2012/12/17/getting-started-with-charts-in-r/
 
 
 ## Visualisation
@@ -351,6 +348,9 @@ Create visualisations from various data formats by dragging and dropping. Free t
 d3
   - http://datadrivenjournalism.net/resources/data_driven_documents_defined
     - http://www.benmcmahen.com/blog/posts/50eb57d55a94d35262000001 d3 svg
+    - d3 tools and tutorial http://enjalot.com/ http://news.ycombinator.com/item?id=4608440
+      - Why d3 is the way it is and how to make charts http://bost.ocks.org/mike/chart/
+      - how to make an xkcd chart http://bl.ocks.org/3914862
 
 ### Processing.js
 
@@ -374,6 +374,11 @@ R
 
 ## Analysis
 
+### R
+
+- http://is-r.tumblr.com/post/38240018815/making-prettier-network-graphs-with-sna-and-igraph
+
+
 ### Neo4j
 
 [![](http://www.govhack.org/wp-content/uploads/webadmin-data-300x127.png "Neo4\. web admin screenshot")](http://www.govhack.org/wp-content/uploads/webadmin-data.png)Help understand relationships � how is X connected to Y and via what other entities they both are connected to. Imports and exports
@@ -386,13 +391,11 @@ can be done using a preexisting tool like Gremlin or by writing a simple Java/Py
 
 NetworkX is a social network analysis library for python. Many advanced analyses built in like finding communities within a graph. Also good for converting data into graphs.
 
-### Palantir
-
-Palantir make a good computer forensics tool, which they will showcase and give GovHack attendees access to for GovHack data analysis purposes. For more information check out:
-
-[http://palantir.com.au/](http://palantir.com.au/)
 
 ## Visualisation
+###
+          - don't use network viz if what you actually have is a tree/hierarchy with no interconnections http://www.randelshofer.ch/treeviz/ http://thejit.org/demos/ http://mbostock.github.com/protovis/ex/treemap.html http://blog.pixelingene.com/2011/07/building-a-tree-diagram-in-d3-js/d3 for Trees and Hierarchies
+ http://mbostock.github.com/d3/ex/pack.html http://mbostock.github.com/d3/ex/tree.html
 
 ### [Graphviz](http://www.graphviz.org/)
 
