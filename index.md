@@ -1,25 +1,6 @@
-Welcome to the GovHack toolkit. This page provides all the information you need to prepare hackfest entries. 
-These tools can be used to make entries like: mobile apps, web apps, data visualisations/infographics
-
-
-- govhack toolkit!!!!
-  - key datasets, directory.gov.au gazetter/AEC electorates/suburbs/postcodes/LGAs
-
-  - definitions, open licence reuse permissive hacker hack data journalism data bis UCX etc.
- - what do govhack entries look like?
-  - roles; coder, designer UX/graphics
-
-
-
 geo
-  - http://converter.mygeodata.eu/vector kml exporter for shp
-  - http://bost.ocks.org/mike/map/ 
 
 R
-  - http://blog.yhathq.com/posts/10-R-packages-I-wish-I-knew-about-earlier.html
-        - excel -> R/rattle/ deducer? http://www.r-bloggers.com/updates-to-the-deducer-family-of-packages/
-
-
 
 - tools.disclo.gs - how to use data
   - developer tools inc. linked data
@@ -30,17 +11,15 @@ R
         - postgis/quantum gis 
           - (google earth is alright but many limitations) NASA World Wind?
           - ABS statistical areas
-          - http://irs.gis-lab.info/ wms or http://www.gdal.org/frmt_wms_openstreetmap_tms.xml
+          - base layers like agri, http://irs.gis-lab.info/ wms or http://www.gdal.org/frmt_wms_openstreetmap_tms.xml
           - can do nearest/isin/union queries - personal geocoder
           - cloudmade geocoder, google maps my maps
-          - base layers like agri or nearmap
+
         - scraperwiki with new pytemplate libraries
           - makes an API for your data to get in sqlite/json/csv
-        - three.js with cables vis? Overviewer from AP?
+
   - govhack library
-    - http://hpneo.github.com/gmaps/examples.html 
     - https://graphics.stanford.edu/wikis/cs448b-12-fall/ data viz theory
-    - https://mixpanel.com/education/understanding-the-first-five-minutes
     - http://drawingbynumbers.org/toolsandresources
     - http://wmbriggs.com/blog/?p=6465
     - http://ofps.oreilly.com/titles/9781449339739/k_00000002.html list of d3 alternatives
@@ -75,6 +54,133 @@ R
       - http://linkeddata.org/home 
 
 
+Welcome to the GovHack toolkit. This page provides all the information you need to prepare hackfest entries.
+These tools can be used to make entries like: mobile apps, web apps, data visualisations/infographics
+
+
+# General Data Hacking and Programming References {#general-data-hacking-and-programming-references}
+## The basics of being a data scientist
+
+*   Have a hypothesis � even if you&#8217;re making a tool/api that helps people with their questions too, remember what the objective of that is.
+*   Find the people and tools you need to prove/show/find. This rest of this page will help with the latter.
+*   Analyse and present results � were they what you expected? Do they help explain to others what you have found out? Can present as a interactive data visualisation or a web/mobile application or just a infographic/motion graphics video that tells a story.
+Please note, there are a combination of Analysis and Visualisation tools in each of the major categories below.
+
+
+[![](http://www.govhack.org/wp-content/uploads/How-to-participate-in-GovHack_html_m6a65720f-300x199.gif "Data Journalism Diagram")](http://www.govhack.org/wp-content/uploads/How-to-participate-in-GovHack_html_m6a65720f.gif)</dt>
+Illustration from Data Journalism Handbook, CC BY-SA 3.0</dd>
+
+
+The best high level reference is the �Understanding Data� and �Delivering Data� chapters of the Data Journalism Handbook which is available online for free at
+
+[datajournalismhandbook.org](http://datajournalismhandbook.org/)
+
+You can learn the technical skills from scratch in Visualize This: The FlowingData Guide to Design, Visualization, and Statistics by Nathan Yau or for more advanced
+
+practical advice check out Data Analysis with Open Source Tools by Philipp K. Janert
+
+For further reading in this space
+
+[http://flowingdata.com/2012/04/27/data-and-visualization-blogs-worth-following/](http://flowingdata.com/2012/04/27/data-and-visualization-blogs-worth-following/)
+
+
+
+**Statistics**
+
+[http://greenteapress.com/thinkstats/html/index.html](http://greenteapress.com/thinkstats/html/index.html)
+
+**Programming**
+
+Programming is valuable skill for manipulating and displaying data.
+
+Basic tutorials for a variety of languages are available for free online or you can learn
+
+interactively with websites like [http://www.codecademy.com/](http://www.codecademy.com/#!/exercises/0\. for JavaScript or [http://www.learnpython.org/ ](http://www.learnpython.org/)or [http://tryruby.org](http://tryruby.org/)
+
+[https://developer.mozilla.org/en/JavaScript](https://developer.mozilla.org/en/JavaScript) &#8211\. especially for web applications and visualisations, you&#8217;ll need a basic understanding of JS. Common libraries like prototype or jQuery can help
+
+**Accessibility/User Experience**
+
+WCAG guidelines not only make a web app accessible but make it a better experience for all users! Even if not making an app, good to consider these things to do and not do: [http://www.w3.org/TR/WCAG/](http://www.w3.org/TR/WCAG/)
+
+## Who can be a hack day participant
+  - roles; coder, designer UX/graphics
+
+## Definitions
+  - definitions, open licence reuse permissive hacker hack data journalism data bis UCX etc.
+
+
+## key datasets
+  - key datasets, directory.gov.au gazetter/AEC electorates/suburbs/postcodes/LGAs
+
+## examples
+
+## The Open Budget
+
+## WeatherTree weather API
+
+## PlanningAlerts
+
+[![Planning Alerts Screenshot](http://www.govhack.org/wp-content/uploads/How-to-participate-in-GovHack_html_2f0199ff1-300x221.png "Planning Alerts Screenshot")](http://www.govhack.org/wp-content/uploads/How-to-participate-in-GovHack_html_2f0199ff1.png)Description: Planning Alerts takes data from local government development applications and sends alerts to users based on what applications are lodged in their area.
+
+Programming Language: Ruby
+
+Source Control: [Git](https://github.com/openaustralia/planningalerts-app)
+
+Issue Tracking: [Atlassian JIRA](http://tickets.openaustraliafoundation.org.au/browse/PA/)
+
+## LobbyLens
+
+[![](http://www.govhack.org/wp-content/uploads/129-Screenshot-LobbyClue_-_Chromium-300x180.png "LobbyLens screenshot")](http://www.govhack.org/wp-content/uploads/129-Screenshot-LobbyClue_-_Chromium.png)
+
+Description: Displays connections between government contracts, business details, politician responsibilities, lobbyists, clients of lobbyists, political donors and the location of these entities.
+
+Programing Language: PHP
+
+Source Control: SVN (Subversion)
+
+Issue Tracking: A whiteboard
+
+## Bus.lambdacomplex.org
+
+[![](http://www.govhack.org/wp-content/uploads/How-to-participate-in-GovHack_html_3789acae-300x253.jpg "Bus.lambda screenshot")](http://www.govhack.org/wp-content/uploads/How-to-participate-in-GovHack_html_3789acae.jpg)
+
+Description: Online Canberra Bus Timetables and Trip Planner.
+
+Programing Language: PHP/Ruby
+
+Source Control: Git
+
+Issue Tracking: Github
+
+
+## Developer Tools For Your Computer {#developer-tools-for-your-computer}
+
+server admin / technical tools
+many projects will require some kind of internet presence, webpage etc.
+    - css framework like bootstrap or zurb foundation
+    video tools, youtube video editor/slideshow, FOSS video editing tools
+  - http://ubuntu-tutorials.com/2008/11/11/relaying-postfix-smtp-via-smtpgmailcom/
+  - amon
+
+### Source Control &#8211\. Git / Subversion
+
+[![](http://www.govhack.org/wp-content/uploads/Screenshot-at-2012-04-29-172132-300x235.png "Git Screenshot")](http://progit.org/book/)
+
+[http://progit.org/book/](http://progit.org/book/)
+
+[http://svnbook.red-bean.com/](http://svnbook.red-bean.com/)
+
+[http://tortoisesvn.net/](http://tortoisesvn.net/)
+
+[http://code.google.com/p/tortoisegit/](http://code.google.com/p/tortoisegit/)
+
+### Task Tracking -
+
+Issue/task trackers allow you to outline the tasks required for your project and assign them to people to do.
+
+[Trello](https://trello.com/) and [Workflowy](https://workflowy.com/) are free, lightweight project management tools suitable for a rapid project!
+
 # Hosted Developer Tools {#hosted-developer-tools}
 
 ### Sourceforge
@@ -90,13 +196,6 @@ Git, Mercurial, and Subversion code. Issue tracker, wiki, release file downloads
 You can host your Google Code project and get access to developer tools, APIs and documentation at [http://code.google.com/](http://code.google.com/)
 
 
-
-# The basics of being a data scientist
-
-*   Have a hypothesis � even if you&#8217;re making a tool/api that helps people with their questions too, remember what the objective of that is.
-*   Find the people and tools you need to prove/show/find. This rest of this page will help with the latter.
-*   Analyse and present results � were they what you expected? Do they help explain to others what you have found out? Can present as a interactive data visualisation or a web/mobile application or just a infographic/motion graphics video that tells a story.
-Please note, there are a combination of Analysis and Visualisation tools in each of the major categories below.
 
 # API Development {#api-development}
 
@@ -126,7 +225,7 @@ API
     - http://symfony.com/ https://github.com/FriendsOfSymfony/FOSRestBundle http://williamdurand.fr/2012/08/02/rest-apis-with-symfony2-the-right-way/ https://github.com/nelmio/NelmioApiDocBundle better apis https://github.com/liip/LiipHelloBundle
       - https://github.com/elc/rapi_doc https://github.com/Pajk/apipie-rails
       -
-
+   http://amberonrails.com/building-stripes-api/
 
 
 # Infographics and Data Visualisation {#data-visualisation}
@@ -141,6 +240,8 @@ You can find some data visualisation &#8220;essential&#8221\. tools below:
 
 Also check out [http://thejit.org](http://thejit.org/) &amp; [http://www.senchalabs.org/<wbr>philogl/</wbr>](http://www.senchalabs.org/philogl/) (contributed by Matt Adcock)
 
+Have to use visual art concepts, good color schemes http://www.r-bloggers.com/the-paul-tol-21-color-salute/
+
 # Mobile
 html5 jquery mobile like directory.gov.au
     - android datviz
@@ -152,7 +253,20 @@ html5 jquery mobile like directory.gov.au
 
 Check out the[ GeoRabble Boundary Mapper&#8217;s Cookbook](http://georabble.org/2012/05/31/the-boundary-mappers-cookbook/) to see how you can tie all these things together!
 
+## Wrangling
+
+## Converting
+There are many spatial data formats and often the one your tool requires is not the one the dataset is provided in
+Online
+  - http://converter.mygeodata.eu/vector kml exporter for shp
+or locally using GDAL
+
+## geocoding
+cloudmade, google (but you must display on a Google Map).
+
+
 ## Analysis
+
 
 ### PostGIS
 
@@ -173,12 +287,14 @@ Check out the[ GeoRabble Boundary Mapper&#8217;s Cookbook](http://georabble.org/
 ### [Cartographer.js](http://cartographer.visualmotive.com/)
 
 [![](http://www.govhack.org/wp-content/uploads/cartographerjs-300x187.png "cartographerjs screenshot")](http://www.govhack.org/wp-content/uploads/cartographerjs.png)Input data as JSON and maps are produced.
-
+See also d3 maps.
+  - http://bost.ocks.org/mike/map/
 
 
 ### OpenLayers/Google Maps/[Leaflet](http://leaflet.cloudmade.com/)
 
 [![](http://www.govhack.org/wp-content/uploads/How-to-participate-in-GovHack_html_512fcbe1-300x173.jpg "OpenLayers Screenshot")](http://www.govhack.org/wp-content/uploads/How-to-participate-in-GovHack_html_512fcbe1.jpg)Display points and different layers. Leaflet is the easiest to use if you just want to show points with popups when clicked on.
+There are wrappers for Google maps like http://hpneo.github.com/gmaps/examples.html and Mapstraction that can make it easier to use too.
 
 ### NASA World Wind/Google Earth
 
@@ -188,27 +304,36 @@ Check out the[ GeoRabble Boundary Mapper&#8217;s Cookbook](http://georabble.org/
 
 # Tabular Data Tools {#tabular-data-tools}
 
+## Wrangling
+
+Tabular data may have duplicate entries or incorrect formats (varying ways to enter dates/phonenumbers etc.). There are tools to quickly fix common problems
+
+[DataWrangler](http://vis.stanford.edu/wrangler/)/[Google Refine](http://code.google.com/p/google-refine/)
+
+[![](http://www.govhack.org/wp-content/uploads/google_refine_interface.png "google_refine_interface")](http://www.govhack.org/wp-content/uploads/google_refine_interface.png)Clean up duplicate or inconsistent data entries.
+
 ## Analysis
 
 ### Excel / Calc
 
 Great basic analysis and viewing. Older versions can be limited to 6500\. or so rows. Eg [http://www.tcij.org/training-material/car/data-mining/3474](http://www.tcij.org/training-material/car/data-mining/3474)
 
-### [DataWrangler](http://vis.stanford.edu/wrangler/)/[Google Refine](http://code.google.com/p/google-refine/)
-
-[![](http://www.govhack.org/wp-content/uploads/google_refine_interface.png "google_refine_interface")](http://www.govhack.org/wp-content/uploads/google_refine_interface.png)Clean up duplicate or inconsistent data entries.
 
 ### PostgreSQL/MySQL
 
 [![](http://www.govhack.org/wp-content/uploads/How-to-participate-in-GovHack_html_209ee972.jpg "SQL screenshot")](http://www.govhack.org/wp-content/uploads/How-to-participate-in-GovHack_html_209ee972.jpg)Next step up, large datasets can be manipulated/extracted efficiently for example [http://www.postgresql.org/docs/8.4/static/tutorial-window.html](http://www.postgresql.org/docs/8.4/static/tutorial-window.html) , no built-in data visualisation though.
 
-[Miso Dataset](http://misoproject.com/dataset/)
+### [Miso Dataset](http://misoproject.com/dataset/)
 
 [![](http://www.govhack.org/wp-content/uploads/How-to-participate-in-GovHack_html_m53b7ee38-293x300.png "miso screenshot")](http://www.govhack.org/wp-content/uploads/How-to-participate-in-GovHack_html_m53b7ee38.png)Javascript data transformation library � especially good if you want to use the output for javascript interactive visualisations because the transformations can be done on-the-fly by users.
 
 ### R Statistical Language
 
 [![](http://www.govhack.org/wp-content/uploads/rstudio-windows-300x249.png "rstudio-windows")](http://www.govhack.org/wp-content/uploads/rstudio-windows.png)Advanced data analysis, can find and visualise trends in large datasets. Some reference resources to learn the language [http://cran.r-project.org/doc/manuals/R-intro.html ](http://cran.r-project.org/doc/manuals/R-intro.html)There are also some addons that provide graphical interfaces that make it easier to use such as Rattle [http://rattle.togaware.com/](http://rattle.togaware.com/) , RStudio [http://rstudio.org/](http://rstudio.org/) or Deducer [http://www.deducer.org/pmwiki/pmwiki.php?n=Main.DeducerManual](http://www.deducer.org/pmwiki/pmwiki.php?n=Main.DeducerManual)
+
+  - http://blog.yhathq.com/posts/10-R-packages-I-wish-I-knew-about-earlier.html
+        - excel -> R/rattle/ deducer? http://www.r-bloggers.com/updates-to-the-deducer-family-of-packages/
+
 
 ## Visualisation
 
@@ -280,113 +405,3 @@ Palantir make a good computer forensics tool, which they will showcase and give 
 ### [sigma.js](http://sigmajs.org/)
 
 [![](http://www.govhack.org/wp-content/uploads/How-to-participate-in-GovHack_html_m6006eaf3-300x130.jpg "Sigma.js Screenshot")](http://www.govhack.org/wp-content/uploads/How-to-participate-in-GovHack_html_m6006eaf3.jpg)Javascript graph viewer, can use GEXF files exported from tools like neo4j, gephi and NetworkX.
-
-
-
-Below is some additional information including a few previous GovHack projects to get you thinking ![:)](http://www.govhack.org/wp-includes/images/smilies/icon_smile.gif)  More examples are available at [http://mashupaustralia.org/](http://mashupaustralia.org/).
-
-# Previous Project Examples {#previous-project-examples}
-
-## The Open Budget
-
-## WeatherTree weather API
-
-## PlanningAlerts
-
-[![Planning Alerts Screenshot](http://www.govhack.org/wp-content/uploads/How-to-participate-in-GovHack_html_2f0199ff1-300x221.png "Planning Alerts Screenshot")](http://www.govhack.org/wp-content/uploads/How-to-participate-in-GovHack_html_2f0199ff1.png)Description: Planning Alerts takes data from local government development applications and sends alerts to users based on what applications are lodged in their area.
-
-Programming Language: Ruby
-
-Source Control: [Git](https://github.com/openaustralia/planningalerts-app)
-
-Issue Tracking: [Atlassian JIRA](http://tickets.openaustraliafoundation.org.au/browse/PA/)
-
-## LobbyLens
-
-[![](http://www.govhack.org/wp-content/uploads/129-Screenshot-LobbyClue_-_Chromium-300x180.png "LobbyLens screenshot")](http://www.govhack.org/wp-content/uploads/129-Screenshot-LobbyClue_-_Chromium.png)
-
-Description: Displays connections between government contracts, business details, politician responsibilities, lobbyists, clients of lobbyists, political donors and the location of these entities.
-
-Programing Language: PHP
-
-Source Control: SVN (Subversion)
-
-Issue Tracking: A whiteboard
-
-## Bus.lambdacomplex.org
-
-[![](http://www.govhack.org/wp-content/uploads/How-to-participate-in-GovHack_html_3789acae-300x253.jpg "Bus.lambda screenshot")](http://www.govhack.org/wp-content/uploads/How-to-participate-in-GovHack_html_3789acae.jpg)
-
-Description: Online Canberra Bus Timetables and Trip Planner.
-
-Programing Language: PHP/Ruby
-
-Source Control: Git
-
-Issue Tracking: Github
-
-# General Data Hacking and Programming References {#general-data-hacking-and-programming-references}
-
-
-[![](http://www.govhack.org/wp-content/uploads/How-to-participate-in-GovHack_html_m6a65720f-300x199.gif "Data Journalism Diagram")](http://www.govhack.org/wp-content/uploads/How-to-participate-in-GovHack_html_m6a65720f.gif)</dt>
-Illustration from Data Journalism Handbook, CC BY-SA 3.0</dd>
-
-
-The best high level reference is the �Understanding Data� and �Delivering Data� chapters of the Data Journalism Handbook which is available online for free at
-
-[datajournalismhandbook.org](http://datajournalismhandbook.org/)
-
-You can learn the technical skills from scratch in Visualize This: The FlowingData Guide to Design, Visualization, and Statistics by Nathan Yau or for more advanced
-
-practical advice check out Data Analysis with Open Source Tools by Philipp K. Janert
-
-For further reading in this space
-
-[http://flowingdata.com/2012/04/27/data-and-visualization-blogs-worth-following/](http://flowingdata.com/2012/04/27/data-and-visualization-blogs-worth-following/)
-
-**Statistics**
-
-[http://greenteapress.com/thinkstats/html/index.html](http://greenteapress.com/thinkstats/html/index.html)
-
-**Programming**
-
-Programming is valuable skill for manipulating and displaying data.
-
-Basic tutorials for a variety of languages are available for free online or you can learn
-
-interactively with websites like [http://www.codecademy.com/](http://www.codecademy.com/#!/exercises/0\. for JavaScript or [http://www.learnpython.org/ ](http://www.learnpython.org/)or [http://tryruby.org](http://tryruby.org/)
-
-[https://developer.mozilla.org/en/JavaScript](https://developer.mozilla.org/en/JavaScript) &#8211\. especially for web applications and visualisations, you&#8217;ll need a basic understanding of JS. Common libraries like prototype or jQuery can help
-
-**Accessibility/User Experience**
-
-WCAG guidelines not only make a web app accessible but make it a better experience for all users! Even if not making an app, good to consider these things to do and not do: [http://www.w3.org/TR/WCAG/](http://www.w3.org/TR/WCAG/)
-
-
-
-# Developer Tools For Your Computer {#developer-tools-for-your-computer}
-
-server admin / technical tools
-many projects will require some kind of internet presence, webpage etc.
-    - css framework like bootstrap or zurb foundation
-    video tools, youtube video editor/slideshow, FOSS video editing tools
-  - http://ubuntu-tutorials.com/2008/11/11/relaying-postfix-smtp-via-smtpgmailcom/
-  - amon
-
-### Source Control &#8211\. Git / Subversion
-
-[![](http://www.govhack.org/wp-content/uploads/Screenshot-at-2012-04-29-172132-300x235.png "Git Screenshot")](http://progit.org/book/)
-
-[http://progit.org/book/](http://progit.org/book/)
-
-[http://svnbook.red-bean.com/](http://svnbook.red-bean.com/)
-
-[http://tortoisesvn.net/](http://tortoisesvn.net/)
-
-[http://code.google.com/p/tortoisegit/](http://code.google.com/p/tortoisegit/)
-
-### Task Tracking - [Trac](http://trac.edgewall.org/) / [Redmine](http://www.redmine.org/) / [Bugzilla](http://www.bugzilla.org/)
-
-## [![](http://www.govhack.org/wp-content/uploads/trac-300x207.png "trac screenshot")](http://www.govhack.org/wp-content/uploads/trac.png)
-
-Issue/task trackers allow you to outline the tasks required for your project and assign them to people to do.
