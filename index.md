@@ -5,9 +5,9 @@ These tools can be used to make entries like: mobile apps, web apps, data visual
 # General Data Hacking and Programming References {#general-data-hacking-and-programming-references}
 ## The basics of being a data scientist
 
-*   Have a hypothesis � even if you&#8217;re making a tool/api that helps people with their questions too, remember what the objective of that is.
+*   Have a hypothesis - even if you're making a tool/api that helps people with their questions too, remember what the objective of that is.
 *   Find the people and tools you need to prove/show/find. This rest of this page will help with the latter.
-*   Analyse and present results � were they what you expected? Do they help explain to others what you have found out? Can present as a interactive data visualisation or a web/mobile application or just a infographic/motion graphics video that tells a story.
+*   Analyse and present results -  were they what you expected? Do they help explain to others what you have found out? Can present as a interactive data visualisation or a web/mobile application or just a infographic/motion graphics video that tells a story.
 Please note, there are a combination of Analysis and Visualisation tools in each of the major categories below.
 
 
@@ -15,7 +15,7 @@ Please note, there are a combination of Analysis and Visualisation tools in each
 Illustration from Data Journalism Handbook, CC BY-SA 3.0</dd>
 
 
-The best high level reference is the �Understanding Data� and �Delivering Data� chapters of the Data Journalism Handbook which is available online for free at
+The best high level reference is the 'Understanding Data' and 'Delivering Data' chapters of the Data Journalism Handbook which is available online for free at
 
 [datajournalismhandbook.org](http://datajournalismhandbook.org/)
 
@@ -38,9 +38,9 @@ Programming is valuable skill for manipulating and displaying data.
 
 Basic tutorials for a variety of languages are available for free online or you can learn
 
-interactively with websites like [http://www.codecademy.com/](http://www.codecademy.com/#!/exercises/0\. for JavaScript or [http://www.learnpython.org/ ](http://www.learnpython.org/)or [http://tryruby.org](http://tryruby.org/)
+interactively with websites like [http://www.codecademy.com/](http://www.codecademy.com/#!/exercises/0). for JavaScript or [http://www.learnpython.org/ ](http://www.learnpython.org/)or [http://tryruby.org](http://tryruby.org/)
 
-[https://developer.mozilla.org/en/JavaScript](https://developer.mozilla.org/en/JavaScript) &#8211\. especially for web applications and visualisations, you&#8217;ll need a basic understanding of JS. Common libraries like prototype or jQuery can help
+[https://developer.mozilla.org/en/JavaScript](https://developer.mozilla.org/en/JavaScript) - especially for web applications and visualisations, you'll need a basic understanding of JS. Common libraries like prototype or jQuery can help
 
 **Accessibility/User Experience**
 
@@ -51,7 +51,6 @@ WCAG guidelines not only make a web app accessible but make it a better experien
 
 ## Definitions
   - definitions, open licence reuse permissive hacker hack data journalism data bis UCX etc.
-
 
 ## key datasets
   - key datasets, directory.gov.au gazetter/AEC electorates/suburbs/postcodes/LGAs
@@ -106,7 +105,8 @@ many projects will require some kind of internet presence, webpage etc.
   - http://ubuntu-tutorials.com/2008/11/11/relaying-postfix-smtp-via-smtpgmailcom/
   - amon
 
-### Source Control &#8211\. Git / Subversion
+### Source Control 
+ Git / Subversion
 
 [![](http://www.govhack.org/wp-content/uploads/Screenshot-at-2012-04-29-172132-300x235.png "Git Screenshot")](http://progit.org/book/)
 
@@ -148,7 +148,7 @@ You can host your Google Code project and get access to developer tools, APIs an
 # API Development {#api-development}
 
 
-So an API isn&#8217;t just an XML file ![;)](http://www.govhack.org/wp-includes/images/smilies/icon_wink.gif) 
+So an API isn't just an XML file ![;)](http://www.govhack.org/wp-includes/images/smilies/icon_wink.gif) 
 
 A good web based data API:
 
@@ -182,7 +182,7 @@ Infographics try to contextualise charts and graphs to tell a story. Data vis bu
 
 Most of the categories to follow have visualisation tools specific to their purpose.
 
-You can find some data visualisation &#8220;essential&#8221\. tools below:
+You can find some data visualisation tools below:
 
 [http://www.visualisingdata.com/index.php/2011/07/part-6-the-essential-collection-of-visualisation-resources/](http://www.visualisingdata.com/index.php/2011/07/part-6-the-essential-collection-of-visualisation-resources/)
 
@@ -200,6 +200,7 @@ tools     - http://selection.datavisualization.ch/ data viz tools catalog
 
 
 # Mobile
+bom water, nz gov budget
 html5 jquery mobile like directory.gov.au
     - android datviz
       - http://code.google.com/p/afreechart/ http://code.google.com/p/snowdon/ http://code.google.com/p/chartdroid/ http://androidplot.com/ http://code.google.com/p/achartengine/
@@ -208,7 +209,7 @@ html5 jquery mobile like directory.gov.au
 
 # Geographical Data Tools {#geographical-data-tools}
 
-Check out the[ GeoRabble Boundary Mapper&#8217;s Cookbook](http://georabble.org/2012/05/31/the-boundary-mappers-cookbook/) to see how you can tie all these things together!
+Check out the[ GeoRabble Boundary Mapper's Cookbook](http://georabble.org/2012/05/31/the-boundary-mappers-cookbook/) to see how you can tie all these things together!
 
 ## Key datasets
           - base layers like agri http://agri.openstreetmap.org/, http://irs.gis-lab.info/ wms or http://www.gdal.org/frmt_wms_openstreetmap_tms.xml
@@ -284,14 +285,13 @@ regex http://www.regexper.com/ http://www.debuggex.com/?re=&str=
 
 Great basic analysis and viewing. Older versions can be limited to 6500\. or so rows. Eg [http://www.tcij.org/training-material/car/data-mining/3474](http://www.tcij.org/training-material/car/data-mining/3474)
 
-
 ### PostgreSQL/MySQL
 
 [![](http://www.govhack.org/wp-content/uploads/How-to-participate-in-GovHack_html_209ee972.jpg "SQL screenshot")](http://www.govhack.org/wp-content/uploads/How-to-participate-in-GovHack_html_209ee972.jpg)Next step up, large datasets can be manipulated/extracted efficiently for example [http://www.postgresql.org/docs/8.4/static/tutorial-window.html](http://www.postgresql.org/docs/8.4/static/tutorial-window.html) , no built-in data visualisation though.
 
 ### [Miso Dataset](http://misoproject.com/dataset/)
 
-[![](http://www.govhack.org/wp-content/uploads/How-to-participate-in-GovHack_html_m53b7ee38-293x300.png "miso screenshot")](http://www.govhack.org/wp-content/uploads/How-to-participate-in-GovHack_html_m53b7ee38.png)Javascript data transformation library � especially good if you want to use the output for javascript interactive visualisations because the transformations can be done on-the-fly by users.
+[![](http://www.govhack.org/wp-content/uploads/How-to-participate-in-GovHack_html_m53b7ee38-293x300.png "miso screenshot")](http://www.govhack.org/wp-content/uploads/How-to-participate-in-GovHack_html_m53b7ee38.png)Javascript data transformation library - especially good if you want to use the output for javascript interactive visualisations because the transformations can be done on-the-fly by users.
 
 ### R Statistical Language
 
@@ -356,7 +356,7 @@ http://www.cc.gatech.edu/gvu/ii/jigsaw/
 
 ### Neo4j / OrientDB
 
-[![](http://www.govhack.org/wp-content/uploads/webadmin-data-300x127.png "Neo4\. web admin screenshot")](http://www.govhack.org/wp-content/uploads/webadmin-data.png)Help understand relationships � how is X connected to Y and via what other entities they both are connected to. Imports and exports
+[![](http://www.govhack.org/wp-content/uploads/webadmin-data-300x127.png "Neo4\. web admin screenshot")](http://www.govhack.org/wp-content/uploads/webadmin-data.png)Help understand relationships - how is X connected to Y and via what other entities they both are connected to. Imports and exports
 
     - http://www.slideshare.net/maxdemarzi/etl-into-neo4j
 
@@ -383,7 +383,7 @@ NetworkX is a social network analysis library for python. Many advanced analyses
 
 ### [Graphviz](http://www.graphviz.org/)
 
-[![](http://www.govhack.org/wp-content/uploads/How-to-participate-in-GovHack_html_7579906d-300x184.png "Graphviz Screenshot")](http://www.govhack.org/wp-content/uploads/How-to-participate-in-GovHack_html_7579906d.png)Classic directed graph visualisation tool, can even [generate images online without installing](http://ashitani.jp/gv/) or use in webpages with [javascript port of software](http://code.google.com/p/canviz/). File format [�dot� very easy to learn](http://en.wikipedia.org/wiki/DOT_language)
+[![](http://www.govhack.org/wp-content/uploads/How-to-participate-in-GovHack_html_7579906d-300x184.png "Graphviz Screenshot")](http://www.govhack.org/wp-content/uploads/How-to-participate-in-GovHack_html_7579906d.png)Classic directed graph visualisation tool, can even [generate images online without installing](http://ashitani.jp/gv/) or use in webpages with [javascript port of software](http://code.google.com/p/canviz/). File format ["dot" very easy to learn](http://en.wikipedia.org/wiki/DOT_language)
 
 ### Gephi
 
