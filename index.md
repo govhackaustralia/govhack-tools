@@ -1,8 +1,15 @@
 Welcome to the GovHack toolkit. This page provides all the information you need to prepare hackfest entries.
 These tools can be used to make entries like: mobile apps, web apps, data visualisations/infographics
 
+# How to register and submit your entry
+- how to use website "Hacker Space" to register and find teams etc.
 
-# General Data Hacking and Programming References {#general-data-hacking-and-programming-references}
+- screencast tools - preparing your submission
+  video tools, youtube video editor/slideshow, FOSS video editing tools
+
+- how to submit code
+
+# General References {#general-data-hacking-and-programming-references}
 ## The basics of being a data scientist
 
 *   Have a hypothesis - even if you're making a tool/api that helps people with their questions too, remember what the objective of that is.
@@ -101,7 +108,10 @@ Issue Tracking: Github
 server admin / technical tools
 many projects will require some kind of internet presence, webpage etc.
     - css framework like bootstrap or zurb foundation
-    video tools, youtube video editor/slideshow, FOSS video editing tools
+- css gauges http://www.larentis.eu/donuts/
+- bootstrap themes, web fonts, css sprites, icon fonts
+  - http://designmodo.com/flat-free/ http://designmodo.github.com/Flat-UI/
+
   - http://ubuntu-tutorials.com/2008/11/11/relaying-postfix-smtp-via-smtpgmailcom/
   - amon
 
