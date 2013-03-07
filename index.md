@@ -2,20 +2,34 @@ Welcome to the GovHack toolkit. This page provides all the information you need 
 These tools can be used to make entries like: mobile apps, web apps, data visualisations/infographics
 
 # How to register and submit your entry
-- how to use website "Hacker Space" to register and find teams etc.
+## registering your team
+how to use website "Hacker Space" to register and find teams etc.
 
-- screencast tools - preparing your submission
-  video tools, youtube video editor/slideshow, FOSS video editing tools
+## preparing your submission
 
-- how to submit code
+  record a 3 minute speech and mix images/text to accompany
+http://www.screenr.com/ and other screencasting tools allow you to demo apps.
+  youtube video editor http://www.youtube.com/editor
+or local software like http://www.videolan.org/vlmc/ or http://www.lwks.com/
+
+you also need to submit your "source material". For an application this may be source code, for another work it might be your notes or prototypes.
+The key thing here is that your source material demonstrates to the judges that some of the end result was your own work and that it is possible for another person to replicate that work.
+
 
 # General References {#general-data-hacking-and-programming-references}
+
+## Who can be a hack day participant
+  - roles; coder, designer UX/graphics
+
+## Definitions
+  - definitions, open licence reuse permissive hacker hack data journalism data vis UX etc.
+
 ## The basics of being a data scientist
 
 *   Have a hypothesis - even if you're making a tool/api that helps people with their questions too, remember what the objective of that is.
 *   Find the people and tools you need to prove/show/find. This rest of this page will help with the latter.
-*   Analyse and present results -  were they what you expected? Do they help explain to others what you have found out? Can present as a interactive data visualisation or a web/mobile application or just a infographic/motion graphics video that tells a story.
-Please note, there are a combination of Analysis and Visualisation tools in each of the major categories below.
+*   Analyse and present results -  were they what you expected? Do they help explain to others what you have found out?
+Can present as a interactive data visualisation or a web/mobile application or just a infographic/motion graphics video that tells a story.
 
 
 [![](http://www.govhack.org/wp-content/uploads/How-to-participate-in-GovHack_html_m6a65720f-300x199.gif "Data Journalism Diagram")](http://www.govhack.org/wp-content/uploads/How-to-participate-in-GovHack_html_m6a65720f.gif)</dt>
@@ -42,7 +56,6 @@ For further reading in this space
 **Programming**
 
 Programming is valuable skill for manipulating and displaying data.
-
 Basic tutorials for a variety of languages are available for free online or you can learn
 
 interactively with websites like [http://www.codecademy.com/](http://www.codecademy.com/#!/exercises/0). for JavaScript or [http://www.learnpython.org/ ](http://www.learnpython.org/)or [http://tryruby.org](http://tryruby.org/)
@@ -53,14 +66,7 @@ interactively with websites like [http://www.codecademy.com/](http://www.codecad
 
 WCAG guidelines not only make a web app accessible but make it a better experience for all users! Even if not making an app, good to consider these things to do and not do: [http://www.w3.org/TR/WCAG/](http://www.w3.org/TR/WCAG/)
 
-## Who can be a hack day participant
-  - roles; coder, designer UX/graphics
 
-## Definitions
-  - definitions, open licence reuse permissive hacker hack data journalism data bis UCX etc.
-
-## key datasets
-  - key datasets, directory.gov.au gazetter/AEC electorates/suburbs/postcodes/LGAs
 
 ## examples
 
@@ -172,7 +178,7 @@ A good web based data API:
 
 Some people like sensis [http://](http://developers.sensis.com.au/)[developers.sensis.com.<wbr>au</wbr>](http://developers.sensis.com.au/)[/](http://developers.sensis.com.au/) use a provider like[http://](http://mashery.com/)[mashery.com](http://mashery.com/)[/](http://mashery.com/) or [https](https://apigee.com/)[://](https://apigee.com/)[apigee.com](https://apigee.com/) or [http://](http://apiaxle.com/)[apiaxle.com](http://apiaxle.com/)[/](http://apiaxle.com/) or [http://www.3scale.net/](http://www.3scale.net/) which handles making a good API for them.
 
-Atlassian have a great page on what makes a good API [https](https://developer.atlassian.com/display/REST/Atlassian+REST+API+Design+Guidelines+version+1)[://](https://developer.atlassian.com/display/REST/Atlassian+REST+API+Design+Guidelines+version+1)[developer.atlassian.<wbr>com</wbr>](https://developer.atlassian.com/display/REST/Atlassian+REST+API+Design+Guidelines+version+1)[/display/REST/](https://developer.atlassian.com/display/REST/Atlassian+REST+API+Design+Guidelines+version+1)[Atlassian](https://developer.atlassian.com/display/REST/Atlassian+REST+API+Design+Guidelines+version+1)[+<wbr>REST+API+Design+Guidelines+<wbr>version+1</wbr></wbr>](https://developer.atlassian.com/display/REST/Atlassian+REST+API+Design+Guidelines+version+1)
+Atlassian have a great page on what makes a good API https://developer.atlassian.com/display/REST/Atlassian+REST+API+Design+Guidelines+version+1)
 
 API
   - howto.gov api tutorial
@@ -256,7 +262,7 @@ Easiest way to do is with a Google Spreadsheet/Fusion Table http://williamparry.
 
 ### Google Fusion Tables/ChartsBin/[OpenHeatMap](http://www.openheatmap.com/)
 
-[![](http://www.govhack.org/wp-content/uploads/fusiontablesscreenshot-300x168.jpg "fusiontablesscreenshot")](http://www.govhack.org/wp-content/uploads/fusiontablesscreenshot.jpg)Input a numerical values and areas to a spreadsheet and maps are produced
+[![](http://www.govhack.org/wp-content/uploads/fusiontablesscreenshot-300x168.jpg "fusiontablesscreenshot")](http://www.govhack.org/wp-content/uploads/fusiontablesscreenshot.jpg)Input numerical values and areas to a spreadsheet and maps are produced where the areas are colored on a scale of the values
 
 ### [Cartographer.js](http://cartographer.visualmotive.com/)
 
@@ -340,15 +346,22 @@ d3
 
 # Unstructured (text documents, webpages, metadata, tweets etc) Data Tools
 
-## wranglying
+## wrangling
 Scraperwiki pytemplate scrapy
+regex
 
-Overviewer/ Jigsaw
-http://www.cc.gatech.edu/gvu/ii/jigsaw/
+#analysing
     - opennlp/nltk / https://github.com/clips/pattern
     - lucene/solr
     - http://www.r-bloggers.com/simple-text-mining-with-r/
     - http://blog.josephwilk.net/ruby/latent-semantic-analysis-in-ruby.html similar terms usually found together
+
+#visualising
+
+Overviewer/ Jigsaw
+http://www.cc.gatech.edu/gvu/ii/jigsaw/
+
+http://www.jasondavies.com/wordtree/
 
 # Graph (relationships and networks) Data Tools {#graph-relationships-and-networks-data-tools}
 
@@ -369,6 +382,7 @@ http://www.cc.gatech.edu/gvu/ii/jigsaw/
 [![](http://www.govhack.org/wp-content/uploads/webadmin-data-300x127.png "Neo4\. web admin screenshot")](http://www.govhack.org/wp-content/uploads/webadmin-data.png)Help understand relationships - how is X connected to Y and via what other entities they both are connected to. Imports and exports
 
     - http://www.slideshare.net/maxdemarzi/etl-into-neo4j
+    http://blog.neo4j.org/2013/03/importing-data-into-neo4j-spreadsheet.html
 
 http://www.orientdb.org/
 
@@ -385,7 +399,8 @@ NetworkX is a social network analysis library for python. Many advanced analyses
 
 ## Visualisation
 ###  Tree/Hierarchy visualisation
-          - don't use network viz if what you actually have is a tree/hierarchy with no interconnections http://www.randelshofer.ch/treeviz/ http://thejit.org/demos/ http://mbostock.github.com/protovis/ex/treemap.html http://blog.pixelingene.com/2011/07/building-a-tree-diagram-in-d3-js/d3 for Trees and Hierarchies
+Sometimes what you actually have is a tree/hierarchy with no interconnections.
+ http://www.randelshofer.ch/treeviz/ http://thejit.org/demos/ http://mbostock.github.com/protovis/ex/treemap.html http://blog.pixelingene.com/2011/07/building-a-tree-diagram-in-d3-js/d3 for Trees and Hierarchies
  http://mbostock.github.com/d3/ex/pack.html http://mbostock.github.com/d3/ex/tree.html
 
 ### NodeXL for Microsoft Excel
