@@ -3,16 +3,15 @@ These tools can be used to make entries like: mobile apps, web apps, data visual
 
 # How to register and submit your entry
 ## registering your team
-how to use website "Hacker Space" to register and find teams etc.
+TODO how to use website "Hacker Space" to register and find teams etc.
 
 ## preparing your submission
 
-  record a 3 minute speech and mix images/text to accompany
+You should record a 3 minute speech and mix images/text to accompany.
 http://www.screenr.com/ and other screencasting tools allow you to demo apps.
-  youtube video editor http://www.youtube.com/editor
-or local software like http://www.videolan.org/vlmc/ or http://www.lwks.com/
+To mix together clips, you can use youtube video editor http://www.youtube.com/editor or local software like http://www.videolan.org/vlmc/ or http://www.lwks.com/
 
-you also need to submit your "source material". For an application this may be source code, for another work it might be your notes or prototypes.
+You also need to submit your "source material". For an application this may be source code, for another work it might be your notes or prototypes.
 The key thing here is that your source material demonstrates to the judges that some of the end result was your own work and that it is possible for another person to replicate that work.
 
 
@@ -96,7 +95,7 @@ Source Control: SVN (Subversion)
 
 Issue Tracking: A whiteboard
 
-## Bus.lambdacomplex.org
+## bus.lambdacomplex.org
 
 [![](http://www.govhack.org/wp-content/uploads/How-to-participate-in-GovHack_html_3789acae-300x253.jpg "Bus.lambda screenshot")](http://www.govhack.org/wp-content/uploads/How-to-participate-in-GovHack_html_3789acae.jpg)
 
@@ -242,7 +241,7 @@ or locally using GDAL
 ### geocoding
 cloudmade, google (but you must display on a Google Map).
 
-Easiest way to do is with a Google Spreadsheet/Fusion Table http://williamparry.blogspot.com.au/2011/04/putting-data-into-google-fusion-tables.htm
+Easiest way to do is with a Google Spreadsheet/Fusion Table http://williamparry.blogspot.com.au/2011/04/putting-data-into-google-fusion-tables.htm http://support.google.com/fusiontables/answer/1012281?hl=en&ref_topic=2592806
 
 
 ## Analysis
@@ -263,6 +262,8 @@ Easiest way to do is with a Google Spreadsheet/Fusion Table http://williamparry.
 ### Google Fusion Tables/ChartsBin/[OpenHeatMap](http://www.openheatmap.com/)
 
 [![](http://www.govhack.org/wp-content/uploads/fusiontablesscreenshot-300x168.jpg "fusiontablesscreenshot")](http://www.govhack.org/wp-content/uploads/fusiontablesscreenshot.jpg)Input numerical values and areas to a spreadsheet and maps are produced where the areas are colored on a scale of the values
+
+http://www.peteraldhous.com/CAR/Making_maps_with_Google_Fusion_Tables.pdf tutorial or http://support.google.com/fusiontables/topic/2592754?hl=en&ref_topic=27020 for google help files
 
 ### [Cartographer.js](http://cartographer.visualmotive.com/)
 
