@@ -1,11 +1,13 @@
+#GovHack Toolkit
 Welcome to the GovHack toolkit. This page provides all the information you need to prepare hackfest entries.
-These tools can be used to make entries like: mobile apps, web apps, data visualisations/infographics
+These tools can be used to make entries like: mobile apps, web apps, data visualisations/infographics.
+This toolkit is open source, licenced cc-by and improvements are encouraged ...
 
 # How to register and submit your entry
-## registering your team
-TODO how to use website "Hacker Space" to register and find teams etc.
+## Registering your team
+Coming Soon: how to use the website "Hacker Space" to register and find teams.
 
-## preparing your submission
+## Preparing your submission
 
 You should record a 3 minute speech and mix images/text to accompany.
 http://www.screenr.com/ and other screencasting tools allow you to demo apps.
@@ -30,26 +32,19 @@ The key thing here is that your source material demonstrates to the judges that 
 *   Analyse and present results -  were they what you expected? Do they help explain to others what you have found out?
 Can present as a interactive data visualisation or a web/mobile application or just a infographic/motion graphics video that tells a story.
 
-
-[![](http://www.govhack.org/wp-content/uploads/How-to-participate-in-GovHack_html_m6a65720f-300x199.gif "Data Journalism Diagram")](http://www.govhack.org/wp-content/uploads/How-to-participate-in-GovHack_html_m6a65720f.gif)</dt>
+[![](img/How-to-participate-in-GovHack_html_m6a65720f-300x199.gif "Data Journalism Diagram")](img/How-to-participate-in-GovHack_html_m6a65720f.gif)</dt>
 Illustration from Data Journalism Handbook, CC BY-SA 3.0</dd>
 
-
 The best high level reference is the 'Understanding Data' and 'Delivering Data' chapters of the Data Journalism Handbook which is available online for free at
-
 [datajournalismhandbook.org](http://datajournalismhandbook.org/)
 
 You can learn the technical skills from scratch in Visualize This: The FlowingData Guide to Design, Visualization, and Statistics by Nathan Yau or for more advanced
-
 practical advice check out Data Analysis with Open Source Tools by Philipp K. Janert
-
 For further reading in this space
-
 [http://flowingdata.com/2012/04/27/data-and-visualization-blogs-worth-following/](http://flowingdata.com/2012/04/27/data-and-visualization-blogs-worth-following/)
 
 
 **Statistics**
-
 [http://greenteapress.com/thinkstats/html/index.html](http://greenteapress.com/thinkstats/html/index.html)
 
 **Programming**
@@ -67,63 +62,13 @@ WCAG guidelines not only make a web app accessible but make it a better experien
 
 
 
-## examples
-
-## The Open Budget
-
-## WeatherTree weather API
-
-## PlanningAlerts
-
-[![Planning Alerts Screenshot](http://www.govhack.org/wp-content/uploads/How-to-participate-in-GovHack_html_2f0199ff1-300x221.png "Planning Alerts Screenshot")](http://www.govhack.org/wp-content/uploads/How-to-participate-in-GovHack_html_2f0199ff1.png)Description: Planning Alerts takes data from local government development applications and sends alerts to users based on what applications are lodged in their area.
-
-Programming Language: Ruby
-
-Source Control: [Git](https://github.com/openaustralia/planningalerts-app)
-
-Issue Tracking: [Atlassian JIRA](http://tickets.openaustraliafoundation.org.au/browse/PA/)
-
-## LobbyLens
-
-[![](http://www.govhack.org/wp-content/uploads/129-Screenshot-LobbyClue_-_Chromium-300x180.png "LobbyLens screenshot")](http://www.govhack.org/wp-content/uploads/129-Screenshot-LobbyClue_-_Chromium.png)
-
-Description: Displays connections between government contracts, business details, politician responsibilities, lobbyists, clients of lobbyists, political donors and the location of these entities.
-
-Programing Language: PHP
-
-Source Control: SVN (Subversion)
-
-Issue Tracking: A whiteboard
-
-## bus.lambdacomplex.org
-
-[![](http://www.govhack.org/wp-content/uploads/How-to-participate-in-GovHack_html_3789acae-300x253.jpg "Bus.lambda screenshot")](http://www.govhack.org/wp-content/uploads/How-to-participate-in-GovHack_html_3789acae.jpg)
-
-Description: Online Canberra Bus Timetables and Trip Planner.
-
-Programing Language: PHP/Ruby
-
-Source Control: Git
-
-Issue Tracking: Github
-
-
-## Developer Tools For Your Computer {#developer-tools-for-your-computer}
-
-server admin / technical tools
-many projects will require some kind of internet presence, webpage etc.
-    - css framework like bootstrap or zurb foundation
-- css gauges http://www.larentis.eu/donuts/
-- bootstrap themes, web fonts, css sprites, icon fonts
-  - http://designmodo.com/flat-free/ http://designmodo.github.com/Flat-UI/
-
-  - http://ubuntu-tutorials.com/2008/11/11/relaying-postfix-smtp-via-smtpgmailcom/
-  - amon
+# Developer Tools For Your Computer {#developer-tools-for-your-computer}
+No matter what kind of application you have for the data, there are many tools you can use to better collaborate and manage your project.
 
 ### Source Control 
  Git / Subversion
 
-[![](http://www.govhack.org/wp-content/uploads/Screenshot-at-2012-04-29-172132-300x235.png "Git Screenshot")](http://progit.org/book/)
+[![](img/Screenshot-at-2012-04-29-172132-300x235.png "Git Screenshot")](http://progit.org/book/)
 
 [http://progit.org/book/](http://progit.org/book/)
 
@@ -158,9 +103,9 @@ Git, Mercurial, and Subversion code. Issue tracker, wiki, release file downloads
 
 You can host your Google Code project and get access to developer tools, APIs and documentation at [http://code.google.com/](http://code.google.com/)
 
+# Applications of data hacking
 
-
-# API Development {#api-development}
+## API Development {#api-development}
 
 
 So an API isn't just an XML file ![;)](http://www.govhack.org/wp-includes/images/smilies/icon_wink.gif) 
@@ -189,9 +134,10 @@ API
       - https://github.com/elc/rapi_doc https://github.com/Pajk/apipie-rails
       -
    http://amberonrails.com/building-stripes-api/
+example WeatherTree weather API
 
 
-# Infographics and Data Visualisation {#data-visualisation}
+## Infographics and Data Visualisation {#data-visualisation}
 
 Infographics try to contextualise charts and graphs to tell a story. Data vis builds on this to find new ways to design insight.
 
@@ -210,13 +156,61 @@ Have to use visual art concepts, good color schemes http://www.r-bloggers.com/th
     - http://drawingbynumbers.org/toolsandresources
 
 examples    - http://sunfoundation.tumblr.com/
+## The Open Budget
+
 tools     - http://selection.datavisualization.ch/ data viz tools catalog
 
+## Web Applications
+    - css framework like bootstrap or zurb foundation
+- css gauges http://www.larentis.eu/donuts/
+- bootstrap themes, web fonts, css sprites, icon fonts
+  - http://designmodo.com/flat-free/ http://designmodo.github.com/Flat-UI/
+
+### Examples
 
 
-# Mobile
-bom water, nz gov budget
+## PlanningAlerts
+
+[![Planning Alerts Screenshot](img/How-to-participate-in-GovHack_html_2f0199ff1-300x221.png "Planning Alerts Screenshot")](img/How-to-participate-in-GovHack_html_2f0199ff1.png)Description: Planning Alerts takes data from local government development applications and sends alerts to users based on what applications are lodged in their area.
+
+Programming Language: Ruby
+
+Source Control: [Git](https://github.com/openaustralia/planningalerts-app)
+
+Issue Tracking: [Atlassian JIRA](http://tickets.openaustraliafoundation.org.au/browse/PA/)
+
+## LobbyLens
+
+[![](img/129-Screenshot-LobbyClue_-_Chromium-300x180.png "LobbyLens screenshot")](img/129-Screenshot-LobbyClue_-_Chromium.png)
+
+Description: Displays connections between government contracts, business details, politician responsibilities, lobbyists, clients of lobbyists, political donors and the location of these entities.
+
+Programing Language: PHP
+
+Source Control: SVN (Subversion)
+
+Issue Tracking: A whiteboard
+
+## bus.lambdacomplex.org
+
+[![](img/How-to-participate-in-GovHack_html_3789acae-300x253.jpg "Bus.lambda screenshot")](img/How-to-participate-in-GovHack_html_3789acae.jpg)
+
+Description: Online Canberra Bus Timetables and Trip Planner.
+
+Programing Language: PHP/Ruby
+
+Source Control: Git
+
+Issue Tracking: Github
+
+## Mobile
+
+FRameworks, http://www.sencha.com/products/touch http://phonegap.com/ http://cordova.apache.org/
+
+bom water,
+nz gov budget
 html5 jquery mobile like directory.gov.au
+
     - android datviz
       - http://code.google.com/p/afreechart/ http://code.google.com/p/snowdon/ http://code.google.com/p/chartdroid/ http://androidplot.com/ http://code.google.com/p/achartengine/
 
@@ -249,11 +243,11 @@ Easiest way to do is with a Google Spreadsheet/Fusion Table http://williamparry.
 
 ### PostGIS
 
-[![](http://www.govhack.org/wp-content/uploads/postgisexample-300x130.jpg "postgisexample")](http://www.govhack.org/wp-content/uploads/postgisexample.jpg)PostGIS is an extension for the PostgreSQL database server that allows you to store and manipulate geospatial data on a large scale. For example finding which points are in an area or what points are closest . It is also very useful for storing geospatial data because it can convert between all major formats including ESRI Shape files and Google Earth/Maps KML.
+[![](img/postgisexample-300x130.jpg "postgisexample")](img/postgisexample.jpg)PostGIS is an extension for the PostgreSQL database server that allows you to store and manipulate geospatial data on a large scale. For example finding which points are in an area or what points are closest . It is also very useful for storing geospatial data because it can convert between all major formats including ESRI Shape files and Google Earth/Maps KML.
 
 ### Quantum GIS
 
-[![](http://www.govhack.org/wp-content/uploads/How-to-participate-in-GovHack_html_m50afbe88-300x160.jpg "QGIS Screenshot")](http://www.govhack.org/wp-content/uploads/How-to-participate-in-GovHack_html_m50afbe88.jpg)QGIS is a graphical desktop application that allows viewing and editing of geospatial data. Some good base maps are available by adding the WMS layer/server [http://irs.gis-lab.info/](http://irs.gis-lab.info/)
+[![](img/How-to-participate-in-GovHack_html_m50afbe88-300x160.jpg "QGIS Screenshot")](img/How-to-participate-in-GovHack_html_m50afbe88.jpg)QGIS is a graphical desktop application that allows viewing and editing of geospatial data. Some good base maps are available by adding the WMS layer/server [http://irs.gis-lab.info/](http://irs.gis-lab.info/)
 
 ## Visualisation
 
@@ -261,25 +255,25 @@ Easiest way to do is with a Google Spreadsheet/Fusion Table http://williamparry.
 
 ### Google Fusion Tables/ChartsBin/[OpenHeatMap](http://www.openheatmap.com/)
 
-[![](http://www.govhack.org/wp-content/uploads/fusiontablesscreenshot-300x168.jpg "fusiontablesscreenshot")](http://www.govhack.org/wp-content/uploads/fusiontablesscreenshot.jpg)Input numerical values and areas to a spreadsheet and maps are produced where the areas are colored on a scale of the values
+[![](img/fusiontablesscreenshot-300x168.jpg "fusiontablesscreenshot")](img/fusiontablesscreenshot.jpg)Input numerical values and areas to a spreadsheet and maps are produced where the areas are colored on a scale of the values
 
 http://www.peteraldhous.com/CAR/Making_maps_with_Google_Fusion_Tables.pdf tutorial or http://support.google.com/fusiontables/topic/2592754?hl=en&ref_topic=27020 for google help files
 
 ### [Cartographer.js](http://cartographer.visualmotive.com/)
 
-[![](http://www.govhack.org/wp-content/uploads/cartographerjs-300x187.png "cartographerjs screenshot")](http://www.govhack.org/wp-content/uploads/cartographerjs.png)Input data as JSON and maps are produced.
+[![](img/cartographerjs-300x187.png "cartographerjs screenshot")](img/cartographerjs.png)Input data as JSON and maps are produced.
 See also d3 maps.
   - http://bost.ocks.org/mike/map/
 
 
 ### OpenLayers/Google Maps/[Leaflet](http://leaflet.cloudmade.com/)
 
-[![](http://www.govhack.org/wp-content/uploads/How-to-participate-in-GovHack_html_512fcbe1-300x173.jpg "OpenLayers Screenshot")](http://www.govhack.org/wp-content/uploads/How-to-participate-in-GovHack_html_512fcbe1.jpg)Display points and different layers. Leaflet is the easiest to use if you just want to show points with popups when clicked on.
+[![](img/How-to-participate-in-GovHack_html_512fcbe1-300x173.jpg "OpenLayers Screenshot")](img/How-to-participate-in-GovHack_html_512fcbe1.jpg)Display points and different layers. Leaflet is the easiest to use if you just want to show points with popups when clicked on.
 There are wrappers for Google maps like http://hpneo.github.com/gmaps/examples.html and Mapstraction that can make it easier to use too.
 
 ### NASA World Wind/Google Earth
 
-[![](http://www.govhack.org/wp-content/uploads/How-to-participate-in-GovHack_html_4dda24a4-300x261.jpg "WorldWind screenshot")](http://www.govhack.org/wp-content/uploads/How-to-participate-in-GovHack_html_4dda24a4.jpg)Google Earth provides 3\. viewing of KML/GML files which represent points and shapes, both through a desktop application and a web plugin. These can be extended with interactive features that allow you to view by timeline or have animated tours between different points. You can also develop and customise your own viewer with the open source [NASA World Wind toolkit.](http://goworldwind.org/demos/)
+[![](img/How-to-participate-in-GovHack_html_4dda24a4-300x261.jpg "WorldWind screenshot")](img/How-to-participate-in-GovHack_html_4dda24a4.jpg)Google Earth provides 3\. viewing of KML/GML files which represent points and shapes, both through a desktop application and a web plugin. These can be extended with interactive features that allow you to view by timeline or have animated tours between different points. You can also develop and customise your own viewer with the open source [NASA World Wind toolkit.](http://goworldwind.org/demos/)
 
 ### 
 
@@ -291,7 +285,7 @@ Tabular data may have duplicate entries or incorrect formats (varying ways to en
 
 [DataWrangler](http://vis.stanford.edu/wrangler/)/[Google Refine](http://code.google.com/p/google-refine/)
 
-[![](http://www.govhack.org/wp-content/uploads/google_refine_interface.png "google_refine_interface")](http://www.govhack.org/wp-content/uploads/google_refine_interface.png)Clean up duplicate or inconsistent data entries.
+[![](img/google_refine_interface.png "google_refine_interface")](img/google_refine_interface.png)Clean up duplicate or inconsistent data entries.
 
 Can also use general purpose tools; grep/awk/sed
 regex http://www.regexper.com/ http://www.debuggex.com/?re=&str=
@@ -304,15 +298,15 @@ Great basic analysis and viewing. Older versions can be limited to 6500\. or so 
 
 ### PostgreSQL/MySQL
 
-[![](http://www.govhack.org/wp-content/uploads/How-to-participate-in-GovHack_html_209ee972.jpg "SQL screenshot")](http://www.govhack.org/wp-content/uploads/How-to-participate-in-GovHack_html_209ee972.jpg)Next step up, large datasets can be manipulated/extracted efficiently for example [http://www.postgresql.org/docs/8.4/static/tutorial-window.html](http://www.postgresql.org/docs/8.4/static/tutorial-window.html) , no built-in data visualisation though.
+[![](img/How-to-participate-in-GovHack_html_209ee972.jpg "SQL screenshot")](img/How-to-participate-in-GovHack_html_209ee972.jpg)Next step up, large datasets can be manipulated/extracted efficiently for example [http://www.postgresql.org/docs/8.4/static/tutorial-window.html](http://www.postgresql.org/docs/8.4/static/tutorial-window.html) , no built-in data visualisation though.
 
 ### [Miso Dataset](http://misoproject.com/dataset/)
 
-[![](http://www.govhack.org/wp-content/uploads/How-to-participate-in-GovHack_html_m53b7ee38-293x300.png "miso screenshot")](http://www.govhack.org/wp-content/uploads/How-to-participate-in-GovHack_html_m53b7ee38.png)Javascript data transformation library - especially good if you want to use the output for javascript interactive visualisations because the transformations can be done on-the-fly by users.
+[![](img/How-to-participate-in-GovHack_html_m53b7ee38-293x300.png "miso screenshot")](img/How-to-participate-in-GovHack_html_m53b7ee38.png)Javascript data transformation library - especially good if you want to use the output for javascript interactive visualisations because the transformations can be done on-the-fly by users.
 
 ### R Statistical Language
 
-[![](http://www.govhack.org/wp-content/uploads/rstudio-windows-300x249.png "rstudio-windows")](http://www.govhack.org/wp-content/uploads/rstudio-windows.png)Advanced data analysis, can find and visualise trends in large datasets. Some reference resources to learn the language [http://cran.r-project.org/doc/manuals/R-intro.html ](http://cran.r-project.org/doc/manuals/R-intro.html)There are also some addons that provide graphical interfaces that make it easier to use such as Rattle [http://rattle.togaware.com/](http://rattle.togaware.com/) , RStudio [http://rstudio.org/](http://rstudio.org/) or Deducer [http://www.deducer.org/pmwiki/pmwiki.php?n=Main.DeducerManual](http://www.deducer.org/pmwiki/pmwiki.php?n=Main.DeducerManual)
+[![](img/rstudio-windows-300x249.png "rstudio-windows")](img/rstudio-windows.png)Advanced data analysis, can find and visualise trends in large datasets. Some reference resources to learn the language [http://cran.r-project.org/doc/manuals/R-intro.html ](http://cran.r-project.org/doc/manuals/R-intro.html)There are also some addons that provide graphical interfaces that make it easier to use such as Rattle [http://rattle.togaware.com/](http://rattle.togaware.com/) , RStudio [http://rstudio.org/](http://rstudio.org/) or Deducer [http://www.deducer.org/pmwiki/pmwiki.php?n=Main.DeducerManual](http://www.deducer.org/pmwiki/pmwiki.php?n=Main.DeducerManual)
 
   - http://blog.yhathq.com/posts/10-R-packages-I-wish-I-knew-about-earlier.html
         - excel -> R/rattle/ deducer? http://www.r-bloggers.com/updates-to-the-deducer-family-of-packages/
@@ -327,15 +321,15 @@ Great basic analysis and viewing. Older versions can be limited to 6500\. or so 
 
 ### [Tableau Desktop](http://www.tableausoftware.com/)
 
-Create visualisations from various data formats by dragging and dropping. Free trial available on website. [![](http://www.govhack.org/wp-content/uploads/Tableau-Screenshot-300x190.jpg "Tableau Screenshot")](http://www.govhack.org/wp-content/uploads/Tableau-Screenshot.jpg)
+Create visualisations from various data formats by dragging and dropping. Free trial available on website. [![](img/Tableau-Screenshot-300x190.jpg "Tableau Screenshot")](img/Tableau-Screenshot.jpg)
 
 ### [Flotr2](http://www.humblesoftware.com/flotr2/)/[Google Chart Tools](https://developers.google.com/chart/)
 
-[![](http://www.govhack.org/wp-content/uploads/How-to-participate-in-GovHack_html_m11006fce-300x199.jpg "flotr2 screenshot")](http://www.govhack.org/wp-content/uploads/How-to-participate-in-GovHack_html_m11006fce.jpg)Javascript based charts for webpages.
+[![](img/How-to-participate-in-GovHack_html_m11006fce-300x199.jpg "flotr2 screenshot")](img/How-to-participate-in-GovHack_html_m11006fce.jpg)Javascript based charts for webpages.
 
 ### D3.js (Data-Driven Documents)
 
-[![](http://www.govhack.org/wp-content/uploads/How-to-participate-in-GovHack_html_m90d8020-300x277.jpg "d3 screenshot")](http://www.govhack.org/wp-content/uploads/How-to-participate-in-GovHack_html_m90d8020.jpg)Javascript visualisations that are more interactive or intricate than charts. Can be hard to learn but there are examples and easier to use premade visualisations such as [word clouds](http://www.jasondavies.com/wordcloud/), [realtime filtering of barcharts](http://square.github.com/crossfilter/), or [bubble trees for comparing amount sizes](https://github.com/okfn/bubbletree).
+[![](img/How-to-participate-in-GovHack_html_m90d8020-300x277.jpg "d3 screenshot")](img/How-to-participate-in-GovHack_html_m90d8020.jpg)Javascript visualisations that are more interactive or intricate than charts. Can be hard to learn but there are examples and easier to use premade visualisations such as [word clouds](http://www.jasondavies.com/wordcloud/), [realtime filtering of barcharts](http://square.github.com/crossfilter/), or [bubble trees for comparing amount sizes](https://github.com/okfn/bubbletree).
 d3
   - http://datadrivenjournalism.net/resources/data_driven_documents_defined
     - http://www.benmcmahen.com/blog/posts/50eb57d55a94d35262000001 d3 svg
@@ -345,19 +339,19 @@ d3
 
 ### Processing.js
 
-# Unstructured (text documents, webpages, metadata, tweets etc) Data Tools
-
+# Unstructured (Text) Data Tools
+MOPst of thw world's dat isn't structured because it is contained in documents (webpages, tweets etc.). Sometimes it is possible to structure it, sometimes there are tools that are better suited it unstructured data.
 ## wrangling
 Scraperwiki pytemplate scrapy
 regex
 
-#analysing
+## analysing
     - opennlp/nltk / https://github.com/clips/pattern
     - lucene/solr
     - http://www.r-bloggers.com/simple-text-mining-with-r/
     - http://blog.josephwilk.net/ruby/latent-semantic-analysis-in-ruby.html similar terms usually found together
 
-#visualising
+## visualising
 
 Overviewer/ Jigsaw
 http://www.cc.gatech.edu/gvu/ii/jigsaw/
@@ -380,7 +374,7 @@ http://www.jasondavies.com/wordtree/
 
 ### Neo4j / OrientDB
 
-[![](http://www.govhack.org/wp-content/uploads/webadmin-data-300x127.png "Neo4\. web admin screenshot")](http://www.govhack.org/wp-content/uploads/webadmin-data.png)Help understand relationships - how is X connected to Y and via what other entities they both are connected to. Imports and exports
+[![](img/webadmin-data-300x127.png "Neo4\. web admin screenshot")](img/webadmin-data.png)Help understand relationships - how is X connected to Y and via what other entities they both are connected to. Imports and exports
 
     - http://www.slideshare.net/maxdemarzi/etl-into-neo4j
     http://blog.neo4j.org/2013/03/importing-data-into-neo4j-spreadsheet.html
@@ -393,7 +387,7 @@ Both can be accessed using a preexisting tool like Gremlin or by writing a simpl
 
 ### [NetworkX](http://networkx.lanl.gov/index.html)
 
-[![](http://www.govhack.org/wp-content/uploads/chess_masters-300x300.png "NetworkX")](http://www.govhack.org/wp-content/uploads/chess_masters.png)
+[![](img/chess_masters-300x300.png "NetworkX")](img/chess_masters.png)
 
 NetworkX is a social network analysis library for python. Many advanced analyses built in like finding communities within a graph. Also good for converting data into graphs.
 
@@ -409,12 +403,12 @@ Sometimes what you actually have is a tree/hierarchy with no interconnections.
 
 ### [Graphviz](http://www.graphviz.org/)
 
-[![](http://www.govhack.org/wp-content/uploads/How-to-participate-in-GovHack_html_7579906d-300x184.png "Graphviz Screenshot")](http://www.govhack.org/wp-content/uploads/How-to-participate-in-GovHack_html_7579906d.png)Classic directed graph visualisation tool, can even [generate images online without installing](http://ashitani.jp/gv/) or use in webpages with [javascript port of software](http://code.google.com/p/canviz/). File format ["dot" very easy to learn](http://en.wikipedia.org/wiki/DOT_language)
+[![](img/How-to-participate-in-GovHack_html_7579906d-300x184.png "Graphviz Screenshot")](img/How-to-participate-in-GovHack_html_7579906d.png)Classic directed graph visualisation tool, can even [generate images online without installing](http://ashitani.jp/gv/) or use in webpages with [javascript port of software](http://code.google.com/p/canviz/). File format ["dot" very easy to learn](http://en.wikipedia.org/wiki/DOT_language)
 
 ### Gephi
 
-[![](http://www.govhack.org/wp-content/uploads/How-to-participate-in-GovHack_html_74d01d05-300x195.jpg "Gephi Screenshot")](http://www.govhack.org/wp-content/uploads/How-to-participate-in-GovHack_html_74d01d05.jpg)Desktop graph editor and renderer. Many good automatic layout algorithms even for very large graphs.
+[![](img/How-to-participate-in-GovHack_html_74d01d05-300x195.jpg "Gephi Screenshot")](img/How-to-participate-in-GovHack_html_74d01d05.jpg)Desktop graph editor and renderer. Many good automatic layout algorithms even for very large graphs.
 
 ### [sigma.js](http://sigmajs.org/)
 
-[![](http://www.govhack.org/wp-content/uploads/How-to-participate-in-GovHack_html_m6006eaf3-300x130.jpg "Sigma.js Screenshot")](http://www.govhack.org/wp-content/uploads/How-to-participate-in-GovHack_html_m6006eaf3.jpg)Javascript graph viewer, can use GEXF files exported from tools like neo4j, gephi and NetworkX.
+[![](img/How-to-participate-in-GovHack_html_m6006eaf3-300x130.jpg "Sigma.js Screenshot")](img/How-to-participate-in-GovHack_html_m6006eaf3.jpg)Javascript graph viewer, can use GEXF files exported from tools like neo4j, gephi and NetworkX.
