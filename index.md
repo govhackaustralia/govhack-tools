@@ -20,7 +20,7 @@ The key thing here is that your source material demonstrates to the judges that 
 # General References {#general-data-hacking-and-programming-references}
 
 ## Who can be a hack day participant
-  - roles; coder, designer UX/graphics
+There are many roles you can play; coder, designer UX/graphics
 
 ## Definitions
   - definitions, open licence reuse permissive hacker hack data journalism data vis UX etc.
@@ -125,13 +125,12 @@ Some people like sensis [http://](http://developers.sensis.com.au/)[developers.s
 Atlassian have a great page on what makes a good API https://developer.atlassian.com/display/REST/Atlassian+REST+API+Design+Guidelines+version+1)
 
 API
-  - howto.gov api tutorial
-  - http://shancarter.com/data_converter/
+  - howto.gov api resources about choosing SOAP vs. REST etc. http://www.howto.gov/mobile/apis-in-government
   - http://training.sunlightfoundation.com/module/data-visualizations-google-docs/
-  - api documentation
+  - api documentation is important too.
     - WSDL or http://swagger.wordnik.com/ or https://github.com/mashery/iodocs
-    - http://symfony.com/ https://github.com/FriendsOfSymfony/FOSRestBundle http://williamdurand.fr/2012/08/02/rest-apis-with-symfony2-the-right-way/ https://github.com/nelmio/NelmioApiDocBundle better apis https://github.com/liip/LiipHelloBundle
-      - https://github.com/elc/rapi_doc https://github.com/Pajk/apipie-rails
+    - Many web app frameworks can generate the documentation for you. For example Symfony for PHPhttp://symfony.com/ https://github.com/FriendsOfSymfony/FOSRestBundle http://williamdurand.fr/2012/08/02/rest-apis-with-symfony2-the-right-way/ https://github.com/nelmio/NelmioApiDocBundle better apis https://github.com/liip/LiipHelloBundle
+      - or for Rails https://github.com/elc/rapi_doc https://github.com/Pajk/apipie-rails
       -
    http://amberonrails.com/building-stripes-api/
 example WeatherTree weather API
@@ -161,6 +160,9 @@ examples    - http://sunfoundation.tumblr.com/
 tools     - http://selection.datavisualization.ch/ data viz tools catalog
 
 ## Web Applications
+
+With the rise of HTML5 technologies it is easier than ever to make a web application for engaging use of data.
+
     - css framework like bootstrap or zurb foundation
 - css gauges http://www.larentis.eu/donuts/
 - bootstrap themes, web fonts, css sprites, icon fonts
@@ -280,6 +282,10 @@ There are wrappers for Google maps like http://hpneo.github.com/gmaps/examples.h
 # Tabular Data Tools {#tabular-data-tools}
 
 ## Wrangling
+
+Converting formats json/xml/csv etc.
+  - http://shancarter.com/data_converter/
+
 
 Tabular data may have duplicate entries or incorrect formats (varying ways to enter dates/phonenumbers etc.). There are tools to quickly fix common problems
 
