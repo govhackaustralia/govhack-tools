@@ -20,10 +20,7 @@ The key thing here is that your source material demonstrates to the judges that 
 # General References {#general-data-hacking-and-programming-references}
 
 ## Who can be a hack day participant
-There are many roles you can play; coder, designer UX/graphics
-
-## Definitions
-  - definitions, open licence reuse permissive hacker hack data journalism data vis UX etc.
+There are many roles you can play; coder, designer UX/graphics.
 
 ## The basics of being a data scientist
 
@@ -124,15 +121,15 @@ Some people like sensis [http://](http://developers.sensis.com.au/)[developers.s
 
 Atlassian have a great page on what makes a good API https://developer.atlassian.com/display/REST/Atlassian+REST+API+Design+Guidelines+version+1)
 
-API
-  - howto.gov api resources about choosing SOAP vs. REST etc. http://www.howto.gov/mobile/apis-in-government
-  - http://training.sunlightfoundation.com/module/data-visualizations-google-docs/
-  - api documentation is important too.
+howto.gov api resources about choosing SOAP vs. REST etc. http://www.howto.gov/mobile/apis-in-government
+
+API documentation is important too.
     - WSDL or http://swagger.wordnik.com/ or https://github.com/mashery/iodocs
     - Many web app frameworks can generate the documentation for you. For example Symfony for PHPhttp://symfony.com/ https://github.com/FriendsOfSymfony/FOSRestBundle http://williamdurand.fr/2012/08/02/rest-apis-with-symfony2-the-right-way/ https://github.com/nelmio/NelmioApiDocBundle better apis https://github.com/liip/LiipHelloBundle
       - or for Rails https://github.com/elc/rapi_doc https://github.com/Pajk/apipie-rails
-      -
+
    http://amberonrails.com/building-stripes-api/
+
 example WeatherTree weather API
 
 
@@ -298,17 +295,15 @@ regex http://www.regexper.com/ http://www.debuggex.com/?re=&str=
 
 ## Analysis
 
-### Excel / Calc
+### Excel / Google Docs
 
 Great basic analysis and viewing. Older versions can be limited to 6500\. or so rows. Eg [http://www.tcij.org/training-material/car/data-mining/3474](http://www.tcij.org/training-material/car/data-mining/3474)
+
+http://training.sunlightfoundation.com/module/data-visualizations-google-docs/
 
 ### PostgreSQL/MySQL
 
 [![](img/How-to-participate-in-GovHack_html_209ee972.jpg "SQL screenshot")](img/How-to-participate-in-GovHack_html_209ee972.jpg)Next step up, large datasets can be manipulated/extracted efficiently for example [http://www.postgresql.org/docs/8.4/static/tutorial-window.html](http://www.postgresql.org/docs/8.4/static/tutorial-window.html) , no built-in data visualisation though.
-
-### [Miso Dataset](http://misoproject.com/dataset/)
-
-[![](img/How-to-participate-in-GovHack_html_m53b7ee38-293x300.png "miso screenshot")](img/How-to-participate-in-GovHack_html_m53b7ee38.png)Javascript data transformation library - especially good if you want to use the output for javascript interactive visualisations because the transformations can be done on-the-fly by users.
 
 ### R Statistical Language
 
@@ -346,7 +341,7 @@ d3
 ### Processing.js
 
 # Unstructured (Text) Data Tools
-MOPst of thw world's dat isn't structured because it is contained in documents (webpages, tweets etc.). Sometimes it is possible to structure it, sometimes there are tools that are better suited it unstructured data.
+Most of thw world's dat isn't structured because it is contained in documents (webpages, tweets etc.). Sometimes it is possible to structure it, sometimes there are tools that are better suited it unstructured data.
 ## wrangling
 Scraperwiki pytemplate scrapy
 regex
@@ -378,7 +373,7 @@ http://www.jasondavies.com/wordtree/
 - http://is-r.tumblr.com/post/38240018815/making-prettier-network-graphs-with-sna-and-igraph
 
 
-### Neo4j / OrientDB
+### Graph Databases
 
 [![](img/webadmin-data-300x127.png "Neo4\. web admin screenshot")](img/webadmin-data.png)Help understand relationships - how is X connected to Y and via what other entities they both are connected to. Imports and exports
 
@@ -387,7 +382,9 @@ http://www.jasondavies.com/wordtree/
 
 http://www.orientdb.org/
 
-Both can be accessed using a preexisting tool like Gremlin or by writing a simple Java/Python/Ruby application. Queries can be tested in the built in data browser.
+http://thinkaurelius.github.com/titan/
+
+Major graph databases like theese can be accessed using a common tool like Gremlin or by writing a simple Java/Python/Ruby application. Queries can be tested in the built in data browser.
 
 
 
