@@ -1,7 +1,8 @@
 #GovHack Toolkit
 Welcome to the GovHack toolkit. This page provides all the information you need to prepare hackfest entries.
-These tools can be used to make entries like: mobile apps, web apps, data visualisations/infographics.
-This toolkit is open source, licenced cc-by and improvements are encouraged ...
+These tools can be used to make entries like mobile apps, web apps and data visualisations/infographics.
+
+The text of this toolkit is open for reuse under a Creative Commons Attribution licence and improvements are encouraged via Git http://github.com/maxious/govhack-tools or via email patches to govhack@lambdacomplex.org
 
 # How to register and submit your entry
 ## Registering your team
@@ -20,7 +21,7 @@ The key thing here is that your source material demonstrates to the judges that 
 # General References {#general-data-hacking-and-programming-references}
 
 ## Who can be a hack day participant
-There are many roles you can play; coder, designer UX/graphics.
+There are many roles you can play as a hack day participant; coder, designer UX/graphics.
 
 ## The basics of being a data scientist
 
@@ -42,20 +43,20 @@ For further reading in this space
 
 
 **Statistics**
-[http://greenteapress.com/thinkstats/html/index.html](http://greenteapress.com/thinkstats/html/index.html)
+
+A great guide to statistics is 
+[Think Stats](http://greenteapress.com/thinkstats/html/index.html)
 
 **Programming**
 
 Programming is valuable skill for manipulating and displaying data.
-Basic tutorials for a variety of languages are available for free online or you can learn
+Basic tutorials for a variety of languages are available for free online or you can learn interactively with websites like [Codecademy for JavaScript](http://www.codecademy.com/#!/exercises/0), [Learn Python](http://www.learnpython.org/) or [Try Ruby](http://tryruby.org/)
 
-interactively with websites like [http://www.codecademy.com/](http://www.codecademy.com/#!/exercises/0). for JavaScript or [http://www.learnpython.org/ ](http://www.learnpython.org/)or [http://tryruby.org](http://tryruby.org/)
-
-[https://developer.mozilla.org/en/JavaScript](https://developer.mozilla.org/en/JavaScript) - especially for web applications and visualisations, you'll need a basic understanding of JS. Common libraries like prototype or jQuery can help
+For web applications and visualisations, you'll need a basic understanding of JavaScript in order to configure pre made libraries like jQuery. A good source for Javascript information is the [Mozilla Development Network Javascript Page](https://developer.mozilla.org/en/JavaScript)
 
 **Accessibility/User Experience**
 
-WCAG guidelines not only make a web app accessible but make it a better experience for all users! Even if not making an app, good to consider these things to do and not do: [http://www.w3.org/TR/WCAG/](http://www.w3.org/TR/WCAG/)
+Following accessibility guidelines not only make a application accessible but make it a better experience for all users! Even if not making an app, good to consider these things to do and not do when designing for humans: [http://www.w3.org/TR/WCAG/](http://www.w3.org/TR/WCAG/)
 
 
 
@@ -63,7 +64,7 @@ WCAG guidelines not only make a web app accessible but make it a better experien
 No matter what kind of application you have for the data, there are many tools you can use to better collaborate and manage your project.
 
 ### Source Control 
- Git / Subversion
+Using a version control system like Git or Subversion allows you to keep many different versions of what you have been working on so you can collaborate with others or simply back up your files so you don't lose them!
 
 [![](img/Screenshot-at-2012-04-29-172132-300x235.png "Git Screenshot")](http://progit.org/book/)
 
@@ -75,7 +76,7 @@ No matter what kind of application you have for the data, there are many tools y
 
 [http://code.google.com/p/tortoisegit/](http://code.google.com/p/tortoisegit/)
 
-### Task Tracking -
+### Task Tracking
 
 Issue/task trackers allow you to outline the tasks required for your project and assign them to people to do.
 
@@ -83,10 +84,10 @@ Issue/task trackers allow you to outline the tasks required for your project and
 
 ## Hosted Developer Tools {#hosted-developer-tools}
 
-Can get many tools (source control, issue tracking) combined into one service cloud hosted so no setup required.
+Can get many tools (source control, issue tracking) combined into one service cloud hosted so there's no setup required.
 
 ### Github
-Git obviously but svn/hg interfaces are possible. Provide their own GUI for Windows/OSX or use the variety of Git capable tools
+Git obviously but svn/hg interfaces are also available. Provide their own GUI for Windows/OSX or use a variety of Git capable tools
 
 ### Sourceforge
 
@@ -99,6 +100,7 @@ You can create your own Sourceforge project at [http://sourceforge.net/](http://
 Git, Mercurial, and Subversion code. Issue tracker, wiki, release file downloads. Unlimited free use for open source projects.
 
 You can host your Google Code project and get access to developer tools, APIs and documentation at [http://code.google.com/](http://code.google.com/)
+
 
 # Applications of data hacking
 
@@ -152,7 +154,7 @@ Have to use visual art concepts, good color schemes http://www.r-bloggers.com/th
     - http://drawingbynumbers.org/toolsandresources
 
 examples    - http://sunfoundation.tumblr.com/
-## The Open Budget
+### The Open Budget
 
 tools     - http://selection.datavisualization.ch/ data viz tools catalog
 
@@ -168,7 +170,7 @@ With the rise of HTML5 technologies it is easier than ever to make a web applica
 ### Examples
 
 
-## PlanningAlerts
+#### PlanningAlerts
 
 [![Planning Alerts Screenshot](img/How-to-participate-in-GovHack_html_2f0199ff1-300x221.png "Planning Alerts Screenshot")](img/How-to-participate-in-GovHack_html_2f0199ff1.png)Description: Planning Alerts takes data from local government development applications and sends alerts to users based on what applications are lodged in their area.
 
@@ -178,7 +180,7 @@ Source Control: [Git](https://github.com/openaustralia/planningalerts-app)
 
 Issue Tracking: [Atlassian JIRA](http://tickets.openaustraliafoundation.org.au/browse/PA/)
 
-## LobbyLens
+#### LobbyLens
 
 [![](img/129-Screenshot-LobbyClue_-_Chromium-300x180.png "LobbyLens screenshot")](img/129-Screenshot-LobbyClue_-_Chromium.png)
 
@@ -190,7 +192,7 @@ Source Control: SVN (Subversion)
 
 Issue Tracking: A whiteboard
 
-## bus.lambdacomplex.org
+#### bus.lambdacomplex.org
 
 [![](img/How-to-participate-in-GovHack_html_3789acae-300x253.jpg "Bus.lambda screenshot")](img/How-to-participate-in-GovHack_html_3789acae.jpg)
 
@@ -204,15 +206,19 @@ Issue Tracking: Github
 
 ## Mobile
 
-FRameworks, http://www.sencha.com/products/touch http://phonegap.com/ http://cordova.apache.org/
+Frameworks, http://www.sencha.com/products/touch http://phonegap.com/ http://cordova.apache.org/
 
-bom water,
-nz gov budget
 html5 jquery mobile like directory.gov.au
 
-    - android datviz
-      - http://code.google.com/p/afreechart/ http://code.google.com/p/snowdon/ http://code.google.com/p/chartdroid/ http://androidplot.com/ http://code.google.com/p/achartengine/
+For data visualisation, there are a variety of graph widgets http://code.google.com/p/afreechart/ http://code.google.com/p/snowdon/ http://code.google.com/p/chartdroid/ http://androidplot.com/ http://code.google.com/p/achartengine/
 
+
+Backend frameworks http://helios.io/ https://www.parse.com/
+### Examples
+
+bom water,
+
+nz gov budget
 
 
 # Geographical Data Tools {#geographical-data-tools}
@@ -316,6 +322,8 @@ http://training.sunlightfoundation.com/module/data-visualizations-google-docs/
          - http://www.r-bloggers.com/video-simpler-tricks-and-tools-help-debugging-git-latex-and-workflow-with-r-by-prof-rob-hyndman/
       - http://yihui.name/knitr/ makes reports including google widgets/charts/maps via http://www.r-bloggers.com/googlevis-0-3-2-is-released-better-integration-with-knitr/
       - http://chartsnthings.tumblr.com/post/36978271916/r-tutorial-simple-charts http://flowingdata.com/2012/12/17/getting-started-with-charts-in-r/
+      
+      http://www.r-bloggers.com/to-plot-them-is-my-real-test/
 
 
 ## Visualisation
