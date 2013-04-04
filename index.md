@@ -350,25 +350,35 @@ d3
 
 # Unstructured (Text) Data Tools
 Most of thw world's dat isn't structured because it is contained in documents (webpages, tweets etc.). Sometimes it is possible to structure it, sometimes there are tools that are better suited it unstructured data.
-## wrangling
-Scraperwiki pytemplate scrapy
-regex
+## Wrangling
+For extracting data from webpages, checkout Scraperwiki pytemplate scrapy
 
-## analysing
+PDFs - http://source.mozillaopennews.org/en-US/articles/introducing-tabula/ for text PDFs or http://www.reporterslab.org/dochive/ for imafges
+
+If there is no way to form a table structure to be able to apply tabular data techniques , you need a more sophisticated analysis as detailed below.
+
+## Analysing
     - opennlp/nltk / https://github.com/clips/pattern
+    
     - lucene/solr
+    
     - http://www.r-bloggers.com/simple-text-mining-with-r/
+    
     - http://blog.josephwilk.net/ruby/latent-semantic-analysis-in-ruby.html similar terms usually found together
 
-## visualising
+## Visualising
 
-Overviewer/ Jigsaw
-http://www.cc.gatech.edu/gvu/ii/jigsaw/
+Make word trees of blocks of text, webpages or twitter account and share them http://www.jasondavies.com/wordtree/
 
-http://www.jasondavies.com/wordtree/
+"Overview automatically sorts thousands of documents into topics and sub-topics, by reading the full text of each one." Simply make a CSV file with two columns, id and text. 10,000 documents is a good limit for the current state of the system. https://www.overviewproject.org/
+
+For larger document sets or for alternative visualisations, try Jigsaw a desktop based application. http://www.cc.gatech.edu/gvu/ii/jigsaw/
+
+
 
 # Graph (relationships and networks) Data Tools {#graph-relationships-and-networks-data-tools}
 
+Why? Find communities, hubs, connections between (the X degrees of separation)
     - http://www.slideshare.net/OReillyStrata/visualizing-networks-beyond-the-hairball
     - http://blog.sciencenet.cn/blog-554179-622011.html SNA tools catalog
     - https://github.com/jacomyal/osdc2012-sigmajs-demo sigmajs filtering/searching
@@ -401,6 +411,8 @@ Major graph databases like theese can be accessed using a common tool like Greml
 [![](img/chess_masters-300x300.png "NetworkX")](img/chess_masters.png)
 
 NetworkX is a social network analysis library for python. Many advanced analyses built in like finding communities within a graph. Also good for converting data into graphs.
+
+tutorial/intro http://www.cl.cam.ac.uk/~cm542/teaching/2011/stna-pdfs/stna-lecture11.pdf
 
 
 ## Visualisation
