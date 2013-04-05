@@ -123,11 +123,12 @@ Some people like sensis [http://](http://developers.sensis.com.au/)[developers.s
 
 Atlassian have a great page on what makes a good API https://developer.atlassian.com/display/REST/Atlassian+REST+API+Design+Guidelines+version+1)
 
-howto.gov api resources about choosing SOAP vs. REST etc. http://www.howto.gov/mobile/apis-in-government
+HowTo.gov has a bunch of api resources about choosing SOAP vs. REST etc. http://www.howto.gov/mobile/apis-in-government
 
-API documentation is important too.
-    - WSDL or http://swagger.wordnik.com/ or https://github.com/mashery/iodocs
-    - Many web app frameworks can generate the documentation for you. For example Symfony for PHPhttp://symfony.com/ https://github.com/FriendsOfSymfony/FOSRestBundle http://williamdurand.fr/2012/08/02/rest-apis-with-symfony2-the-right-way/ https://github.com/nelmio/NelmioApiDocBundle better apis https://github.com/liip/LiipHelloBundle
+API documentation is important too! Traditionally for SOAP APIs, you use WSDL but for REST try [Swagger](http://swagger.wordnik.com/) or [iodocs](https://github.com/mashery/iodocs)
+Many web app frameworks can generate the documentation for you. For example Symfony for PHP http://symfony.com/ https://github.com/FriendsOfSymfony/FOSRestBundle http://williamdurand.fr/2012/08/02/rest-apis-with-symfony2-the-right-way/ https://github.com/nelmio/NelmioApiDocBundle
+
+ better apis https://github.com/liip/LiipHelloBundle
       - or for Rails https://github.com/elc/rapi_doc https://github.com/Pajk/apipie-rails
 
    http://amberonrails.com/building-stripes-api/
@@ -237,7 +238,7 @@ Online
   - http://converter.mygeodata.eu/vector kml exporter for shp
 or locally using GDAL
 
-### geocoding
+### Geocoding
 cloudmade, google (but you must display on a Google Map).
 
 Easiest way to do is with a Google Spreadsheet/Fusion Table http://williamparry.blogspot.com.au/2011/04/putting-data-into-google-fusion-tables.htm http://support.google.com/fusiontables/answer/1012281?hl=en&ref_topic=2592806
@@ -387,7 +388,7 @@ Why? Find communities, hubs, connections between (the X degrees of separation)
 ## Analysis
 
 ### R
-
+http://www.slideshare.net/ianmcook/social-network-analysis-in-r
 - http://is-r.tumblr.com/post/38240018815/making-prettier-network-graphs-with-sna-and-igraph
 
 
@@ -398,11 +399,8 @@ Why? Find communities, hubs, connections between (the X degrees of separation)
     - http://www.slideshare.net/maxdemarzi/etl-into-neo4j
     http://blog.neo4j.org/2013/03/importing-data-into-neo4j-spreadsheet.html
 
-http://www.orientdb.org/
-
-http://thinkaurelius.github.com/titan/
-
-Major graph databases like theese can be accessed using a common tool like Gremlin or by writing a simple Java/Python/Ruby application. Queries can be tested in the built in data browser.
+There are other graph databases worth considering like [OrientDB](http://www.orientdb.org/) or [Titan](http://thinkaurelius.github.com/titan/)
+Major graph databases like these can be accessed using a common syntax called Gremlin or by writing a simple Java/Python/Ruby application. Queries can be tested in the built in data browser.
 
 
 
