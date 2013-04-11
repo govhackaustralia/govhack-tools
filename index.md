@@ -20,9 +20,6 @@ The key thing here is that your source material demonstrates to the judges that 
 
 # General References {#general-data-hacking-and-programming-references}
 
-## Who can be a hack day participant
-There are many roles you can play as a hack day participant; coder, designer UX/graphics.
-
 ## The basics of being a data scientist
 
 *   Have a hypothesis - even if you're making a tool/api that helps people with their questions too, remember what the objective of that is.
@@ -68,13 +65,12 @@ Using a version control system like Git or Subversion allows you to keep many di
 
 [![](img/Screenshot-at-2012-04-29-172132-300x235.png "Git Screenshot")](http://progit.org/book/)
 
-[http://progit.org/book/](http://progit.org/book/)
+[tutorials on git](http://progit.org/book/) and
+[GUIs to help you](http://code.google.com/p/tortoisegit/)
 
-[http://svnbook.red-bean.com/](http://svnbook.red-bean.com/)
+[manual for Subversion](http://svnbook.red-bean.com/)
+and a [similar GUI for Subversion](http://tortoisesvn.net/)
 
-[http://tortoisesvn.net/](http://tortoisesvn.net/)
-
-[http://code.google.com/p/tortoisegit/](http://code.google.com/p/tortoisegit/)
 
 ### Task Tracking
 
@@ -325,7 +321,7 @@ http://training.sunlightfoundation.com/module/data-visualizations-google-docs/
       - http://chartsnthings.tumblr.com/post/36978271916/r-tutorial-simple-charts http://flowingdata.com/2012/12/17/getting-started-with-charts-in-r/
       
       http://www.r-bloggers.com/to-plot-them-is-my-real-test/
-
+                               http://blog.revolutionanalytics.com/2013/04/visualize-large-data-sets-with-the-bigvis-package.html 10 Million Points in 5 seconds.
 
 ## Visualisation
 
@@ -333,9 +329,10 @@ http://training.sunlightfoundation.com/module/data-visualizations-google-docs/
 
 Create visualisations from various data formats by dragging and dropping. Free trial available on website. [![](img/Tableau-Screenshot-300x190.jpg "Tableau Screenshot")](img/Tableau-Screenshot.jpg)
 
-### [Flotr2](http://www.humblesoftware.com/flotr2/)/[Google Chart Tools](https://developers.google.com/chart/)
-
+### Web page (Javascript) graphs
+[Flotr2](http://www.humblesoftware.com/flotr2/)/[Google Chart Tools](https://developers.google.com/chart/)
 [![](img/How-to-participate-in-GovHack_html_m11006fce-300x199.jpg "flotr2 screenshot")](img/How-to-participate-in-GovHack_html_m11006fce.jpg)Javascript based charts for webpages.
+http://www.polychartjs.com/ Allows facetting and easy use of JSON data sets.
 
 ### D3.js (Data-Driven Documents)
 
@@ -415,7 +412,7 @@ tutorial/intro http://www.cl.cam.ac.uk/~cm542/teaching/2011/stna-pdfs/stna-lectu
 
 ## Visualisation
 ###  Tree/Hierarchy visualisation
-Sometimes what you actually have is a tree/hierarchy with no interconnections.
+Sometimes what you actually have is a tree/hierarchy with no interconnections. In these cases, it's better to use a Tree visualisation.
  http://www.randelshofer.ch/treeviz/ http://thejit.org/demos/ http://mbostock.github.com/protovis/ex/treemap.html http://blog.pixelingene.com/2011/07/building-a-tree-diagram-in-d3-js/d3 for Trees and Hierarchies
  http://mbostock.github.com/d3/ex/pack.html http://mbostock.github.com/d3/ex/tree.html
 
