@@ -127,9 +127,9 @@ HowTo.gov has a bunch of api resources about choosing SOAP vs. REST etc. http://
 
 API documentation is important too! Traditionally for SOAP APIs, you use WSDL but for REST try [Swagger](http://swagger.wordnik.com/) or [iodocs](https://github.com/mashery/iodocs)
 Many web app frameworks can generate the documentation for you. For example Symfony for PHP http://symfony.com/ https://github.com/FriendsOfSymfony/FOSRestBundle http://williamdurand.fr/2012/08/02/rest-apis-with-symfony2-the-right-way/ https://github.com/nelmio/NelmioApiDocBundle
+Or for Ruby on Rails there is is https://github.com/elc/rapi_doc https://github.com/Pajk/apipie-rails
 
  better apis https://github.com/liip/LiipHelloBundle
-      - or for Rails https://github.com/elc/rapi_doc https://github.com/Pajk/apipie-rails
 
    http://amberonrails.com/building-stripes-api/
 
@@ -153,11 +153,11 @@ Have to use visual art concepts, good color schemes http://www.r-bloggers.com/th
 
     - https://graphics.stanford.edu/wikis/cs448b-12-fall/ data viz theory
     - http://drawingbynumbers.org/toolsandresources
+     - http://selection.datavisualization.ch/ data viz tools catalog
 
 examples    - http://sunfoundation.tumblr.com/
 ### The Open Budget
 
-tools     - http://selection.datavisualization.ch/ data viz tools catalog
 
 ## Web Applications
 
@@ -217,26 +217,28 @@ For data visualisation, there are a variety of graph widgets http://code.google.
 Backend frameworks http://helios.io/ https://www.parse.com/
 ### Examples
 
-bom water,
+Bureau of Meteorology Water Storage App http://icelab.com.au/work/bureau-of-meteorology/
 
-nz gov budget
+NZ Gov budget http://www.treasury.govt.nz/budget/app
 
 
 # Geographical Data Tools {#geographical-data-tools}
 
-Check out the[ GeoRabble Boundary Mapper's Cookbook](http://georabble.org/2012/05/31/the-boundary-mappers-cookbook/) to see how you can tie all these things together!
+Check out the [GeoRabble Boundary Mapper's Cookbook](http://georabble.org/2012/05/31/the-boundary-mappers-cookbook/) to see how you can tie all these things together!
 
 ## Key datasets
-          - base layers like agri http://agri.openstreetmap.org/, http://irs.gis-lab.info/ wms or http://www.gdal.org/frmt_wms_openstreetmap_tms.xml
-           ASGS including suburbs/postcodes
-                   - andrewharvey4.wordpress.com postgis/asgs tutorial
+base layers like agri http://agri.openstreetmap.org/, http://irs.gis-lab.info/ wms or http://www.gdal.org/frmt_wms_openstreetmap_tms.xml
+
+ASGS from ABS including suburbs/postcodes andrewharvey4.wordpress.com postgis/asgs tutorial
+You can also get KML layers for various statistical measures on the ABS TableBuilder tool.
+
 ## Wrangling
 
 ### Converting
 There are many spatial data formats and often the one your tool requires is not the one the dataset is provided in
 Online
   - http://converter.mygeodata.eu/vector kml exporter for shp
-or locally using GDAL
+or locally using GDAL (better for many megabyte datasets)
 
 ### Geocoding
 cloudmade, google (but you must display on a Google Map).
@@ -350,7 +352,7 @@ d3
 ### Processing.js
 
 # Unstructured (Text) Data Tools
-Most of thw world's dat isn't structured because it is contained in documents (webpages, tweets etc.). Sometimes it is possible to structure it, sometimes there are tools that are better suited it unstructured data.
+Most of the world's data isn't structured because it is contained in documents (webpages, tweets etc.). Sometimes it is possible to structure it, sometimes there are tools that are better suited it unstructured data.
 ## Wrangling
 For extracting data from webpages, checkout Scraperwiki pytemplate scrapy
 
@@ -359,10 +361,13 @@ PDFs - http://source.mozillaopennews.org/en-US/articles/introducing-tabula/ for 
 If there is no way to form a table structure to be able to apply tabular data techniques , you need a more sophisticated analysis as detailed below.
 
 ## Analysing
+Natural Language Processing
     - opennlp/nltk / https://github.com/clips/pattern
     
+A search engine just for your dataset can also help
     - lucene/solr
     
+For light weight analysis, try R or Ruby
     - http://www.r-bloggers.com/simple-text-mining-with-r/
     
     - http://blog.josephwilk.net/ruby/latent-semantic-analysis-in-ruby.html similar terms usually found together
