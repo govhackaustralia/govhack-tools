@@ -20,6 +20,7 @@ The key thing here is that your source material demonstrates to the judges that 
 
 # General References {#general-data-hacking-and-programming-references}
 
+
 ## The basics of being a data scientist
 
 *   Have a hypothesis - even if you're making a tool/api that helps people with their questions too, remember what the objective of that is.
@@ -140,19 +141,15 @@ Most of the categories to follow have visualisation tools specific to their purp
 
 You can find some data visualisation tools below:
 
-[http://www.visualisingdata.com/index.php/2011/07/part-6-the-essential-collection-of-visualisation-resources/](http://www.visualisingdata.com/index.php/2011/07/part-6-the-essential-collection-of-visualisation-resources/)
-
+[Essential Colletion](http://www.visualisingdata.com/index.php/2011/07/part-6-the-essential-collection-of-visualisation-resources/)
+              [Drawing By Numbers Tools and Resources](http://drawingbynumbers.org/toolsandresources)
+               - http://selection.datavisualization.ch/ data viz tools catalog
 Also check out [http://thejit.org](http://thejit.org/) &amp; [http://www.senchalabs.org/<wbr>philogl/</wbr>](http://www.senchalabs.org/philogl/) (contributed by Matt Adcock)
 
-Have to use visual art concepts, good color schemes http://www.r-bloggers.com/the-paul-tol-21-color-salute/
+A good infographic should use visual art concepts and [good color schemes](http://www.r-bloggers.com/the-paul-tol-21-color-salute/)
+For more information on the theory of data visualisation check out the (Stanford CS448B notes)[https://graphics.stanford.edu/wikis/cs448b-12-fall/]
 
-
-    - https://graphics.stanford.edu/wikis/cs448b-12-fall/ data viz theory
-    - http://drawingbynumbers.org/toolsandresources
-     - http://selection.datavisualization.ch/ data viz tools catalog
-
-examples    - http://sunfoundation.tumblr.com/
-### The Open Budget
+Some examples of data visualisation can be seen on [the Sunlight Foundation tumblr](http://sunfoundation.tumblr.com/) or at the GovHack alumn [The Open Budget](http://www/.theopenbudget.org)
 
 
 ## Web Applications
@@ -380,8 +377,7 @@ For larger document sets or for alternative visualisations, try Jigsaw a desktop
 
 
 # Graph (relationships and networks) Data Tools {#graph-relationships-and-networks-data-tools}
-
-Why? Find communities, hubs, connections between (the X degrees of separation)
+Graph data can be very valuable for finding communities, hubs and connections between entities (the 6 degrees of separation). This is through the techniques of Social Network Analysis.
     - http://www.slideshare.net/OReillyStrata/visualizing-networks-beyond-the-hairball
     - http://blog.sciencenet.cn/blog-554179-622011.html SNA tools catalog
     - https://github.com/jacomyal/osdc2012-sigmajs-demo sigmajs filtering/searching
@@ -396,10 +392,8 @@ http://www.slideshare.net/ianmcook/social-network-analysis-in-r
 
 ### Graph Databases
 
-[![](img/webadmin-data-300x127.png "Neo4\. web admin screenshot")](img/webadmin-data.png)Help understand relationships - how is X connected to Y and via what other entities they both are connected to. Imports and exports
-
-    - http://www.slideshare.net/maxdemarzi/etl-into-neo4j
-    http://blog.neo4j.org/2013/03/importing-data-into-neo4j-spreadsheet.html
+[![](img/webadmin-data-300x127.png "Neo4\. web admin screenshot")](img/webadmin-data.png)Help understand relationships - how is X connected to Y and via what other entities they both are connected to.
+Imports and exports can be done by [writing a java program](http://www.slideshare.net/maxdemarzi/etl-into-neo4j) or [spreadsheet](http://blog.neo4j.org/2013/03/importing-data-into-neo4j-spreadsheet.html)
 
 There are other graph databases worth considering like [OrientDB](http://www.orientdb.org/) or [Titan](http://thinkaurelius.github.com/titan/)
 Major graph databases like these can be accessed using a common syntax called Gremlin or by writing a simple Java/Python/Ruby application. Queries can be tested in the built in data browser.
@@ -412,7 +406,7 @@ Major graph databases like these can be accessed using a common syntax called Gr
 
 NetworkX is a social network analysis library for python. Many advanced analyses built in like finding communities within a graph. Also good for converting data into graphs.
 
-tutorial/intro http://www.cl.cam.ac.uk/~cm542/teaching/2011/stna-pdfs/stna-lecture11.pdf
+See this [introduction to Social Network Analysis with NetworkX](http://www.cl.cam.ac.uk/~cm542/teaching/2011/stna-pdfs/stna-lecture11.pdf)
 
 
 ## Visualisation
@@ -434,4 +428,4 @@ Sometimes what you actually have is a tree/hierarchy with no interconnections. I
 
 ### [sigma.js](http://sigmajs.org/)
 
-[![](img/How-to-participate-in-GovHack_html_m6006eaf3-300x130.jpg "Sigma.js Screenshot")](img/How-to-participate-in-GovHack_html_m6006eaf3.jpg)Javascript graph viewer, can use GEXF files exported from tools like neo4j, gephi and NetworkX.
+[![](img/How-to-participate-in-GovHack_html_m6006eaf3-300x130.jpg "Sigma.js Screenshot")](img/How-to-participate-in-GovHack_html_m6006eaf3.jpg)Javascript graph viewer for displaying graphs on webpages without any other plugins/applications required. It can use GEXF files exported from tools like neo4j, gephi or NetworkX.
