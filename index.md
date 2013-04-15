@@ -219,6 +219,8 @@ NZ Gov budget http://www.treasury.govt.nz/budget/app
 
 Check out the [GeoRabble Boundary Mapper's Cookbook](http://georabble.org/2012/05/31/the-boundary-mappers-cookbook/) to see how you can tie all these things together!
 
+GeoDjango TileMill
+
 ## Key datasets
 base layers like agri http://agri.openstreetmap.org/, http://irs.gis-lab.info/ wms or http://www.gdal.org/frmt_wms_openstreetmap_tms.xml
 
@@ -234,10 +236,9 @@ Online
 or locally using GDAL (better for many megabyte datasets)
 
 ### Geocoding
-cloudmade, google (but you must display on a Google Map).
+Google Maps APIs allow you to convert an address to map co-ordinates (geocoding) but you must display on a Google Map. The easiest way to do is with a Google Spreadsheet/Fusion Table http://williamparry.blogspot.com.au/2011/04/putting-data-into-google-fusion-tables.htm http://support.google.com/fusiontables/answer/1012281?hl=en&ref_topic=2592806
 
-Easiest way to do is with a Google Spreadsheet/Fusion Table http://williamparry.blogspot.com.au/2011/04/putting-data-into-google-fusion-tables.htm http://support.google.com/fusiontables/answer/1012281?hl=en&ref_topic=2592806
-
+If you need geocoding for more than display (working out the distance between points etc) or you don't want to use Google Maps, Cloudmade offers free OpenStreetMap based geocoding http://developers.cloudmade.com/projects/show/geocoding-http-api
 
 ## Analysis
 
