@@ -66,11 +66,8 @@ Using a version control system like Git or Subversion allows you to keep many di
 
 [![](img/Screenshot-at-2012-04-29-172132-300x235.png "Git Screenshot")](http://progit.org/book/)
 
-[tutorials on git](http://progit.org/book/) and
-[GUIs to help you](http://code.google.com/p/tortoisegit/)
-
-[manual for Subversion](http://svnbook.red-bean.com/)
-and a [similar GUI for Subversion](http://tortoisesvn.net/)
+There are [tutorials on git](http://progit.org/book/) and [GUIs to help you](http://code.google.com/p/tortoisegit/)
+There is also a [manual for Subversion](http://svnbook.red-bean.com/) and a [similar GUI for Subversion](http://tortoisesvn.net/)
 
 
 ### Task Tracking
