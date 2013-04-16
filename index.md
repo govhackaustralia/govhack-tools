@@ -216,7 +216,7 @@ NZ Gov budget http://www.treasury.govt.nz/budget/app
 
 Check out the [GeoRabble Boundary Mapper's Cookbook](http://georabble.org/2012/05/31/the-boundary-mappers-cookbook/) to see how you can tie all these things together!
 
-GeoDjango TileMill
+
 
 ## Key datasets
 base layers like agri http://agri.openstreetmap.org/, http://irs.gis-lab.info/ wms or http://www.gdal.org/frmt_wms_openstreetmap_tms.xml
@@ -227,10 +227,8 @@ You can also get KML layers for various statistical measures on the ABS TableBui
 ## Wrangling
 
 ### Converting
-There are many spatial data formats and often the one your tool requires is not the one the dataset is provided in
-Online
-  - http://converter.mygeodata.eu/vector kml exporter for shp
-or locally using GDAL (better for many megabyte datasets)
+There are many spatial data formats and often the one your tool requires is not the one the dataset is provided in.
+You can convert spatial datasets online with http://converter.mygeodata.eu/vector or locally using GDAL (which better for >10 megabyte datasets)
 
 ### Geocoding
 Google Maps APIs allow you to convert an address to map co-ordinates (geocoding) but you must display on a Google Map. The easiest way to do is with a Google Spreadsheet/Fusion Table http://williamparry.blogspot.com.au/2011/04/putting-data-into-google-fusion-tables.htm http://support.google.com/fusiontables/answer/1012281?hl=en&ref_topic=2592806
@@ -251,6 +249,7 @@ If you need geocoding for more than display (working out the distance between po
 ## Visualisation
 
 ### Layar and other augmented reality tools
+[Layar](http://www.layar.com/) provides a platform for exploring a dataset by travelling to the actual locations of the data and looking through a smartphone. Custom markers (2D or 3D) seem to float in the air and can be clicked on for more information. You can even trigger an event like playing music when within a certain range of a location.
 
 ### Google Fusion Tables/ChartsBin/[OpenHeatMap](http://www.openheatmap.com/)
 
@@ -260,15 +259,16 @@ http://www.peteraldhous.com/CAR/Making_maps_with_Google_Fusion_Tables.pdf tutori
 
 ### [Cartographer.js](http://cartographer.visualmotive.com/)
 
-[![](img/cartographerjs-300x187.png "cartographerjs screenshot")](img/cartographerjs.png)Input data as JSON and maps are produced.
-See also d3 maps.
-  - http://bost.ocks.org/mike/map/
+[![](img/cartographerjs-300x187.png "cartographerjs screenshot")](img/cartographerjs.png)Input data as JSON and interactive maps are produced.
+You can also try d3 maps: http://bost.ocks.org/mike/map/
 
 
 ### OpenLayers/Google Maps/[Leaflet](http://leaflet.cloudmade.com/)
 
 [![](img/How-to-participate-in-GovHack_html_512fcbe1-300x173.jpg "OpenLayers Screenshot")](img/How-to-participate-in-GovHack_html_512fcbe1.jpg)Display points and different layers. Leaflet is the easiest to use if you just want to show points with popups when clicked on.
 There are wrappers for Google maps like http://hpneo.github.com/gmaps/examples.html and Mapstraction that can make it easier to use too.
+
+If you need to customise the base map, try TileMill.
 
 ### NASA World Wind/Google Earth
 
@@ -280,9 +280,7 @@ There are wrappers for Google maps like http://hpneo.github.com/gmaps/examples.h
 
 ## Wrangling
 
-Converting formats json/xml/csv etc.
-  - http://shancarter.com/data_converter/
-
+Converting between formats like json/xml or csv can be done online with http://shancarter.com/data_converter/
 
 Tabular data may have duplicate entries or incorrect formats (varying ways to enter dates/phonenumbers etc.). There are tools to quickly fix common problems
 
@@ -297,7 +295,7 @@ regex http://www.regexper.com/ http://www.debuggex.com/?re=&str=
 
 ### Excel / Google Docs
 
-Great basic analysis and viewing. Older versions can be limited to 6500\. or so rows. Eg [http://www.tcij.org/training-material/car/data-mining/3474](http://www.tcij.org/training-material/car/data-mining/3474)
+Great basic analysis and viewing but older versions can be limited to 6500 rows. Eg [http://www.tcij.org/training-material/car/data-mining/3474](http://www.tcij.org/training-material/car/data-mining/3474)
 
 http://training.sunlightfoundation.com/module/data-visualizations-google-docs/
 
@@ -307,11 +305,10 @@ http://training.sunlightfoundation.com/module/data-visualizations-google-docs/
 
 ### R Statistical Language
 
-[![](img/rstudio-windows-300x249.png "rstudio-windows")](img/rstudio-windows.png)Advanced data analysis, can find and visualise trends in large datasets. Some reference resources to learn the language [http://cran.r-project.org/doc/manuals/R-intro.html ](http://cran.r-project.org/doc/manuals/R-intro.html)There are also some addons that provide graphical interfaces that make it easier to use such as Rattle [http://rattle.togaware.com/](http://rattle.togaware.com/) , RStudio [http://rstudio.org/](http://rstudio.org/) or Deducer [http://www.deducer.org/pmwiki/pmwiki.php?n=Main.DeducerManual](http://www.deducer.org/pmwiki/pmwiki.php?n=Main.DeducerManual)
+[![](img/rstudio-windows-300x249.png "rstudio-windows")](img/rstudio-windows.png)
+R provides a platform for advanced data analysis which can find and visualise trends even in large datasets. Some reference resources to learn the language [http://cran.r-project.org/doc/manuals/R-intro.html ](http://cran.r-project.org/doc/manuals/R-intro.html)There are also some addons that provide graphical interfaces that make it easier to use such as Rattle [http://rattle.togaware.com/](http://rattle.togaware.com/) , RStudio [http://rstudio.org/](http://rstudio.org/) or Deducer [http://www.deducer.org/pmwiki/pmwiki.php?n=Main.DeducerManual](http://www.deducer.org/pmwiki/pmwiki.php?n=Main.DeducerManual)
 
   - http://blog.yhathq.com/posts/10-R-packages-I-wish-I-knew-about-earlier.html
-        - excel -> R/rattle/ deducer? http://www.r-bloggers.com/updates-to-the-deducer-family-of-packages/
-    - http://www.twotorials.com/ for R
       - http://www.r-bloggers.com/gradient-word-clouds/ http://www.rstudio.com/shiny/ http://blog.ouseful.info/2012/11/28/quick-shiny-demo-exploring-nhs-winter-sit-rep-data/ https://github.com/timelyportfolio/shiny-d3-plot https://github.com/trestletech/shiny-sandbox/tree/master/grn
          - http://www.r-bloggers.com/video-simpler-tricks-and-tools-help-debugging-git-latex-and-workflow-with-r-by-prof-rob-hyndman/
       - http://yihui.name/knitr/ makes reports including google widgets/charts/maps via http://www.r-bloggers.com/googlevis-0-3-2-is-released-better-integration-with-knitr/
@@ -348,25 +345,21 @@ Most of the world's data isn't structured because it is contained in documents (
 ## Wrangling
 For extracting data from webpages, checkout Scraperwiki pytemplate scrapy
 
-PDFs - http://source.mozillaopennews.org/en-US/articles/introducing-tabula/ for text PDFs or http://www.reporterslab.org/dochive/ for imafges
+PDFs - http://source.mozillaopennews.org/en-US/articles/introducing-tabula/ for text PDFs or http://www.reporterslab.org/dochive/ for images (common in scanned document PDFs)
 
 If there is no way to form a table structure to be able to apply tabular data techniques , you need a more sophisticated analysis as detailed below.
 
 ## Analysing
-Natural Language Processing
-    - opennlp/nltk / https://github.com/clips/pattern
+Natural Language Processing libraries like OpenNLP for Java or NLTK / [Pattern](https://github.com/clips/pattern) for Python allow you to extract information from text.
+One of the most useful techniques found in these libraries is Named entity recognition which extracts the subjects named in a piece of text.
     
-A search engine just for your dataset can also help
-    - lucene/solr
+A search engine just for your dataset can also help. Tools like Apache Lucene/Solr or ElasticSearch can help you index and search large datasets in new ways.
     
-For light weight analysis, try R or Ruby
-    - http://www.r-bloggers.com/simple-text-mining-with-r/
-    
-    - http://blog.josephwilk.net/ruby/latent-semantic-analysis-in-ruby.html similar terms usually found together
+For light weight analysis, try R or Ruby: http://www.r-bloggers.com/simple-text-mining-with-r/ http://blog.josephwilk.net/ruby/latent-semantic-analysis-in-ruby.html
 
 ## Visualising
 
-Make word trees of blocks of text, webpages or twitter account and share them http://www.jasondavies.com/wordtree/
+You can make word trees of blocks of text, webpages or twitter account and share them http://www.jasondavies.com/wordtree/
 
 "Overview automatically sorts thousands of documents into topics and sub-topics, by reading the full text of each one." Simply make a CSV file with two columns, id and text. 10,000 documents is a good limit for the current state of the system. https://www.overviewproject.org/
 
@@ -409,12 +402,14 @@ See this [introduction to Social Network Analysis with NetworkX](http://www.cl.c
 
 ## Visualisation
 ###  Tree/Hierarchy visualisation
-Sometimes what you actually have is a tree/hierarchy with no interconnections. In these cases, it's better to use a Tree visualisation.
- http://www.randelshofer.ch/treeviz/ http://thejit.org/demos/ http://mbostock.github.com/protovis/ex/treemap.html http://blog.pixelingene.com/2011/07/building-a-tree-diagram-in-d3-js/d3 for Trees and Hierarchies
- http://mbostock.github.com/d3/ex/pack.html http://mbostock.github.com/d3/ex/tree.html
+Sometimes when you analyse a network what you actually have is a tree/hierarchy with no interconnections.
+In these cases, it's faster and more visually effective to use a Tree visualisation.
+You can run [TreeViz](http://www.randelshofer.ch/treeviz/) locally or use [d3 on a website](http://bl.ocks.org/mbostock/4063550), [step by step instructions for creating tree data for d3](http://blog.pixelingene.com/2011/07/building-a-tree-diagram-in-d3-js/)
+d3 also includes [treemaps - bubbles inside bubbles](http://bl.ocks.org/mbostock/4063530)
 
 ### NodeXL for Microsoft Excel
-    - http://nodexl.codeplex.com/ network graphs for excel
+[![](img/ExcelWindow.png "NodeXL Screenshot")](img/ExcelWindow.png)
+ [NodeXL](http://nodexl.codeplex.com/) allows you to visualise networks/graphs quickly inside Excel.
 
 ### [Graphviz](http://www.graphviz.org/)
 
