@@ -152,11 +152,10 @@ Some examples of data visualisation can be seen on [the Sunlight Foundation tumb
 ## Web Applications
 
 With the rise of HTML5 technologies it is easier than ever to make a web application for engaging use of data.
+It's easy to quickly make a good looking and accessible webpage if you use a CSS framework like Bootstrap or Zurb Foundation.
+There are a variety of bootstrap themes like [Flat-UI](http://designmodo.com/flat-free/)
 
-    - css framework like bootstrap or zurb foundation
-- css gauges http://www.larentis.eu/donuts/
-- bootstrap themes, web fonts, css sprites, icon fonts
-  - http://designmodo.com/flat-free/ http://designmodo.github.com/Flat-UI/
+Check out the visualisation tools listed in the data sections for web application tools like these [CSS Dashboard gauges](http://www.larentis.eu/donuts/)
 
 ### Examples
 
@@ -197,14 +196,14 @@ Issue Tracking: Github
 
 ## Mobile
 
-Frameworks, http://www.sencha.com/products/touch http://phonegap.com/ http://cordova.apache.org/
+If you want to get stared quickly with mobile application development, it's worth considering cross platform frameworks like http://www.sencha.com/products/touch http://phonegap.com/ http://cordova.apache.org/
 
-html5 jquery mobile like directory.gov.au
+For a simple mobile app, a web application with a framewrok like jQuery Mobile can work quite well (as used on directory.gov.au)
 
 For data visualisation, there are a variety of graph widgets http://code.google.com/p/afreechart/ http://code.google.com/p/snowdon/ http://code.google.com/p/chartdroid/ http://androidplot.com/ http://code.google.com/p/achartengine/
 
+You may wish to consider backend frameworks like http://helios.io/ or https://www.parse.com/
 
-Backend frameworks http://helios.io/ https://www.parse.com/
 ### Examples
 
 Bureau of Meteorology Water Storage App http://icelab.com.au/work/bureau-of-meteorology/
@@ -217,9 +216,8 @@ NZ Gov budget http://www.treasury.govt.nz/budget/app
 Check out the [GeoRabble Boundary Mapper's Cookbook](http://georabble.org/2012/05/31/the-boundary-mappers-cookbook/) to see how you can tie all these things together!
 
 
-
 ## Key datasets
-base layers like agri http://agri.openstreetmap.org/, http://irs.gis-lab.info/ wms or http://www.gdal.org/frmt_wms_openstreetmap_tms.xml
+There are a variety of base layers like AGRI aerial imagery of Australia http://agri.openstreetmap.org/ or WMS services like http://irs.gis-lab.info/ wms or http://www.gdal.org/frmt_wms_openstreetmap_tms.xml
 
 ASGS from ABS including suburbs/postcodes andrewharvey4.wordpress.com postgis/asgs tutorial
 You can also get KML layers for various statistical measures on the ABS TableBuilder tool.
@@ -288,16 +286,13 @@ Tabular data may have duplicate entries or incorrect formats (varying ways to en
 
 [![](img/google_refine_interface.png "google_refine_interface")](img/google_refine_interface.png)Clean up duplicate or inconsistent data entries.
 
-Can also use general purpose tools; grep/awk/sed
-regex http://www.regexper.com/ http://www.debuggex.com/?re=&str=
+You can also use general purpose file manipulation tools like grep/awk/sed. These work best when you instruct them what search/change you need using Regular Expressions (RegEx) which you can learn more about at http://www.regexper.com/ and http://www.debuggex.com/?re=&str=
 
 ## Analysis
 
 ### Excel / Google Docs
 
-Great basic analysis and viewing but older versions can be limited to 6500 rows. Eg [http://www.tcij.org/training-material/car/data-mining/3474](http://www.tcij.org/training-material/car/data-mining/3474)
-
-http://training.sunlightfoundation.com/module/data-visualizations-google-docs/
+Great basic analysis and viewing but older versions can be limited to 6500 rows. Eg [http://www.tcij.org/training-material/car/data-mining/3474](http://www.tcij.org/training-material/car/data-mining/3474) or [http://training.sunlightfoundation.com/module/data-visualizations-google-docs/](http://training.sunlightfoundation.com/module/data-visualizations-google-docs/)
 
 ### PostgreSQL/MySQL
 
@@ -308,14 +303,19 @@ http://training.sunlightfoundation.com/module/data-visualizations-google-docs/
 [![](img/rstudio-windows-300x249.png "rstudio-windows")](img/rstudio-windows.png)
 R provides a platform for advanced data analysis which can find and visualise trends even in large datasets. Some reference resources to learn the language [http://cran.r-project.org/doc/manuals/R-intro.html ](http://cran.r-project.org/doc/manuals/R-intro.html)There are also some addons that provide graphical interfaces that make it easier to use such as Rattle [http://rattle.togaware.com/](http://rattle.togaware.com/) , RStudio [http://rstudio.org/](http://rstudio.org/) or Deducer [http://www.deducer.org/pmwiki/pmwiki.php?n=Main.DeducerManual](http://www.deducer.org/pmwiki/pmwiki.php?n=Main.DeducerManual)
 
-  - http://blog.yhathq.com/posts/10-R-packages-I-wish-I-knew-about-earlier.html
-      - http://www.r-bloggers.com/gradient-word-clouds/ http://www.rstudio.com/shiny/ http://blog.ouseful.info/2012/11/28/quick-shiny-demo-exploring-nhs-winter-sit-rep-data/ https://github.com/timelyportfolio/shiny-d3-plot https://github.com/trestletech/shiny-sandbox/tree/master/grn
-         - http://www.r-bloggers.com/video-simpler-tricks-and-tools-help-debugging-git-latex-and-workflow-with-r-by-prof-rob-hyndman/
-      - http://yihui.name/knitr/ makes reports including google widgets/charts/maps via http://www.r-bloggers.com/googlevis-0-3-2-is-released-better-integration-with-knitr/
-      - http://chartsnthings.tumblr.com/post/36978271916/r-tutorial-simple-charts http://flowingdata.com/2012/12/17/getting-started-with-charts-in-r/
-      
-      http://www.r-bloggers.com/to-plot-them-is-my-real-test/
-                               http://blog.revolutionanalytics.com/2013/04/visualize-large-data-sets-with-the-bigvis-package.html 10 Million Points in 5 seconds.
+  R's value lies in the wide array of libraries and addons you can use. For example [BigVis](http://blog.revolutionanalytics.com/2013/04/visualize-large-data-sets-with-the-bigvis-package.html) lets you visualise 10 Million data points in 5 seconds on an ordinary computer.
+  Be sure to checkout the list of ["10 R packages I wish I knew about earlier"](http://blog.yhathq.com/puosts/10-R-packages-I-wish-I-knew-about-earlier.html)
+
+ggplot2 is the typical graphical output of R and is very powerful. See these tutorials for instructions: http://chartsnthings.tumblr.com/post/36978271916/r-tutorial-simple-charts http://flowingdata.com/2012/12/17/getting-started-with-charts-in-r/
+You can do some very creative plotting for example [putting pictures of Pokemon where their power level is on an X/Y axis](http://www.r-bloggers.com/to-plot-them-is-my-real-test/)
+
+To share your analysis with the world you can use [KnittR](http://yihui.name/knitr/) which to make reports. These can include google widgets/charts/maps with the [googlevis](http://www.r-bloggers.com/googlevis-0-3-2-is-released-better-integration-with-knitr/) package.
+
+  For advanced interactive visualisation you can use [Shiny](http://www.rstudio.com/shiny/) which allows visitors to you page to adjust the R charts.
+  Examples of Shiny use include:
+   http://blog.ouseful.info/2012/11/28/quick-shiny-demo-exploring-nhs-winter-sit-rep-data/ https://github.com/timelyportfolio/shiny-d3-plot https://github.com/trestletech/shiny-sandbox/tree/master/grn
+
+
 
 ## Visualisation
 
@@ -331,12 +331,8 @@ http://www.polychartjs.com/ Allows facetting and easy use of JSON data sets.
 ### D3.js (Data-Driven Documents)
 
 [![](img/How-to-participate-in-GovHack_html_m90d8020-300x277.jpg "d3 screenshot")](img/How-to-participate-in-GovHack_html_m90d8020.jpg)Javascript visualisations that are more interactive or intricate than charts. Can be hard to learn but there are examples and easier to use premade visualisations such as [word clouds](http://www.jasondavies.com/wordcloud/), [realtime filtering of barcharts](http://square.github.com/crossfilter/), or [bubble trees for comparing amount sizes](https://github.com/okfn/bubbletree).
-d3
-  - http://datadrivenjournalism.net/resources/data_driven_documents_defined
-    - http://www.benmcmahen.com/blog/posts/50eb57d55a94d35262000001 d3 svg
-    - d3 tools and tutorial http://enjalot.com/ http://news.ycombinator.com/item?id=4608440
-      - Why d3 is the way it is and how to make charts http://bost.ocks.org/mike/chart/
-      - how to make an xkcd chart http://bl.ocks.org/3914862
+See these tutorials to get started: http://datadrivenjournalism.net/resources/data_driven_documents_defined http://bost.ocks.org/mike/chart/
+
 
 ### Processing.js
 
