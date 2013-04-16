@@ -365,10 +365,6 @@ For larger document sets or for alternative visualisations, try Jigsaw a desktop
 
 # Graph (relationships and networks) Data Tools {#graph-relationships-and-networks-data-tools}
 Graph data can be very valuable for finding communities, hubs and connections between entities (the 6 degrees of separation). This is through the techniques of Social Network Analysis.
-    - http://www.slideshare.net/OReillyStrata/visualizing-networks-beyond-the-hairball
-    - http://blog.sciencenet.cn/blog-554179-622011.html SNA tools catalog
-    - https://github.com/jacomyal/osdc2012-sigmajs-demo sigmajs filtering/searching
-
 
 ## Analysis
 
@@ -397,6 +393,9 @@ See this [introduction to Social Network Analysis with NetworkX](http://www.cl.c
 
 
 ## Visualisation
+
+Proper visualisation of networks can be hard as described in this presentation [Visualising Networks: Beyond the Hairball](http://www.slideshare.net/OReillyStrata/visualizing-networks-beyond-the-hairball)
+
 ###  Tree/Hierarchy visualisation
 Sometimes when you analyse a network what you actually have is a tree/hierarchy with no interconnections.
 In these cases, it's faster and more visually effective to use a Tree visualisation.
@@ -418,3 +417,4 @@ d3 also includes [treemaps - bubbles inside bubbles](http://bl.ocks.org/mbostock
 ### [sigma.js](http://sigmajs.org/)
 
 [![](img/How-to-participate-in-GovHack_html_m6006eaf3-300x130.jpg "Sigma.js Screenshot")](img/How-to-participate-in-GovHack_html_m6006eaf3.jpg)Javascript graph viewer for displaying graphs on webpages without any other plugins/applications required. It can use GEXF files exported from tools like neo4j, gephi or NetworkX.
+ It's also possible to [filter/search the displayed network in sigma.js](https://github.com/jacomyal/osdc2012-sigmajs-demo)
