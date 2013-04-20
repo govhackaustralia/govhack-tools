@@ -27,7 +27,7 @@
         <section>
 <?php
 include_once "php-markdown/markdown.php";
-echo Markdown(file_get_contents("index.md"));
+echo str_replace("</div><div><h1>GovHack","<div><h1>GovHack",str_replace("<h1>","</div><div><h1>",Markdown(file_get_contents("index.md"))));
 ?>
 </div>
         </section>
@@ -41,13 +41,13 @@ echo Markdown(file_get_contents("index.md"));
             $('#toc').toc({
                 'selectors': 'h1'
             });
-            /*$(function(){
+            $(function(){
 
                 $('<div class="items"></div>').insertAfter('h1');
                 $(".items").each(function() {
                     $(this).stoc();
                 });
-            });*/
+            });
         </script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
