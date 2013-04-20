@@ -120,14 +120,10 @@ Atlassian have a great page on what makes a good API https://developer.atlassian
 HowTo.gov has a bunch of api resources about choosing SOAP vs. REST etc. http://www.howto.gov/mobile/apis-in-government
 
 API documentation is important too! Traditionally for SOAP APIs, you use WSDL but for REST try [Swagger](http://swagger.wordnik.com/) or [iodocs](https://github.com/mashery/iodocs)
-Many web app frameworks can generate the documentation for you. For example Symfony for PHP http://symfony.com/ https://github.com/FriendsOfSymfony/FOSRestBundle http://williamdurand.fr/2012/08/02/rest-apis-with-symfony2-the-right-way/ https://github.com/nelmio/NelmioApiDocBundle
+Many web app frameworks can generate the documentation for you. For example Symfony for PHP http://symfony.com/ https://github.com/FriendsOfSymfony/FOSRestBundle http://williamdurand.fr/2012/08/02/rest-apis-with-symfony2-the-right-way/ https://github.com/nelmio/NelmioApiDocBundle https://github.com/liip/LiipHelloBundle
 Or for Ruby on Rails there is is https://github.com/elc/rapi_doc https://github.com/Pajk/apipie-rails
 
- better apis https://github.com/liip/LiipHelloBundle
-
-   http://amberonrails.com/building-stripes-api/
-
-example WeatherTree weather API
+For example [Stripe's API](http://amberonrails.com/building-stripes-api/) or previous GovHack entrant [WeatheredOak](http://www.govhack.org/2012/06/02/weatheredoak/)
 
 
 ## Infographics and Data Visualisation {#data-visualisation}
@@ -144,7 +140,7 @@ You can find some data visualisation tools below:
 Also check out [http://thejit.org](http://thejit.org/) &amp; [http://www.senchalabs.org/<wbr>philogl/</wbr>](http://www.senchalabs.org/philogl/) (contributed by Matt Adcock)
 
 A good infographic should use visual art concepts and [good color schemes](http://www.r-bloggers.com/the-paul-tol-21-color-salute/)
-For more information on the theory of data visualisation check out the (Stanford CS448B notes)[https://graphics.stanford.edu/wikis/cs448b-12-fall/]
+For more information on the theory of data visualisation check out the [Stanford CS448B notes](https://graphics.stanford.edu/wikis/cs448b-12-fall/)
 
 Some examples of data visualisation can be seen on [the Sunlight Foundation tumblr](http://sunfoundation.tumblr.com/) or at the GovHack alumn [The Open Budget](http://www/.theopenbudget.org)
 
@@ -266,7 +262,7 @@ You can also try d3 maps: http://bost.ocks.org/mike/map/
 [![](img/How-to-participate-in-GovHack_html_512fcbe1-300x173.jpg "OpenLayers Screenshot")](img/How-to-participate-in-GovHack_html_512fcbe1.jpg)Display points and different layers. Leaflet is the easiest to use if you just want to show points with popups when clicked on.
 There are wrappers for Google maps like http://hpneo.github.com/gmaps/examples.html and Mapstraction that can make it easier to use too.
 
-If you need to customise the base map, try TileMill.
+If you need to customise the base map, try TileMill. See the [THE INSANELY ILLUSTRATED GUIDE TO YOUR FIRST DATA-DRIVEN TILEMILL MAP](http://dataforradicals.com/the-insanely-illustrated-guide-to-your-first-tile-mill-map/)
 
 ### NASA World Wind/Google Earth
 
