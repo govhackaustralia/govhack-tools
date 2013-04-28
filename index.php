@@ -1,3 +1,10 @@
+<?php
+$wordpress = false;
+if (isset($_REQUEST["wordpress"])) $wordpress = true;
+
+if (!$wordpress) {
+
+?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -26,8 +33,22 @@
         <div id="wrapper">
         <section>
 <?php
+}
 include_once "php-markdown/markdown.php";
-echo str_replace("</div><div><h1>GovHack","<div><h1>GovHack",str_replace("<h1>","</div><div><h1>",Markdown(file_get_contents("index.md"))));
+$content = Markdown(file_get_contents("index.md"));
+$content = str_replace("<h1","</div><div><h1",$content);
+$content = str_replace("</div><div><h1>GovHack","<div><h1>GovHack",$content);
+$content .= "</div>";
+if ($wordpress) {
+    $content = str_replace("<div><h1>","<div>[toggle title=\"",$content);
+    $content = str_replace("</div>","[/toggle]</div>",$content);
+    $content = str_replace("</h1>","\"]",$content);
+
+    $content = str_replace("<img","<img width=\"300\" class=\"alignright size-medium\"",$content);
+    $content = str_replace("img/","http://www.govhack.org/wp-content/uploads/",$content);
+}
+echo  $content;
+if (!$wordpress) {
 ?>
 </div>
         </section>
@@ -58,3 +79,6 @@ echo str_replace("</div><div><h1>GovHack","<div><h1>GovHack",str_replace("<h1>",
         </script>
     </body>
 </html>
+<?php
+}
+?>

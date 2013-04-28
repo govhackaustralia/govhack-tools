@@ -18,7 +18,7 @@ You also need to submit your "source material". For an application this may be s
 The key thing here is that your source material demonstrates to the judges that some of the end result was your own work and that it is possible for another person to replicate that work.
 
 
-# General References {#general-data-hacking-and-programming-references}
+# General References
 
 
 ## The basics of being a data scientist
@@ -58,7 +58,7 @@ Following accessibility guidelines not only make a application accessible but ma
 
 
 
-# Developer Tools For Your Computer {#developer-tools-for-your-computer}
+# Developer Tools For Your Computer
 No matter what kind of application you have for the data, there are many tools you can use to better collaborate and manage your project.
 
 ### Source Control 
@@ -76,7 +76,7 @@ Issue/task trackers allow you to outline the tasks required for your project and
 
 [Trello](https://trello.com/) and [Workflowy](https://workflowy.com/) are free, lightweight project management tools suitable for a rapid project!
 
-## Hosted Developer Tools {#hosted-developer-tools}
+## Hosted Developer Tools
 
 Can get many tools (source control, issue tracking) combined into one service cloud hosted so there's no setup required.
 
@@ -98,10 +98,10 @@ You can host your Google Code project and get access to developer tools, APIs an
 
 # Applications of data hacking
 
-## API Development {#api-development}
+## API Development
 
 
-So an API isn't just an XML file ![;)](http://www.govhack.org/wp-includes/images/smilies/icon_wink.gif) 
+So an API isn't just an XML file!
 
 A good web based data API:
 
@@ -126,7 +126,7 @@ Or for Ruby on Rails there is is https://github.com/elc/rapi_doc https://github.
 For example [Stripe's API](http://amberonrails.com/building-stripes-api/) or previous GovHack entrant [WeatheredOak](http://www.govhack.org/2012/06/02/weatheredoak/)
 
 
-## Infographics and Data Visualisation {#data-visualisation}
+## Infographics and Data Visualisation
 
 Infographics try to contextualise charts and graphs to tell a story. Data vis builds on this to find new ways to design insight.
 
@@ -207,7 +207,7 @@ Bureau of Meteorology Water Storage App http://icelab.com.au/work/bureau-of-mete
 NZ Gov budget http://www.treasury.govt.nz/budget/app
 
 
-# Geographical Data Tools {#geographical-data-tools}
+# Geographical Data Tools
 
 Check out the [GeoRabble Boundary Mapper's Cookbook](http://georabble.org/2012/05/31/the-boundary-mappers-cookbook/) to see how you can tie all these things together!
 
@@ -270,7 +270,7 @@ If you need to customise the base map, try TileMill. See the [THE INSANELY ILLUS
 
 ### 
 
-# Tabular Data Tools {#tabular-data-tools}
+# Tabular Data Tools
 
 ## Wrangling
 
@@ -359,7 +359,7 @@ For larger document sets or for alternative visualisations, try Jigsaw a desktop
 
 
 
-# Graph (relationships and networks) Data Tools {#graph-relationships-and-networks-data-tools}
+# Graph (relationships and networks) Data Tools
 Graph data can be very valuable for finding communities, hubs and connections between entities (the 6 degrees of separation). This is through the techniques of Social Network Analysis.
 
 ## Analysis
