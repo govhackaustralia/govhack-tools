@@ -66,7 +66,7 @@ Using a version control system like Git or Subversion allows you to keep many di
 
 [![](img/Screenshot-at-2012-04-29-172132-300x235.png "Git Screenshot")](http://progit.org/book/)
 
-There are [tutorials on git](http://progit.org/book/) and [GUIs to help you](http://code.google.com/p/tortoisegit/)
+There are [tutorials on git](http://progit.org/book/) and GUIs to help you like [TortoiseGit for Windows](http://code.google.com/p/tortoisegit/) and [Atlassian SourceTree for Windows and OSX](http://sourcetreeapp.com/)
 There is also a [manual for Subversion](http://svnbook.red-bean.com/) and a [similar GUI for Subversion](http://tortoisesvn.net/)
 
 
@@ -75,6 +75,9 @@ There is also a [manual for Subversion](http://svnbook.red-bean.com/) and a [sim
 Issue/task trackers allow you to outline the tasks required for your project and assign them to people to do.
 
 [Trello](https://trello.com/) and [Workflowy](https://workflowy.com/) are free, lightweight project management tools suitable for a rapid project!
+
+## Virtual Servers
+Many free services to try out virtual/cloud servers before scaling up: https://www.chunkhost.com/ or heroku or https://www.appfog.com/pricing/
 
 ## Hosted Developer Tools
 
@@ -139,8 +142,8 @@ You can find some data visualisation tools below:
                - http://selection.datavisualization.ch/ data viz tools catalog
 Also check out [http://thejit.org](http://thejit.org/) &amp; [http://www.senchalabs.org/<wbr>philogl/</wbr>](http://www.senchalabs.org/philogl/) (contributed by Matt Adcock)
 
-A good infographic should use visual art concepts and [good color schemes](http://www.r-bloggers.com/the-paul-tol-21-color-salute/)
-For more information on the theory of data visualisation check out the [Stanford CS448B notes](https://graphics.stanford.edu/wikis/cs448b-12-fall/)
+A good infographic should use visual art concepts and [good color schemes](http://www.r-bloggers.com/the-paul-tol-21-color-salute/). See the [data visualisation guidelines from the international journalism festival](http://schoolofdata.org/2013/04/26/data-visualization-guidelines-by-gregor-aisch-international-journalism-festival/)
+For more information on the theory of data visualisation check out the [Stanford CS448B notes](https://graphics.stanford.edu/wikis/cs448b-12-fall/) or [The Ultimate Collection of Data Storytelling Resources](http://www.juiceanalytics.com/writing/the-ultimate-collection-of-data-storytelling-resources/)
 
 Some examples of data visualisation can be seen on [the Sunlight Foundation tumblr](http://sunfoundation.tumblr.com/) or at the GovHack alumn [The Open Budget](http://www/.theopenbudget.org)
 
@@ -225,7 +228,10 @@ There are many spatial data formats and often the one your tool requires is not 
 You can convert spatial datasets online with http://converter.mygeodata.eu/vector or locally using GDAL (which better for >10 megabyte datasets)
 
 ### Geocoding
-Google Maps APIs allow you to convert an address to map co-ordinates (geocoding) but you must display on a Google Map. The easiest way to do is with a Google Spreadsheet/Fusion Table http://williamparry.blogspot.com.au/2011/04/putting-data-into-google-fusion-tables.htm http://support.google.com/fusiontables/answer/1012281?hl=en&ref_topic=2592806
+
+See this [introduction to geocoding](http://schoolofdata.org/2013/02/19/geocoding-part-i-introduction-to-geocoding/)
+
+Google Maps APIs allow you to convert an address to map co-ordinates (geocoding) but you must display on a Google Map. The easiest way to do is with a Google Spreadsheet/Fusion Table http://schoolofdata.org/2013/02/19/geocoding-part-ii-geocoding-data-in-a-google-docs-spreadsheet/
 
 If you need geocoding for more than display (working out the distance between points etc) or you don't want to use Google Maps, Cloudmade offers free OpenStreetMap based geocoding http://developers.cloudmade.com/projects/show/geocoding-http-api
 
@@ -239,6 +245,8 @@ If you need geocoding for more than display (working out the distance between po
 ### Quantum GIS
 
 [![](img/How-to-participate-in-GovHack_html_m50afbe88-300x160.jpg "QGIS Screenshot")](img/How-to-participate-in-GovHack_html_m50afbe88.jpg)QGIS is a graphical desktop application that allows viewing and editing of geospatial data. Some good base maps are available by adding the WMS layer/server [http://irs.gis-lab.info/](http://irs.gis-lab.info/)
+
+See this [Creating a Map in QGIS tutorial](http://schoolofdata.org/2013/04/27/creating-a-map-using-qgis/)
 
 ## Visualisation
 
@@ -274,8 +282,24 @@ If you need to customise the base map, try TileMill. See the [THE INSANELY ILLUS
 
 ## Wrangling
 
+### data access
+#### Relational IO platform
+
+- Datasets from the new data.gov.au CKAN repository
+- Datasets from data.act.gov.au Socrata repository
+- Access to NLAs Trove API
+- Select data from data.nsw.gov.au (csv based)
+- Datasets from data.vic.gov.au (csv based)
+- Datasets from data.qld.gov.au (csv based)
+- Access to web services such as Flickr image search, Twitter Search API, Bing search API, Google Search API, Google geocoding, Textrazor language analysis.
+
+Teams will get their own read-only SQL-powered workspace that will give them access to all the above datasets / services allowing them to join and mashup data quickly and easily.
+
+
+### conversion
 Converting between formats like json/xml or csv can be done online with http://shancarter.com/data_converter/
 
+### correction
 Tabular data may have duplicate entries or incorrect formats (varying ways to enter dates/phonenumbers etc.). There are tools to quickly fix common problems
 
 [DataWrangler](http://vis.stanford.edu/wrangler/)/[Google Refine](http://code.google.com/p/google-refine/)
@@ -290,9 +314,13 @@ You can also use general purpose file manipulation tools like grep/awk/sed. Thes
 
 Great basic analysis and viewing but older versions can be limited to 6500 rows. Eg [http://www.tcij.org/training-material/car/data-mining/3474](http://www.tcij.org/training-material/car/data-mining/3474) or [http://training.sunlightfoundation.com/module/data-visualizations-google-docs/](http://training.sunlightfoundation.com/module/data-visualizations-google-docs/)
 
+ See this [Excel Data Journalism tutorial](http://schoolofdata.org/2013/04/24/using-excel-to-do-precision-journalism-an-update-from-the-school-of-data-journalism-in-perugia/)
+
 ### PostgreSQL/MySQL
 
 [![](img/How-to-participate-in-GovHack_html_209ee972.jpg "SQL screenshot")](img/How-to-participate-in-GovHack_html_209ee972.jpg)Next step up, large datasets can be manipulated/extracted efficiently for example [http://www.postgresql.org/docs/8.4/static/tutorial-window.html](http://www.postgresql.org/docs/8.4/static/tutorial-window.html) , no built-in data visualisation though.
+
+See this [SQL for lightweight data analysis tutorial](http://schoolofdata.org/2013/03/26/using-sql-for-lightweight-data-analysis/)
 
 ### R Statistical Language
 
@@ -303,7 +331,7 @@ R provides a platform for advanced data analysis which can find and visualise tr
   Be sure to checkout the list of ["10 R packages I wish I knew about earlier"](http://blog.yhathq.com/puosts/10-R-packages-I-wish-I-knew-about-earlier.html)
 
 ggplot2 is the typical graphical output of R and is very powerful. See these tutorials for instructions: http://chartsnthings.tumblr.com/post/36978271916/r-tutorial-simple-charts http://flowingdata.com/2012/12/17/getting-started-with-charts-in-r/
-You can do some very creative plotting for example [putting pictures of Pokemon where their power level is on an X/Y axis](http://www.r-bloggers.com/to-plot-them-is-my-real-test/)
+You can do some very creative plotting for example [putting pictures of Pokemon where their power level is on an X/Y axis](http://www.r-bloggers.com/to-plot-them-is-my-real-test/) or [a 2D plot with histograms for each dimension](http://www.r-bloggers.com/2d-plot-with-histograms-for-each-dimension-2013-edition/)
 
 To share your analysis with the world you can use [KnittR](http://yihui.name/knitr/) which to make reports. These can include google widgets/charts/maps with the [googlevis](http://www.r-bloggers.com/googlevis-0-3-2-is-released-better-integration-with-knitr/) package.
 
@@ -319,6 +347,8 @@ To share your analysis with the world you can use [KnittR](http://yihui.name/kni
 
 Create visualisations from various data formats by dragging and dropping. Free trial available on website. [![](img/Tableau-Screenshot-300x190.jpg "Tableau Screenshot")](img/Tableau-Screenshot.jpg)
 
+See this [Tableau Desktop Tutorial](http://schoolofdata.org/2013/04/27/ddjschool-tutorial-analysing-datasets-with-tableau-public/)
+
 ### Web page (Javascript) graphs
 [Flotr2](http://www.humblesoftware.com/flotr2/)/[Google Chart Tools](https://developers.google.com/chart/)
 [![](img/How-to-participate-in-GovHack_html_m11006fce-300x199.jpg "flotr2 screenshot")](img/How-to-participate-in-GovHack_html_m11006fce.jpg)Javascript based charts for webpages.
@@ -329,8 +359,6 @@ http://www.polychartjs.com/ Allows facetting and easy use of JSON data sets.
 [![](img/How-to-participate-in-GovHack_html_m90d8020-300x277.jpg "d3 screenshot")](img/How-to-participate-in-GovHack_html_m90d8020.jpg)Javascript visualisations that are more interactive or intricate than charts. Can be hard to learn but there are examples and easier to use premade visualisations such as [word clouds](http://www.jasondavies.com/wordcloud/), [realtime filtering of barcharts](http://square.github.com/crossfilter/), or [bubble trees for comparing amount sizes](https://github.com/okfn/bubbletree).
 See these tutorials to get started: http://datadrivenjournalism.net/resources/data_driven_documents_defined http://bost.ocks.org/mike/chart/
 
-
-### Processing.js
 
 # Unstructured (Text) Data Tools
 Most of the world's data isn't structured because it is contained in documents (webpages, tweets etc.). Sometimes it is possible to structure it, sometimes there are tools that are better suited it unstructured data.
@@ -372,7 +400,7 @@ http://www.slideshare.net/ianmcook/social-network-analysis-in-r
 ### Graph Databases
 
 [![](img/webadmin-data-300x127.png "Neo4\. web admin screenshot")](img/webadmin-data.png)Help understand relationships - how is X connected to Y and via what other entities they both are connected to.
-Imports and exports can be done by [writing a java program](http://www.slideshare.net/maxdemarzi/etl-into-neo4j) or [spreadsheet](http://blog.neo4j.org/2013/03/importing-data-into-neo4j-spreadsheet.html)
+Imports and exports can be done by [writing a java program](http://www.slideshare.net/maxdemarzi/etl-into-neo4j) or [spreadsheet](http://blog.neo4j.org/2013/03/importing-data-into-neo4j-spreadsheet.html) (for example, [Gmail contacts](http://blog.neo4j.org/2013/04/gmail-email-analysis-with-neo4j-and_24.html)). The fastest way to import data into Neo4j is the [REST batch import API](http://docs.neo4j.org/chunked/milestone/rest-api-batch-ops.html)
 
 There are other graph databases worth considering like [OrientDB](http://www.orientdb.org/) or [Titan](http://thinkaurelius.github.com/titan/)
 Major graph databases like these can be accessed using a common syntax called Gremlin or by writing a simple Java/Python/Ruby application. Queries can be tested in the built in data browser.
@@ -398,6 +426,10 @@ In these cases, it's faster and more visually effective to use a Tree visualisat
 You can run [TreeViz](http://www.randelshofer.ch/treeviz/) locally or use [d3 on a website](http://bl.ocks.org/mbostock/4063550), [step by step instructions for creating tree data for d3](http://blog.pixelingene.com/2011/07/building-a-tree-diagram-in-d3-js/)
 d3 also includes [treemaps - bubbles inside bubbles](http://bl.ocks.org/mbostock/4063530)
 
+### Flow Visualisations
+Sometimes it's more about the magnitude (money? amount of communication?) of the connections between nodes.
+A sankey diagram can easily visualise this http://bost.ocks.org/mike/sankey/
+
 ### NodeXL for Microsoft Excel
 [![](img/ExcelWindow.png "NodeXL Screenshot")](img/ExcelWindow.png)
  [NodeXL](http://nodexl.codeplex.com/) allows you to visualise networks/graphs quickly inside Excel.
@@ -409,6 +441,8 @@ d3 also includes [treemaps - bubbles inside bubbles](http://bl.ocks.org/mbostock
 ### Gephi
 
 [![](img/How-to-participate-in-GovHack_html_74d01d05-300x195.jpg "Gephi Screenshot")](img/How-to-participate-in-GovHack_html_74d01d05.jpg)Desktop graph editor and renderer. Many good automatic layout algorithms even for very large graphs.
+
+Many tools can produce input files for Gephi including Graph Databases and [a Excel Spreadsheet to map twitter social networks](http://dfreelon.org/2013/04/26/spreadsheet-converts-tweets-for-social-network-analysis-in-gephi/)
 
 ### [sigma.js](http://sigmajs.org/)
 
