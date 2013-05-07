@@ -11,7 +11,7 @@ Coming Soon: how to use the website "Hacker Space" to register and find teams.
 ## Preparing your submission
 
 You should record a 3 minute speech and mix images/text to accompany.
-http://www.screenr.com/ and other screencasting tools allow you to demo apps.
+[Screenr] (http://www.screenr.com/) , [ActivePresenter Free Edition](http://atomisystems.com/activepresenter/free-edition/) and other screencasting tools allow you to demo apps.
 To mix together clips, you can use youtube video editor http://www.youtube.com/editor or local software like http://www.videolan.org/vlmc/ or http://www.lwks.com/
 
 You also need to submit your "source material". For an application this may be source code, for another work it might be your notes or prototypes.
@@ -66,7 +66,7 @@ Using a version control system like Git or Subversion allows you to keep many di
 
 [![](img/Screenshot-at-2012-04-29-172132-300x235.png "Git Screenshot")](http://progit.org/book/)
 
-There are [tutorials on git](http://progit.org/book/) and GUIs to help you like [TortoiseGit for Windows](http://code.google.com/p/tortoisegit/) and [Atlassian SourceTree for Windows and OSX](http://sourcetreeapp.com/)
+There are [tutorials on git](http://progit.org/book/) and GUIs to help you like [TortoiseGit for Windows](http://code.google.com/p/tortoisegit/) and [Atlassian SourceTree for Windows and OSX](http://sourcetreeapp.com/) (or if you prefer the console [tig](http://blogs.atlassian.com/2013/05/git-tig/))
 There is also a [manual for Subversion](http://svnbook.red-bean.com/) and a [similar GUI for Subversion](http://tortoisesvn.net/)
 
 
@@ -83,8 +83,9 @@ Many free services to try out virtual/cloud servers before scaling up: https://w
 
 Can get many tools (source control, issue tracking) combined into one service cloud hosted so there's no setup required.
 
-### Github
-Git obviously but svn/hg interfaces are also available. Provide their own GUI for Windows/OSX or use a variety of Git capable tools
+### Github / BitBucket
+Github provides Git but [Subversion (svn)](https://github.com/blog/626-announcing-svn-support) and [Mercurial (hg)](http://hg-git.github.io/) interfaces are also available. Github provide their own GUI for Windows/OSX or you can use a variety of Git capable tools https://github.com/
+Similarly Atlassian provide BitBucket accessible via Git and Mercurial (hg) https://bitbucket.org/
 
 ### Sourceforge
 
@@ -362,6 +363,7 @@ See these tutorials to get started: http://datadrivenjournalism.net/resources/da
 
 # Unstructured (Text) Data Tools
 Most of the world's data isn't structured because it is contained in documents (webpages, tweets etc.). Sometimes it is possible to structure it, sometimes there are tools that are better suited it unstructured data.
+[Text analysis can be very valuable for transparency](http://overview.ap.org/blog/2013/05/video-text-analysis-in-transparency/)
 ## Wrangling
 For extracting data from webpages, checkout Scraperwiki pytemplate scrapy
 
@@ -431,7 +433,7 @@ Sometimes it's more about the magnitude (money? amount of communication?) of the
 A sankey diagram can easily visualise this http://bost.ocks.org/mike/sankey/
 
 ### NodeXL for Microsoft Excel
-[![](img/ExcelWindow.png "NodeXL Screenshot")](img/ExcelWindow.png)
+
  [NodeXL](http://nodexl.codeplex.com/) allows you to visualise networks/graphs quickly inside Excel.
 
 ### [Graphviz](http://www.graphviz.org/)
