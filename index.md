@@ -219,6 +219,8 @@ Check out the [GeoRabble Boundary Mapper's Cookbook](http://georabble.org/2012/0
 ## Key datasets
 There are a variety of base layers like AGRI aerial imagery of Australia http://agri.openstreetmap.org/ or WMS services like http://irs.gis-lab.info/ wms or http://www.gdal.org/frmt_wms_openstreetmap_tms.xml
 
+Check out the [Geoscience Australia Geo Dataset search and preview](http://www.ga.gov.au/search/index.html#/showMap)
+
 ASGS from ABS including suburbs/postcodes andrewharvey4.wordpress.com postgis/asgs tutorial
 You can also get KML layers for various statistical measures on the ABS TableBuilder tool.
 
@@ -301,11 +303,13 @@ Teams will get their own read-only SQL-powered workspace that will give them acc
 Converting between formats like json/xml or csv can be done online with http://shancarter.com/data_converter/
 
 ### correction
-Tabular data may have duplicate entries or incorrect formats (varying ways to enter dates/phonenumbers etc.). There are tools to quickly fix common problems
+Tabular data may have duplicate entries or incorrect formats (varying ways to enter dates/phonenumbers etc.). There are tools to quickly fix common problems:
 
 [DataWrangler](http://vis.stanford.edu/wrangler/)/[Google Refine](http://code.google.com/p/google-refine/)
 
 [![](img/google_refine_interface.png "google_refine_interface")](img/google_refine_interface.png)Clean up duplicate or inconsistent data entries.
+
+For the more adventureous, [Dedupe](https://github.com/open-city/dedupe) allows you to train a computer to deduplicate similarly named entities automatically.
 
 You can also use general purpose file manipulation tools like grep/awk/sed. These work best when you instruct them what search/change you need using Regular Expressions (RegEx) which you can learn more about at http://www.regexper.com/ and http://www.debuggex.com/?re=&str=
 
@@ -315,7 +319,7 @@ You can also use general purpose file manipulation tools like grep/awk/sed. Thes
 
 Great basic analysis and viewing but older versions can be limited to 6500 rows. Eg [http://www.tcij.org/training-material/car/data-mining/3474](http://www.tcij.org/training-material/car/data-mining/3474) or [http://training.sunlightfoundation.com/module/data-visualizations-google-docs/](http://training.sunlightfoundation.com/module/data-visualizations-google-docs/)
 
- See this [Excel Data Journalism tutorial](http://schoolofdata.org/2013/04/24/using-excel-to-do-precision-journalism-an-update-from-the-school-of-data-journalism-in-perugia/)
+ See this [Excel Data Journalism tutorial](http://schoolofdata.org/2013/04/24/using-excel-to-do-precision-journalism-an-update-from-the-school-of-data-journalism-in-perugia/) or [Excel addons for enhanced visualisation and analysis](http://www.clickz.com/clickz/column/2265548/5-free-excel-addins-to-help-digital-marketers-decipher-big-data)
 
 ### PostgreSQL/MySQL
 
@@ -326,7 +330,7 @@ See this [SQL for lightweight data analysis tutorial](http://schoolofdata.org/20
 ### R Statistical Language
 
 [![](img/rstudio-windows-300x249.png "rstudio-windows")](img/rstudio-windows.png)
-R provides a platform for advanced data analysis which can find and visualise trends even in large datasets. Some reference resources to learn the language [http://cran.r-project.org/doc/manuals/R-intro.html ](http://cran.r-project.org/doc/manuals/R-intro.html)There are also some addons that provide graphical interfaces that make it easier to use such as Rattle [http://rattle.togaware.com/](http://rattle.togaware.com/) , RStudio [http://rstudio.org/](http://rstudio.org/) or Deducer [http://www.deducer.org/pmwiki/pmwiki.php?n=Main.DeducerManual](http://www.deducer.org/pmwiki/pmwiki.php?n=Main.DeducerManual)
+R provides a platform for advanced data analysis which can find and visualise trends even in large datasets. Some reference resources to learn the language [R basic statistics and graphs](https://people.ifm.liu.se/marjon/R_intro_solutions.pdf) [http://cran.r-project.org/doc/manuals/R-intro.html ](http://cran.r-project.org/doc/manuals/R-intro.html)There are also some addons that provide graphical interfaces that make it easier to use such as Rattle [http://rattle.togaware.com/](http://rattle.togaware.com/) , RStudio [http://rstudio.org/](http://rstudio.org/) or Deducer [http://www.deducer.org/pmwiki/pmwiki.php?n=Main.DeducerManual](http://www.deducer.org/pmwiki/pmwiki.php?n=Main.DeducerManual)
 
   R's value lies in the wide array of libraries and addons you can use. For example [BigVis](http://blog.revolutionanalytics.com/2013/04/visualize-large-data-sets-with-the-bigvis-package.html) lets you visualise 10 Million data points in 5 seconds on an ordinary computer.
   Be sure to checkout the list of ["10 R packages I wish I knew about earlier"](http://blog.yhathq.com/puosts/10-R-packages-I-wish-I-knew-about-earlier.html)
@@ -372,8 +376,8 @@ PDFs - http://source.mozillaopennews.org/en-US/articles/introducing-tabula/ for 
 If there is no way to form a table structure to be able to apply tabular data techniques , you need a more sophisticated analysis as detailed below.
 
 ## Analysing
-Natural Language Processing libraries like OpenNLP for Java or NLTK / [Pattern](https://github.com/clips/pattern) for Python allow you to extract information from text.
-One of the most useful techniques found in these libraries is Named entity recognition which extracts the subjects named in a piece of text.
+Natural Language Processing libraries like OpenNLP for Java or NLTK / [Pattern](https://github.com/clips/pattern) for Python allow you to extract information from text. For example, [finding the important keywords in a sentence automatically](http://thetokenizer.com/2013/05/09/efficient-way-to-extract-the-main-topics-of-a-sentence/)
+One of the most useful techniques found in these libraries is Named entity recognition which extracts the subjects named in a piece of text. [TextRazor](http://www.textrazor.com/) lets you analyse up to 500 documents a day online.
     
 A search engine just for your dataset can also help. Tools like Apache Lucene/Solr or ElasticSearch can help you index and search large datasets in new ways.
     
@@ -391,6 +395,8 @@ For larger document sets or for alternative visualisations, try Jigsaw a desktop
 
 # Graph (relationships and networks) Data Tools
 Graph data can be very valuable for finding communities, hubs and connections between entities (the 6 degrees of separation). This is through the techniques of Social Network Analysis.
+
+You can also find "linked data", [tools for use are listed here](http://logd.tw.rpi.edu/tools_technologies) as well as [sgvizler](http://code.google.com/p/sgvizler/) for sparql graphing  and [Flint SPARQL editor](http://openuplabs.tso.co.uk/demos/sparqleditor). For more linked data tools, see the [govcamp useful tools wiki](http://govcampau.wikispaces.com/useful+tools)
 
 ## Analysis
 
@@ -415,7 +421,7 @@ Major graph databases like these can be accessed using a common syntax called Gr
 
 NetworkX is a social network analysis library for python. Many advanced analyses built in like finding communities within a graph. Also good for converting data into graphs.
 
-See this [introduction to Social Network Analysis with NetworkX](http://www.cl.cam.ac.uk/~cm542/teaching/2011/stna-pdfs/stna-lecture11.pdf)
+See this [introduction to Social Network Analysis with NetworkX](http://www.cl.cam.ac.uk/~cm542/teaching/2011/stnapdfs/stna-lecture11.pdf)
 
 
 ## Visualisation
