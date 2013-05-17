@@ -377,7 +377,8 @@ If there is no way to form a table structure to be able to apply tabular data te
 
 ## Analysing
 Natural Language Processing libraries like OpenNLP for Java or NLTK / [Pattern](https://github.com/clips/pattern) for Python allow you to extract information from text. For example, [finding the important keywords in a sentence automatically](http://thetokenizer.com/2013/05/09/efficient-way-to-extract-the-main-topics-of-a-sentence/)
-One of the most useful techniques found in these libraries is Named entity recognition which extracts the subjects named in a piece of text. [TextRazor](http://www.textrazor.com/) lets you analyse up to 500 documents a day online.
+
+One of the most useful techniques found in these libraries is Named entity recognition which extracts the subjects named in a piece of text. You can find online services that will interpret text for you without having to install any libraries or write any code such as [Yahoo Content Analysis](http://developer.yahoo.com/contentanalysis/) or [TextRazor](http://www.textrazor.com/).
     
 A search engine just for your dataset can also help. Tools like Apache Lucene/Solr or ElasticSearch can help you index and search large datasets in new ways.
     
@@ -396,13 +397,14 @@ For larger document sets or for alternative visualisations, try Jigsaw a desktop
 # Graph (relationships and networks) Data Tools
 Graph data can be very valuable for finding communities, hubs and connections between entities (the 6 degrees of separation). This is through the techniques of Social Network Analysis.
 
-You can also find "linked data", [tools for use are listed here](http://logd.tw.rpi.edu/tools_technologies) as well as [sgvizler](http://code.google.com/p/sgvizler/) for sparql graphing  and [Flint SPARQL editor](http://openuplabs.tso.co.uk/demos/sparqleditor). For more linked data tools, see the [govcamp useful tools wiki](http://govcampau.wikispaces.com/useful+tools)
+You can also find "linked data", [tools for use are listed here](http://logd.tw.rpi.edu/tools_technologies) as well as [sgvizler](http://code.google.com/p/sgvizler/) for sparql graphing, [RelFinder for RDF exploration](http://www.visualdataweb.org/relfinder.php) and [Flint SPARQL editor](http://openuplabs.tso.co.uk/demos/sparqleditor). For more linked data tools, see the [govcamp useful tools wiki](http://govcampau.wikispaces.com/useful+tools)
 
 ## Analysis
 
 ### R
+
 http://www.slideshare.net/ianmcook/social-network-analysis-in-r
-- http://is-r.tumblr.com/post/38240018815/making-prettier-network-graphs-with-sna-and-igraph
+http://is-r.tumblr.com/post/38240018815/making-prettier-network-graphs-with-sna-and-igraph
 
 
 ### Graph Databases
@@ -452,7 +454,12 @@ A sankey diagram can easily visualise this http://bost.ocks.org/mike/sankey/
 
 Many tools can produce input files for Gephi including Graph Databases and [a Excel Spreadsheet to map twitter social networks](http://dfreelon.org/2013/04/26/spreadsheet-converts-tweets-for-social-network-analysis-in-gephi/)
 
+If you need to distribute or customise Gephi-like functionality [Cytoscape](http://www.cytoscape.org/) provides a framework (looks much like Gephi user interface) to develop advanced interactive network visualisations in Java, including filtering and clustering.
+
 ### [sigma.js](http://sigmajs.org/)
 
 [![](img/How-to-participate-in-GovHack_html_m6006eaf3-300x130.jpg "Sigma.js Screenshot")](img/How-to-participate-in-GovHack_html_m6006eaf3.jpg)Javascript graph viewer for displaying graphs on webpages without any other plugins/applications required. It can use GEXF files exported from tools like neo4j, gephi or NetworkX.
  It's also possible to [filter/search the displayed network in sigma.js](https://github.com/jacomyal/osdc2012-sigmajs-demo)
+
+[Cytoscape.js](https://github.com/cytoscape/cytoscape.js) can also be used for interactive web-based network visualisation.
+
