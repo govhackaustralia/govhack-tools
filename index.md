@@ -13,6 +13,7 @@ Coming Soon: how to use the website "Hacker Space" to register and find teams.
 You should record a 3 minute speech and mix images/text to accompany.
 [Screenr] (http://www.screenr.com/) , [ActivePresenter Free Edition](http://atomisystems.com/activepresenter/free-edition/) and other screencasting tools allow you to demo apps.
 To mix together clips, you can use youtube video editor http://www.youtube.com/editor or local software like http://www.videolan.org/vlmc/ or http://www.lwks.com/
+You can use graphics for example [storyboards with these free icons](http://dribbble.com/shots/1083617-430-FREE-storyboard-illustrations)
 
 You also need to submit your "source material". For an application this may be source code, for another work it might be your notes or prototypes.
 The key thing here is that your source material demonstrates to the judges that some of the end result was your own work and that it is possible for another person to replicate that work.
@@ -78,6 +79,8 @@ Issue/task trackers allow you to outline the tasks required for your project and
 
 ## Virtual Servers
 Many free services to try out virtual/cloud servers before scaling up: https://www.chunkhost.com/ or heroku or https://www.appfog.com/pricing/
+If your wifi starts to get congested, you can use [mosh](http://mosh.mit.edu/) to improve the performance of SSH under reduced network performance.
+
 
 ## Hosted Developer Tools
 
@@ -106,7 +109,6 @@ You can host your Google Code project and get access to developer tools, APIs an
 
 
 So an API isn't just an XML file!
-
 A good web based data API:
 
 *   Is logically organised
@@ -240,6 +242,9 @@ If you need geocoding for more than display (working out the distance between po
 
 ## Analysis
 
+### R
+http://www.r-bloggers.com/starting-analysis-and-visualisation-of-spatial-data-with-r/
+http://www.r-bloggers.com/3d-mapping-in-r/
 
 ### PostGIS
 
@@ -330,7 +335,8 @@ See this [SQL for lightweight data analysis tutorial](http://schoolofdata.org/20
 ### R Statistical Language
 
 [![](img/rstudio-windows-300x249.png "rstudio-windows")](img/rstudio-windows.png)
-R provides a platform for advanced data analysis which can find and visualise trends even in large datasets. Some reference resources to learn the language [R basic statistics and graphs](https://people.ifm.liu.se/marjon/R_intro_solutions.pdf) [http://cran.r-project.org/doc/manuals/R-intro.html ](http://cran.r-project.org/doc/manuals/R-intro.html)There are also some addons that provide graphical interfaces that make it easier to use such as Rattle [http://rattle.togaware.com/](http://rattle.togaware.com/) , RStudio [http://rstudio.org/](http://rstudio.org/) or Deducer [http://www.deducer.org/pmwiki/pmwiki.php?n=Main.DeducerManual](http://www.deducer.org/pmwiki/pmwiki.php?n=Main.DeducerManual)
+R provides a platform for advanced data analysis which can find and visualise trends even in large datasets. Some reference resources to learn the language [R basic statistics and graphs](https://people.ifm.liu.se/marjon/R_intro_solutions.pdf) [http://cran.r-project.org/doc/manuals/R-intro.html ](http://cran.r-project.org/doc/manuals/R-intro.html) [Guerilla Guide to R](http://www.r-bloggers.com/the-guerilla-guide-to-r/)
+There are also some addons that provide graphical interfaces that make it easier to use such as Rattle [http://rattle.togaware.com/](http://rattle.togaware.com/) , RStudio [http://rstudio.org/](http://rstudio.org/) or Deducer [http://www.deducer.org/pmwiki/pmwiki.php?n=Main.DeducerManual](http://www.deducer.org/pmwiki/pmwiki.php?n=Main.DeducerManual)
 
   R's value lies in the wide array of libraries and addons you can use. For example [BigVis](http://blog.revolutionanalytics.com/2013/04/visualize-large-data-sets-with-the-bigvis-package.html) lets you visualise 10 Million data points in 5 seconds on an ordinary computer.
   Be sure to checkout the list of ["10 R packages I wish I knew about earlier"](http://blog.yhathq.com/puosts/10-R-packages-I-wish-I-knew-about-earlier.html)
@@ -348,11 +354,14 @@ To share your analysis with the world you can use [KnittR](http://yihui.name/kni
 
 ## Visualisation
 
-### [Tableau Desktop](http://www.tableausoftware.com/)
+### WYSIWYG visualisation tools
 
+[Tableau Desktop](http://www.tableausoftware.com/)
 Create visualisations from various data formats by dragging and dropping. Free trial available on website. [![](img/Tableau-Screenshot-300x190.jpg "Tableau Screenshot")](img/Tableau-Screenshot.jpg)
 
 See this [Tableau Desktop Tutorial](http://schoolofdata.org/2013/04/27/ddjschool-tutorial-analysing-datasets-with-tableau-public/)
+
+There are also web based tools like [plot.ly](http://plot.ly) and [infogr.am](http://infogr.am)
 
 ### Web page (Javascript) graphs
 [Flotr2](http://www.humblesoftware.com/flotr2/)/[Google Chart Tools](https://developers.google.com/chart/)
@@ -402,9 +411,7 @@ You can also find "linked data", [tools for use are listed here](http://logd.tw.
 ## Analysis
 
 ### R
-
-http://www.slideshare.net/ianmcook/social-network-analysis-in-r
-http://is-r.tumblr.com/post/38240018815/making-prettier-network-graphs-with-sna-and-igraph
+R statistical language can be used for social network analysis too http://www.slideshare.net/ianmcook/social-network-analysis-in-r http://is-r.tumblr.com/post/38240018815/making-prettier-network-graphs-with-sna-and-igraph
 
 
 ### Graph Databases
