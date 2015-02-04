@@ -1,6 +1,0 @@
-[submodule "php-markdown"]
-	path = php-markdown
-	url = git://github.com/michelf/php-markdown.git
-[submodule "js/toc"]
-	path = js/toc
-	url = https://github.com/jgallen23/toc
