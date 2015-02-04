@@ -45,6 +45,13 @@ module.exports = function(grunt) {
         // Gets the port from the connect configuration
         path: 'http://localhost:<%= express.all.options.port%>'
       }
+    },
+
+    'gh-pages': {
+      options: {
+        base: ''
+      },
+      src: ['*.md', '*.html']
     }
   });
 
