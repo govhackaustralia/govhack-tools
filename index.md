@@ -43,7 +43,7 @@ For further reading in this space
 
 **Statistics**
 
-A great guide to statistics is 
+A great guide to statistics is
 [Think Stats](http://greenteapress.com/thinkstats/html/index.html)
 
 **Programming**
@@ -62,7 +62,7 @@ Following accessibility guidelines not only make a application accessible but ma
 # Developer Tools For Your Computer
 No matter what kind of application you have for the data, there are many tools you can use to better collaborate and manage your project.
 
-### Source Control 
+### Source Control
 Using a version control system like Git or Subversion allows you to keep many different versions of what you have been working on so you can collaborate with others or simply back up your files so you don't lose them!
 
 [![](img/Screenshot-at-2012-04-29-172132-300x235.png "Git Screenshot")](http://progit.org/book/)
@@ -284,7 +284,7 @@ If you need to customise the base map, try TileMill. See the [THE INSANELY ILLUS
 
 [![](img/How-to-participate-in-GovHack_html_4dda24a4-300x261.jpg "WorldWind screenshot")](img/How-to-participate-in-GovHack_html_4dda24a4.jpg)Google Earth provides 3\. viewing of KML/GML files which represent points and shapes, both through a desktop application and a web plugin. These can be extended with interactive features that allow you to view by timeline or have animated tours between different points. You can also develop and customise your own viewer with the open source [NASA World Wind toolkit.](http://goworldwind.org/demos/)
 
-### 
+###
 
 # Tabular Data Tools
 
@@ -388,9 +388,9 @@ If there is no way to form a table structure to be able to apply tabular data te
 Natural Language Processing libraries like OpenNLP for Java or NLTK / [Pattern](https://github.com/clips/pattern) for Python allow you to extract information from text. For example, [finding the important keywords in a sentence automatically](http://thetokenizer.com/2013/05/09/efficient-way-to-extract-the-main-topics-of-a-sentence/)
 
 One of the most useful techniques found in these libraries is Named entity recognition which extracts the subjects named in a piece of text. You can find online services that will interpret text for you without having to install any libraries or write any code such as [Yahoo Content Analysis](http://developer.yahoo.com/contentanalysis/) or [TextRazor](http://www.textrazor.com/).
-    
+
 A search engine just for your dataset can also help. Tools like Apache Lucene/Solr or ElasticSearch can help you index and search large datasets in new ways.
-    
+
 For light weight analysis, try R or Ruby: http://www.r-bloggers.com/simple-text-mining-with-r/ http://blog.josephwilk.net/ruby/latent-semantic-analysis-in-ruby.html
 
 ## Visualising
@@ -469,4 +469,3 @@ If you need to distribute or customise Gephi-like functionality [Cytoscape](http
  It's also possible to [filter/search the displayed network in sigma.js](https://github.com/jacomyal/osdc2012-sigmajs-demo)
 
 [Cytoscape.js](https://github.com/cytoscape/cytoscape.js) can also be used for interactive web-based network visualisation.
-
