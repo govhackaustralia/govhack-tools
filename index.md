@@ -1,3 +1,322 @@
+# The GovHack Guide
+
+This page provides all the information you'll need to prepare your GovHack entries, and a wealth of links to tools, techniques, and libraries to help you build an awesome project. You can use these resources to build any sort of project - mobile apps, web apps, data visualisations/infographics, and more. You're not limited to using the resources and tools in this page, but your actual entries must meet the [competition eligibility rules](http://www.govhack.org/competition-rules-code-of-conduct/).
+
+If you're new to GovHack (or are just a little unclear on the process involved) we strongly encourage you to read the [Anatomy of GovHack project](#anatomy-of-govhack-project) section at the top of this page to find out all about the process of registering, preparing, and submitting your entry.
+
+Beyond that, you'll find a range of useful resources from [technical considerations]() in publishing your entry, resources for working with [geospatial]() or [tabular]() data, to extracting good data from [messy unstructured sources](), and much more besides.
+
+> @TODO Links
+
+
+# Document @TODO
+* GovHack Toolkit or GovHack Guide?
+* Run it past some participants for input
+* NationalMap, Mashery, and Socrata got junked - they belong on the Data page.
+* Is there a better place / pitch for the Data Scientist section?
+* The Web Application section got junked. Can advise about Bootstrap, Foundation, et al. somewhere else
+* Where to put advanced webby stuff e.g. https://groups.google.com/a/chromium.org/forum/#!topic/blink-dev/UdGlL9PtBLo
+* Check for consistency of terms used (entries vs projects, et cetera)
+* Screenshots and company/project logos
+* Integrating and formatting for govhack.org
+
+
+# Anatomy of GovHack project
+
+We only have three firm requirements for your GovHack project:
+
+* That you register your team and fill our your project information,
+* that you submit a 3 minute video by the end of the competition (5:30PM AEST Sunday), and
+* that you make your project source code and assets available online under an open license.
+
+It's useful to bear in mind that the competition judges will be focused on the tangible outcomes of your project, so making your team page a snazzy and useful resource with information about your project, screenshots, your 3 minute video, and anything else that shows off how *awesome* your project is is actually REALLY important :)
+
+> @TODO Amusing anatomy image in the sidebar
+>
+> @TODO Link to info on open licenses
+
+## Register your project and team
+
+Firstly, get one of your team to sign up and register your team on the [HackerSpace](http://hackerspace.govhack.org). You *need to have registered* your team and created your project by by 2pm Saturday (local time), but you're free to continue editing and improving it until the competition closes.
+
+If you experience any issues with registering your team, or have any questions about what is required of you, seek out one of your friendly local GovHack organisers and they'll give you a hand.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SnBsC06EF44" frameborder="0" allowfullscreen></iframe>
+
+## Prepare your video
+
+The second most important part of your project (apart from the actual project itself) is the 3 minute video you'll make to show off your project to the competition judges. Your video can be anything from a screencast of your project being used to a mini-movie with live action, voiceovers, and actors (read: team members and bribeable friends)!
+
+If you're including a screencast component check out software like [Screenr](http://www.screenr.com/) and [ActivePresenter](http://atomisystems.com/activepresenter/free-edition/) that will allow you to record demos of your application.
+
+For mixing clips together the [YouTube Video Editor](https://www.youtube.com/editor) is super user-friendly; though [VLC](http://www.videolan.org/vlmc) or [LWKS](http://www.lwks.com/) may also be handy.
+
+To help with storyboarding your video grab this huge pack of [free storyboarding illustrations](https://dribbble.com/shots/1083617-430-FREE-storyboard-illustrations).
+
+Videos can be hosted wherever you like as long as it's web accessible - but most participants end up using YouTube (and it makes it a little easier for us to organise all of the videos after the event!).
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/K-GiOtHN4FY" frameborder="0" allowfullscreen></iframe>
+
+And again, if you are unsure about what you need to do, or just need a bit of help with your video, hunt down one of your local GovHack organisers and they'll be happy to help.
+
+> @TODO Are there any new (free) tools available?
+
+
+## Submit your project
+
+The last tenet of GovHack is that you submit all of your source code and assets (data, documents, art assets, et cetera) and make the available under an open license. Typically this will comprise the source code for a web or mobile application, but for other types of works (e.g. 3D printed jewlery) that can be your notes and evidence of your prototypes.
+
+The key point to remember is that your source material needs to demonstrate to the competition judges that the end result was your own work, and that it is possible for another person, with the right knowledge and equipment, to replicate that work.
+
+You're free to submit your source materials in any fashion, but typically we find people like to use [GitHub](https://github.com/) or [BitBucket](https://bitbucket.org/). Both of these services are free for open source projects and have user-friendly web and desktop applications to allow even novice users to create, submit, and edit their source material.
+
+Check out our short video on getting set up with GitHub for GovHack:
+
+<iframe width="420" height="315" src="https://www.youtube.com/embed/gQsC-msLW2E" frameborder="0" allowfullscreen></iframe>
+
+> @TODO Open license links and info
+
+
+# Data
+
+We have a whole page dedicated to the Government (and other) datasets that you'll be using in your project. Check out the [GovHack Data page](http://www.govhack.org/data) for all of the details.
+
+> @TODO Does this even need to be here?
+
+
+# Mentors (Help me, Obi Wan Kenobi. You're my only hope.)
+
+GovHack is supported by an awesome group of mentors from a wide range of disciplines who've volunteered to provide assistance to teams. We'll also have mentors who provide insider advice about the datasets (data custodians), and others who have expertise in a wide range of technologies and skills (tech mentors) to help you and your team get the best outcomes possible during the competition.
+
+Check out the [GovHack Mentors page](http://www.govhack.org/mentors/) for more information on how to get in touch with your awesome mentors.
+
+
+# Technical considerations
+
+## Putting your project on the web
+
+We've already spoken about how you can submit your project source materials, but you'll more than likely also need a place to host your application on the web.
+
+### Virtual servers and hosting
+
+If you're building any sort of web-connected application (be it web, mobile, or a desktop application) you'll need a server to host it on. These days virtual servers are a dime a dozen (and often significantly cheaper than that) - be they a blank box with command line access that you setup yourself (aka [IAAS](http://en.wikipedia.org/wiki/Infrastructure_as_a_service "Infrastructure as a service")), or a [PAAS](http://en.wikipedia.org/wiki/Platform_as_a_service "Platform as a service") solution that gives you click-button access to databases, caching layers, system utilities, monitoring, and analytics services - all with a nice GUI to keep you from having to delve into command line hell.
+
+#### Amazon Web Services
+
+Thanks to the generous support of Amazon Web Services we've got $100 vouchers for each GovHack team. Simply [fill out this form](http://www.govhack.org/amazon-web-services/), including your AWS account number and your team page URL from HackerSpace.
+
+There is also a free tier of usage available to all new AWS accounts, see the [AWS Free Tier page](http://aws.amazon.com/free/?nc1=h_l3_su) for more information. If you're part of a startup company you might like to sign up for [AWS Activate](http://aws.amazon.com/about-aws/whats-new/2014/05/14/announcing-new-features-in-aws-activate-startup-blog-startup-spotlight-and-the-amazon-toolbox/).
+
+Those new to AWS should check out the [Getting Started with AWS guide](http://aws.amazon.com/getting-started/).
+
+#### NeCTAR
+
+The [National Research Cloud](http://nectar.org.au/research-cloud) (aka NeCTAR) is just like Amazon Web Services, however it is run on open source software ([OpenStack](https://www.openstack.org/)) and is for use by academics and researchers in Australia. In physical terms, NeCTAR spans [eight data centres](https://www.nectar.org.au/news/where-are-nectar-cloud-node-sites-located) around Australia (located at top ranked Higher Education Institutions) which have combined to provide the largest Federated Academic Cloud in the world at 30,000 cores.
+
+Any university student/staff with a valid .edu.au email address can logon right now and use two "small instances / cores" for three months for free. After the initial three month period there is a simple "allocation tab" on the dashboard where you can apply for longer usage or more compute cycles. The allocation form is a simple one page description of your research and how you are using the cloud for that research.
+
+#### Azure, Google Compute Engine, et al.
+
+Trying to list all of the options for virtual server hosting would be a fool's errand, so here are just some of the most popular [IAAS](http://en.wikipedia.org/wiki/Infrastructure_as_a_service "Infrastructure as a service") and [PAAS](http://en.wikipedia.org/wiki/Platform_as_a_service "Platform as a service") options at the moment.
+
+Google offers two services in this space - [Google Compute Engine](https://cloud.google.com/compute/) (IAAS) and [Google App Engine](https://cloud.google.com/appengine/) (PAAS). If containerised application development on Docker is your thing they also have [Google Container Engine](https://cloud.google.com/container-engine/) (in alpha) available.
+
+Speaking of Docker - [Joyent](https://www.joyent.com/) offers some pretty slick support for Docker along with its traditional [IAAS and PAAS offerings](https://www.joyent.com/partners).
+
+For smaller scale IAAS-type services both [DigitalOcean](https://www.digitalocean.com/) and [Linode](https://www.linode.com/) have great offerings from $5/month.
+
+We'd be remiss if we didn't mentions Microsoft's really rather excellent [Azure](http://azure.microsoft.com/en-gb/) IAAS/PAAS services. You don't even need to be inside the .NET ecosystem to take advantage of them (though it does help a bit).
+
+Lastly, we have to mention [Heroku](https://www.heroku.com/) and its great little PAAS offerings.
+
+
+### Static website hosting
+
+> @TODO
+
+## Having the right tools for the job
+
+> @TODO
+
+### Source control and issue tracking
+
+> @TODO
+
+### Project management
+
+> @TODO
+
+### Code editors
+
+> @TODO
+
+### Issue tracking
+
+> @TODO
+
+
+# Become a data scientist in an hour
+
+> @TODO
+
+# Roll you own API
+
+> @TODO
+
+# Of infographics and data visualisation
+
+> @TODO
+
+
+# Working with geographic data and maps
+
+> @TODO
+
+## Finding datasets
+
+> @TODO
+
+## Converting between data formats
+
+> @TODO
+
+## Geocoding - turn an address into a location
+
+> @TODO
+
+## Analysing your data
+
+> @TODO
+
+### QGIS
+
+> @TODO
+
+### R (Arrr!)
+
+> @TODO
+
+### PostGIS
+
+> @TODO
+
+## Visualising your data
+
+> @TODO
+
+### Web mapping libraries
+
+> @TODO
+
+### Maps as a Service
+
+> @TODO
+
+### Desktop tools
+
+> @TODO
+
+
+# Working with tabular data
+
+> @TODO
+
+## Finding datasets
+
+> @TODO
+
+## Converting between data formats
+
+> @TODO
+
+## Cleaning your data
+
+> @TODO
+
+## Analysing your data
+
+> @TODO
+
+### Spreadsheets
+
+> @TODO
+
+### Databases
+
+> @TODO
+
+### R (Arrr!)
+
+> @TODO
+
+## Visualising your data
+
+> @TODO
+
+### Web viz tools
+
+> @TODO
+
+### Desktop tools
+
+> @TODO
+
+
+# Unstructured data (aka Somebody gave us data as a scanned photocopy of a Word doc...)
+
+> @TODO
+
+## Scraping your data
+
+> @TODO
+
+## Analysing your data
+
+> @TODO
+
+## Visualising your data
+
+> @TODO
+
+
+# Advanced analysis
+
+> @TODO
+
+## Graph data (aka relationship networks)
+
+> @TODO
+
+### R (Arrr!)
+
+> @TODO
+
+### Databases
+
+> @TODO
+
+### Visualising
+
+> @TODO
+
+
+# Some useful tools for developing in...
+
+> @TODO
+
+## Python
+
+> @TODO
+Beautiful Tools
+
+
+# Legalese
+The text of this toolkit is open for reuse under a [Creative Commons Attribution](https://creativecommons.org/licenses/by/3.0/au/deed.en) licence and improvements and suggestions are encouraged by submitting them on [GitHub](http://github.com/govhackaustralia/govhack-tools/issues).
+
+
+
+
+
 #GovHack Toolkit
 Welcome to the GovHack toolkit. This page provides all the information you need to prepare hackfest entries.
 These tools can be used to make entries like mobile apps, web apps and data visualisations/infographics.
@@ -17,7 +336,6 @@ You can use graphics for example [storyboards with these free icons](http://drib
 
 You also need to submit your "source material". For an application this may be source code, for another work it might be your notes or prototypes.
 The key thing here is that your source material demonstrates to the judges that some of the end result was your own work and that it is possible for another person to replicate that work.
-
 
 # General References
 
