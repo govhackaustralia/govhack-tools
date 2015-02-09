@@ -51,7 +51,7 @@ module.exports = function(grunt) {
       options: {
         base: ''
       },
-      src: ['*.md', '*.html']
+      src: ['*.html', '*.md', 'img/*']
     }
   });
 

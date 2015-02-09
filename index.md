@@ -11,6 +11,7 @@ Beyond that, you'll find a range of useful resources from [technical considerati
 
 # Document @TODO
 * GovHack Toolkit or GovHack Guide?
+  * Does it make more sense as two separate documents: One a guide to the GovHack competition, one a list of resources?
 * Run it past some participants for input
 * NationalMap, Mashery, and Socrata got junked - they belong on the Data page.
 * Is there a better place / pitch for the Data Scientist section?
