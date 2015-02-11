@@ -1,4 +1,4 @@
-# The GovHack Guide
+# The GovHack Toolkit
 
 This page provides all the information you'll need to prepare your GovHack entries, and a wealth of links to tools, techniques, and libraries to help you build an awesome project. You can use these resources to build any sort of project - mobile apps, web apps, data visualisations/infographics, and more. You're not limited to using the resources and tools in this page, but your actual entries must meet the [competition eligibility rules](http://www.govhack.org/competition-rules-code-of-conduct/).
 
@@ -13,6 +13,7 @@ Beyond that, you'll find a range of useful resources from [technical considerati
 * GovHack Toolkit or GovHack Guide?
   * Does it make more sense as two separate documents: One a guide to the GovHack competition, one a list of resources?
 * Run it past some participants for input
+  * Helen will also review for writing, consistency, and all of that good stuff
 * NationalMap, Mashery, and Socrata got junked - they belong on the Data page.
 * Is there a better place / pitch for the Data Scientist section?
 * The Web Application section got junked. Can advise about Bootstrap, Foundation, et al. somewhere else
@@ -98,7 +99,7 @@ Check out the [GovHack Mentors page](http://www.govhack.org/mentors/) for more i
 
 We've already spoken about how you can submit your project source materials, but you'll more than likely also need a place to host your application on the web.
 
-### Virtual servers and hosting
+### Virtual servers
 
 If you're building any sort of web-connected application (be it web, mobile, or a desktop application) you'll need a server to host it on. These days virtual servers are a dime a dozen (and often significantly cheaper than that) - be they a blank box with command line access that you setup yourself (aka [IAAS](http://en.wikipedia.org/wiki/Infrastructure_as_a_service "Infrastructure as a service")), or a [PAAS](http://en.wikipedia.org/wiki/Platform_as_a_service "Platform as a service") solution that gives you click-button access to databases, caching layers, system utilities, monitoring, and analytics services - all with a nice GUI to keep you from having to delve into command line hell.
 
@@ -128,32 +129,47 @@ For smaller scale IAAS-type services both [DigitalOcean](https://www.digitalocea
 
 We'd be remiss if we didn't mentions Microsoft's really rather excellent [Azure](http://azure.microsoft.com/en-gb/) IAAS/PAAS services. You don't even need to be inside the .NET ecosystem to take advantage of them (though it does help a bit).
 
-Lastly, we have to mention [Heroku](https://www.heroku.com/) and its great little PAAS offerings.
+Lastly, we have to mention [Heroku](https://www.heroku.com/) and its great PAAS offerings.
 
 
 ### Static website hosting
 
-> @TODO
+If your project, by virtue of its nature, doesn't already have a web presence (e.g. it's a mobile app or a game) then you're very likely going to need host a static website somewhere (i.e. A pile of HTML, CSS, and JavaScript) to give your project a home.
+
+Probably the easiest and fastest way to achieve that at the moment is via [GitHub Pages](https://pages.github.com/) that hosts a website straight out of your GitHub repository. In addition to that, GitHub Pages provides the option to generate a project site from a collection of pre-built themes and to point your own custom domain at your site.
+
+If you prefer to start from scratch (on GitHub Pages or elsewhere) [Bootstrap](http://getbootstrap.com/) and [Foundation](http://foundation.zurb.com/) are the two preeminent responsive frontend web frameworks around these days that cut away a lot of the work of making a site look pretty so you can concentrate on content (and your awesome GovHack project).
+
+Beyond GitHub you could also look at hosting your site for free on [Azure](http://azure.microsoft.com/en-us/documentation/articles/web-sites-publish-source-control/) or creating a static site [on Heroku](http://www.lemiffe.com/how-to-deploy-a-static-page-to-heroku-the-easy-way/).
+
 
 ## Having the right tools for the job
 
-> @TODO
+So by now you've got your project idea taking shape, and have probably thought a little about your hosting infrastructure, but how do you turn this idea into reality and what tools do you need?
+
+Well, given the greatly compressed timespan of GovHack anything that can help keep you as responsive flexible - dare I say, [agile](http://www.allaboutagile.com/what-is-agile-10-key-principles/). Use the physical resources you have to hand - pens, butchers paper, post-it notes, a whiteboard (if you can purloin one) to help give your project planning a tangible, physical presence.
+
+> @TODO An Agile image
 
 ### Source control and issue tracking
 
-> @TODO
+We're assuming that everyone [already uses some form of source control system](http://kevgriffin.com/the-non-techie-guide-to-source-control/) (Git, Mercurial, maybe SVN) already. If not, get thee to [GitHub](https://github.com/), [GitLab](https://about.gitlab.com/), or [Bitbucket](https://bitbucket.org/) and grab a copy of their respective desktop applications if your code editor doesn't integrate that particular flavour of version control (it probably does).
+
+For provider-independent source control clients both the [Tortoise family](http://tortoisesvn.net/) of software and [SourceTree](http://www.sourcetreeapp.com/) are well worth a look.
+
+We've lumped issue tracking for bugs, feature requests, research questions, et cetera in here as well just because almost all good hosted source control providers these days build in some sort of issue trackig functionality. No need to reinvent the wheel or go elsewhere!
 
 ### Project management
 
-> @TODO
+Honestly, your best project management tool for GovHack is probably a whiteboard, or butchers paper blutacked to a wall, with different coloured post-it notes. It gives your an immediate, physical, tangible thing to get up and interact with, look at, scribble on, and easily rearrange that no digital system is going to come close to giving you.
+
+But if you really want a digital solution then take a look at [Pivotal Tracker](http://www.pivotaltracker.com/), [Trello](https://trello.com/), or [Matterhorn](https://matterhorn.io/).
 
 ### Code editors
 
-> @TODO
+You've all got your own favourite code editor or [IDE](http://en.wikipedia.org/wiki/Integrated_development_environment "Integrated development environment"), right? A hackathon is probably not the best time to learn a whole pile of new keyboard shortcuts, but if you're looking for inspiration go and check out [Atom](https://atom.io/), [Orion](http://eclipse.org/orion/), [Sublime Text 3](http://www.sublimetext.com/3), and [Brackets](http://brackets.io/).
 
-### Issue tracking
-
-> @TODO
+With honourary mentions going to [Eclipse](https://eclipse.org/downloads/) and [Visual Studio](http://www.visualstudio.com/) if you're after a larger, more fully-featured editor that excels at particular languages or ecosystems.
 
 
 # Become a data scientist in an hour
