@@ -28,6 +28,7 @@ Beyond that, you'll find a range of useful resources from [technical considerati
 * Review tools sections for newer tools!
 * The web and mobile examples sections were junked (inc. The Open Budget). Are they useful in this context?
 * Review "Developer tools for your computer"
+* Stick Vagrant/Docker/Fig somewhere
 
 
 # Anatomy of GovHack project
@@ -305,49 +306,66 @@ Going down the path of native application development can give you a really slic
 
 # Working with geographic data and maps
 
-> @TODO
+Geographic data is any dataset that has a location element to it - usually provided as latitude and longitude coordinates - that describes a set of points, lines, or polygons, or a picture (raster) with other non-geographic attributes attached to them. A lot of datasets fall under the category of geographic data (aka spatial data) - from bus stops, postcodes, and cycle paths to polling places, satellite or aerial photography, and mineral deposits.
 
-## Finding datasets
+Google Maps [may have popularised mapping](http://www.theguardian.com/technology/2015/feb/08/google-maps-10-anniversary-iphone-android-street-view), but actually working with the data that underlies a map requires some specialist tools and knowledge.
 
-> @TODO
+If you're new to working with spatial data then we **highly recommend** reading Tom MacWright's truly excellent [mapschool: a free introduction to geo](http://mapschool.io/) site. You can skim through it in about half an hour and get up to speed on the basics of spatial data, learn about the common data types, and likely pick up some knowledge that will save you a lot of frustration down the line.
 
-## Converting between data formats
+> @TODO GeoJson/TopoJson, GitHub viewing
+> @TODO Principles of components need for spatial [here](http://georabble.org/2012/05/31/the-boundary-mappers-cookbook/)
 
-> @TODO
+### Finding datasets
 
-## Geocoding - turn an address into a location
+> @TODO Link to relevant spatial section of the GovHack Data page
+>
+> Point at the ABS Geography site (asga2pgsql), Census
+>
+> There are a variety of base layers like [AGRI aerial imagery of Australia](http://agri.openstreetmap.org/) or WMS services like [GIS Lab WMS](http://irs.gis-lab.info/) or the [OSM TMS Service](http://www.gdal.org/frmt_wms_openstreetmap_tms.xml). Check out the [Geoscience Australia Geo Dataset search and preview](http://www.ga.gov.au/search/index.html#/showMap). ASGS from ABS including suburbs/postcodes [Andrew Harvey](https://andrewharvey4.wordpress.com/2012/04/15/loading-the-asgs-into-postgresql-in-preperation-for-the-abs-2011-census-data-release/). You can also get KML layers for various statistical measures on the [ABS TableBuilder tool](http://www.abs.gov.au/websitedbs/censushome.nsf/home/tablebuilder).
+>
+> GA FIND
 
-> @TODO
+### Converting between data formats
 
-## Analysing your data
+So you've found the dataset you want, but it's in some bizarre and possibly arcane format (shapefile, MapInfo TAB file - I'm looking at you!) and you want to convert it to something more developer friendly and modern (e.g. GeoJSON, CSV, KML).
 
-> @TODO
+For small datasets (< 10mb) [MyGeoData](http://converter.mygeodata.eu/) will let you convert between most formats. For anything beyond 10mb you'll want to reach for the [GDAL](http://www.gdal.org/ "Geospatial Data Abstraction Library") command-line tools - GDAL is a fantastic open source project that has been embedded in a lot of the software in the spatial world. To translate vector data in GDAL reach for the [ogr2ogr](http://www.gdal.org/ogr2ogr.html) command (if you're on Windows [ogr2gui](http://www.ogr2gui.ca/en/index.php) is available too), for raster (picture) data [gdal_translate](http://www.gdal.org/gdal_translate.html) will convert almost anything to almost anything else.
 
-### QGIS
+If command-line tools aren't your thing skip down a bit to the section on QGIS for a cross-platform GUI built on, amongst other things, GDAL.
 
-> @TODO
-
-### R (Arrr!)
-
-> @TODO
-
-### PostGIS
-
-> @TODO
-
-## Visualising your data
+### Geocoding - turn an address into coordinates
 
 > @TODO
 
-### Web mapping libraries
+### Analysis
 
 > @TODO
 
-### Maps as a Service
+#### QGIS
 
 > @TODO
 
-### Desktop tools
+#### R (Arrr!)
+
+> @TODO
+
+#### PostGIS
+
+> @TODO
+
+### Visualising your data
+
+> @TODO
+
+#### Web mapping libraries
+
+> @TODO
+
+#### Maps as a Service
+
+> @TODO
+
+#### Desktop tools
 
 > @TODO
 
