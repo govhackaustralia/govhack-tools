@@ -1,6 +1,6 @@
 # The GovHack Toolkit
 
-This page provides all the information you'll need to prepare your GovHack entries, and a wealth of links to tools, techniques, and libraries to help you build an awesome project. You can use these resources to build any sort of project - mobile apps, web apps, data visualisations/infographics, and more. You're not limited to using the resources and tools in this page, but your actual entries must meet the [competition eligibility rules](http://www.govhack.org/competition-rules-code-of-conduct/).
+This page provides all the information you'll need to prepare your GovHack entries, and a wealth of links to tools, techniques, and libraries to help you build an awesome project. You can use these resources to build any sort of project - mobile apps, web apps, APIs, data visualisations/infographics, and more. You're not limited to using the resources and tools in this page, but your actual entries must meet the [competition eligibility rules](http://www.govhack.org/competition-rules-code-of-conduct/).
 
 If you're new to GovHack (or are just a little unclear on the process involved) we strongly encourage you to read the [Anatomy of GovHack project](#anatomy-of-govhack-project) section at the top of this page to find out all about the process of registering, preparing, and submitting your entry.
 
@@ -21,6 +21,11 @@ Beyond that, you'll find a range of useful resources from [technical considerati
 * Check for consistency of terms used (entries vs projects, et cetera)
 * Screenshots and company/project logos
 * Integrating and formatting for govhack.org
+* <a href="#">Buttons? ></a>
+* Fix formatting on the YouTube videos
+* Rename "Technical Considerations"?
+* Review content (e.g. tools) that weren't directly reworded
+* Review tools sections for newer tools!
 
 
 # Anatomy of GovHack project
@@ -86,11 +91,13 @@ We have a whole page dedicated to the Government (and other) datasets that you'l
 > @TODO Does this even need to be here?
 
 
-# Mentors (Help me, Obi Wan Kenobi. You're my only hope.)
+# Mentors
 
 GovHack is supported by an awesome group of mentors from a wide range of disciplines who've volunteered to provide assistance to teams. We'll also have mentors who provide insider advice about the datasets (data custodians), and others who have expertise in a wide range of technologies and skills (tech mentors) to help you and your team get the best outcomes possible during the competition.
 
 Check out the [GovHack Mentors page](http://www.govhack.org/mentors/) for more information on how to get in touch with your awesome mentors.
+
+> "Help me, Obi Wan Kenobi. You're my only hope." -- Princess Leia
 
 
 # Technical considerations
@@ -172,15 +179,75 @@ You've all got your own favourite code editor or [IDE](http://en.wikipedia.org/w
 With honourary mentions going to [Eclipse](https://eclipse.org/downloads/) and [Visual Studio](http://www.visualstudio.com/) if you're after a larger, more fully-featured editor that excels at particular languages or ecosystems.
 
 
-# Become a data scientist in an hour
+# Preparing for GovHack
+
+Whilst you're not allowed to actually work on your project until the weekend of GovHack itself that doesn't mean you can't be preparing and learning new skills and tools beforehand.
+
+## Become a data scientist in an hour
+> "Look at me: still talking when there's [data] science to do!" -- GLaDOS
+
+There's so much more to working with data than taking your nicely formatted CSV file and throwing it at a software package that will generate pretty graphs, or widgets, or maps out of it. That's just the easy bit - what does your data **actually** mean?
+
+There are three basic rules to follow when doing data science:
+
+1. *Have a hypothesis* - Always start with a basic hypothesis and keep it forefront in your mind. Don't let yourself get distracted by the shiny tools and end up realising you've made something pretty that doesn't actually answer your original question or prove your hypothesis.
+
+2. *Have the right tools* - Find the right tools for the job - keep on scrolling down for a wealth of tools for dealing with all sorts of different types of data.
+
+3. *Analyse and present your findings* - Be upfront and honest in presenting your project. Did you meet your original goal? Was your original hypothesis valid? How did you iterate to get to the final version?
+
+If you'd like to strengthen your knowledge in any of the facets of data science check out these handy resources:
+
+### Data Science
+* The *"Understanding Data"* and *"Delivering Data"* chapters of the (free) [Data Journalism Handbook](http://datajournalismhandbook.org/).
+
+### Visualisation
+* [Visualize This: The FlowingData Guide to Design, Visualization, and Statistics](https://booko.com.au/works/955519) by Nathan Yau
+* [Data Analysis with Open Source Tools](https://booko.com.au/works/1168452) by Philipp K. Janert
+* [Data and visualization blogs worth following](http://flowingdata.com/2012/04/27/data-and-visualization-blogs-worth-following/) (FlowingData)
+
+### Statistics
+* [Think Stats: Probability and Statistics for Programmers](https://booko.com.au/works/3475110)
+
+> [![](img/How-to-participate-in-GovHack_html_m6a65720f-300x199.gif "Data Journalism Diagram")](img/How-to-participate-in-GovHack_html_m6a65720f.gif)</dt>
+> Illustration from Data Journalism Handbook, CC BY-SA 3.0</dd>
+
+## Hone your programming skills
 
 > @TODO
 
-# Roll you own API
+
+## Designing for humans
 
 > @TODO
 
-# Of infographics and data visualisation
+
+## On the importance of APIs
+
+There's a good chance that your project is going to need some sort of API to connect up your backend layer or data store to your frontend interface (be it web-based or otherwise). But APIs are hard, right? Not any more! Where once we used to have to roll our own APIs and handle the lowest level operations ourselves now there are a bevvy of tools and resources to help you make an awesome API quickly.
+
+### APIs as a Service
+
+Services like [Mashery](http://www.mashery.com/), [Apigee](https://apigee.com/about/), [ApiAxle](http://apiaxle.com/), [3scale](http://www.3scale.net/) provide a quick and easy means to bootstrap your API and provide a range of neat features on the side like analytics and easy inspection and diagnosis of API errors.
+
+### Building and designing your own API
+
+If you need to dig a little further down and actually build your own API it's worth taking a bit of time to think about the design of your API. There are some great resources are such as the API Evangelist's guide to [Providing and Consuming APIs](http://apievangelist.com/) and Atlassian's [REST API Design Guidelines](https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1).
+
+[apiblueprint](http://apiblueprint.org/) is well worth a look as a tool that provides both a means of quickly designing an API, as well as automatically generating nice looking documentation.
+
+> Flask?
+
+#### Documenting your API
+
+Documenting your API well is crucial if you expect anyone else to use it (including other developers on your team) and the tools available are myriad.
+
+For REST APIs in general check out [Swagger](http://swagger.io/) or [iodocs](https://github.com/mashery/iodocs). In PHP-land [Symfony](http://symfony.com/) (see also - [REST APIs with Symfony2: The Right Way](http://williamdurand.fr/2012/08/02/rest-apis-with-symfony2-the-right-way/)) and [Slim](http://www.slimframework.com/) are worth a look
+
+In Rails-land take a look at [Apipie-rails](https://github.com/Apipie/apipie-rails).
+
+
+# Infographics and data visualisation for fun and profit
 
 > @TODO
 
@@ -279,13 +346,16 @@ With honourary mentions going to [Eclipse](https://eclipse.org/downloads/) and [
 > @TODO
 
 
-# Unstructured data (aka Somebody gave us data as a scanned photocopy of a Word doc...)
+# Working with unstructured data
 
 > @TODO
+>
+> "Somebody gave us data as a scanned photocopy of a Word doc?!"
 
 ## Scraping your data
 
 > @TODO
+> http://blog.ouseful.info/2015/02/09/getting-text-of-anything-docs-pdfs-images-using-apache-tika/
 
 ## Analysing your data
 
