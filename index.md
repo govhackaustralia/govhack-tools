@@ -26,6 +26,8 @@ Beyond that, you'll find a range of useful resources from [technical considerati
 * Rename "Technical Considerations"?
 * Review content (e.g. tools) that weren't directly reworded
 * Review tools sections for newer tools!
+* The web and mobile examples sections were junked (inc. The Open Budget). Are they useful in this context?
+* Review "Developer tools for your computer"
 
 
 # Anatomy of GovHack project
@@ -247,9 +249,58 @@ For REST APIs in general check out [Swagger](http://swagger.io/) or [iodocs](htt
 In Rails-land take a look at [Apipie-rails](https://github.com/Apipie/apipie-rails).
 
 
-# Infographics and data visualisation for fun and profit
+# Data visualisation and infographics for fun and profit
 
-> @TODO
+Data visualisation encompasses a broad range of fields, techniques, and tools for creating visual representation of data for human consumption. The geographic and tabular data fields have rich toolsets for visualising their particular types of data, so keep on scrolling if you're after some specific tools.
+
+For now, read on for some of the theory behind data visualisation, some material to inspire, and lists of visualisation tools.
+
+### The theory of it all
+
+For advice on the use of colour check out Paul Tol's advice on [good colour schemes](http://www.r-bloggers.com/the-paul-tol-21-color-salute/) and the Fink Lab's [collection of colour schemes](http://flinklabs.com/labs/colors/).
+
+The School of Data has a set of [data visualization guidelines](http://schoolofdata.org/2013/04/26/data-visualization-guidelines-by-gregor-aisch-international-journalism-festival/) by Gregor Aisch that are worth a read.
+
+So too are the slidedecks for [Stanford CS448B: Visualisation](http://www.graphics.stanford.edu/courses/cs448b-04-winter/), who have now moved to be the University of Washigton's [Interactive Data Lab](http://idl.cs.washington.edu/).
+
+Lastly, Juice Analytics has good roundup at [Data Storytelling: The Ultimate Collection of Resources](http://www.juiceanalytics.com/writing/the-ultimate-collection-of-data-storytelling-resources/).
+
+### Resources for inspiring
+
+If you're stuck for inspiration check out the [Sunlight Foundation's Tumblr](http://sunfoundation.tumblr.com/) or Design Your Way's post of [23 inforgraphics to inspire](http://www.designyourway.net/blog/inspiration/data-visualization-designs-that-should-inspire-you-23-infographics/).
+
+Also worth a look are [Information is Beautiful](http://www.informationisbeautiful.net/), [infosthetics](http://infosthetics.com/), and [Visual Complexity](http://www.visualcomplexity.com/vc/).
+
+And finally Avinash Kaushik's post on [Data Visualization Inspiration: Analysis To Insights To Action, Faster!](http://www.kaushik.net/avinash/data-visualization-inspiration-analysis-insights-action-faster/) uses six short stories of data visualisation done well to inspire.
+
+### Resources for building
+
+If you're not sure exactly what tool you're after and like staring at lists of tools waiting for something to leap out at you then check these out!
+
+* Visualising Data's [Essential Collection of Visualisation Resources](http://www.visualisingdata.com/index.php/2011/07/part-6-the-essential-collection-of-visualisation-resources/)
+* Drawing By Number's [Visualisation Tools and Resources](https://drawingbynumbers.org/toolsandresources)
+* datavisualisation.ch's [selection of tools for visualisation](http://selection.datavisualization.ch/)
+
+Oh, and if you're a JavaScript ninja check out [D3.js](http://d3js.org/), [jit](http://philogb.github.io/jit/), [three.js](http://threejs.org/), or [PhiloGL](http://www.senchalabs.org/philogl/) for all of your visualisation needs.
+
+### Bonus: Android native charting libraries
+
+If you're in need of toolts for building charts and graphs on android have a look at [Androidplot](http://androidplot.com/), [ChartDroid](https://code.google.com/p/chartdroid/), or [achartengine](https://code.google.com/p/achartengine/).
+
+
+# Mobile development
+
+### Device agnostic mobile web development
+
+If your project involves development for mobile devices you've got a choice to make: take a web-based approach or pick a platform and develop a native app. The former will likely be the quicker approach (unless you're a gun Android/iOS developer already) and give you a chance of getting something workable hacked together in time.
+
+On the hybrid web-native side of the equation [PhoneGap](http://phonegap.com/), [Cordova](http://cordova.apache.org/), and [Ionic](http://ionicframework.com/) are all excellent tools for writing apps in HTML, CSS, and JavaScript that can be packaged up to run as native apps on any device.
+
+If you want to stick with the pure web app approach [Sencha Touch](http://www.sencha.com/products/touch) and [jQuery Mobile](http://jquerymobile.com/) are both easy to pick up and use.
+
+### Backend frameworks for native apps
+
+Going down the path of native application development can give you a really slick looking project, but it does give you a lot more to consider than a simple web app might. [Helios](http://helios.io/) and [Parse](https://www.parse.com/) are two backend framworks that'll take care of analytics, notifications, social sign on, and more.
 
 
 # Working with geographic data and maps
