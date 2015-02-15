@@ -333,9 +333,17 @@ For small datasets (< 10mb) [MyGeoData](http://converter.mygeodata.eu/) will let
 
 If command-line tools aren't your thing skip down a bit to the section on QGIS for a cross-platform GUI built on, amongst other things, GDAL.
 
-### Geocoding - turn an address into coordinates
+### Geocoding - turning an address into coordinates
 
-> @TODO
+Your geocoding needs will likely fall into one of two categories: Needing to geocode an address provided by the user vs needing to batch geocode a set of addresses in a dataset.
+
+The School of Data has two great introductory posts [Geocoding Part 1: Introduction to Geocoding](http://schoolofdata.org/2013/02/19/geocoding-part-i-introduction-to-geocoding/) and [Geocoding Part 2: Geocoding Data in a Google Docs Spreadsheet](http://schoolofdata.org/2013/02/19/geocoding-part-ii-geocoding-data-in-a-google-docs-spreadsheet/).
+
+In the former case, your quickest and easiest option is to make use of the [Google Geocoding API](https://developers.google.com/maps/documentation/geocoding/) built on top of Google Maps. Examples are available of a [simple geocoding call](https://developers.google.com/maps/documentation/javascript/examples/geocoding-simple) and an [address search with auto-complete functionality](https://developers.google.com/maps/documentation/javascript/examples/places-searchbox). Caveat emptor - the [Google Maps Terms of Service](https://developers.google.com/maps/terms) do require that the results of geocoding requests are displayed in some fashion on top of a Google Map and limits you to 2,500 requests/day.
+
+There are some free / open source RESTful APIs for geocoding, which you could happily either wrap a UI around or issue batch requests to yourself. These include the [MapQuest Nominatim Search API](http://developer.mapquest.com/web/products/open/nominatim), the [MapBox Geocoding API](https://www.mapbox.com/developers/api/v3/geocoding/), and the [GeoNames Search API](http://www.geonames.org/export/web-services.html).
+
+If you're after a more set-and-forget geocoding service that will geocode a whole file of addresses with having to fiddle with making your own API calls then take a look at [CartoDB's](http://docs.cartodb.com/cartodb-editor.html#geocoding-data) geocoding functionality - and [Google Fusion Tables](https://support.google.com/fusiontables/answer/1012281?hl=en) is still kicking around in "experimental" mode ([tutorial here](http://mdl.library.utoronto.ca/guides-help/geocoding-tutorial-using-google-fusion-tables)).
 
 ### Analysis
 
