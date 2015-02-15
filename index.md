@@ -333,6 +333,8 @@ For small datasets (< 10mb) [MyGeoData](http://converter.mygeodata.eu/) will let
 
 If command-line tools aren't your thing skip down a bit to the section on QGIS for a cross-platform GUI built on, amongst other things, GDAL.
 
+> @TODO GDAL language bindings
+
 ### Geocoding - turning an address into coordinates
 
 Your geocoding needs will likely fall into one of two categories: Needing to geocode an address provided by the user vs needing to batch geocode a set of addresses in a dataset.
@@ -347,19 +349,39 @@ If you're after a more set-and-forget geocoding service that will geocode a whol
 
 ### Analysis
 
-> @TODO
+Unless the spatial part of your project is only for window dressing you're probably going to need to do some analysis between it and other datasets. For instance - you might need to group one of your spatial datasets (like public transport usage) by another (like suburbs) to generate some summary statistics on usage.
 
-#### QGIS
-
-> @TODO
-
-#### R (Arrr!)
-
-> @TODO
+You *could* hack together some code yourself to work it out, but really there are some far better and far far more powerful options available to you.
 
 #### PostGIS
 
-> @TODO
+[PostGIS](http://postgis.net/) is an extension for [PostgreSQL](http://www.postgresql.org/) providing spatial capabilities for both vector and raster data. In spatial database-land it is unequalled in the [sheer range of functions](http://postgis.net/docs/reference.html) it makes available, and their ease of use and speed (it's written in C).
+
+[Getting up and running is easy](http://postgis.net/install) on any platform, with installers available for Windows, `brew install` or [Postgres.app](http://postgresapp.com/) on OSX, and packages available for all of the major Linux distros. For those inclined to Docker there are [Dockerfiles available](https://registry.hub.docker.com/search?q=postgis&searchfield=).
+
+If you need more than `psql` on the command-line, [pgAdmin](http://www.pgadmin.org/) is available across all operating systems (and often comes bundled with PostgreSQL anyway).
+
+#### QGIS
+
+PostGIS may give you the heavy lifting power to do analysis, but staring at database rows trying to make sense of your results can be made so much easier by visualising them. Enter [QGIS](http://www2.qgis.org/en/site/) - a free and open source cross-platform Geographic Information System with the ability to create, edit, visualise, analyse, and publish spatial information.
+
+Thanks to being built on top of [GDAL](http://www.gdal.org/ "Geospatial Data Abstraction Library") (amongst others) QGIS is capable of reading in and writing out almost any format of spatial data that you can throw at it - including direct connections to PostGIS databases.
+
+#### Language bindings: R (Arrr!), Python, C#, Ruby, et al.
+
+If you need to delve down into working with spatial data at the code-level you've got a really rich set of tools at your disposal.
+
+There are [GDAL](http://www.gdal.org/ "Geospatial Data Abstraction Library") bindings available for [Perl](http://trac.osgeo.org/gdal/wiki/GdalOgrInPerl), [Python](http://trac.osgeo.org/gdal/wiki/GdalOgrInPython), [Java](http://trac.osgeo.org/gdal/wiki/GdalOgrInJava), [C#/.NET](http://trac.osgeo.org/gdal/wiki/GdalOgrInCsharp), [Ruby](http://trac.osgeo.org/gdal/wiki/GdalOgrInRuby), and [R](http://trac.osgeo.org/gdal/wiki/GdalOgrInR).
+
+> @TODO https://www.google.com.au/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=.net%20geospatial
+>
+> @TODO https://www.google.com.au/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=python%20geospatial
+>
+> @TODO https://www.google.com.au/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=java%20geospatial
+>
+> @TODO http://www.r-bloggers.com/starting-analysis-and-visualisation-of-spatial-data-with-r/
+>
+> @TODO http://www.r-bloggers.com/3d-mapping-in-r/
 
 ### Visualising your data
 
