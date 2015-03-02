@@ -29,7 +29,8 @@ Beyond that, you'll find a range of useful resources from [technical considerati
 * The web and mobile examples sections were junked (inc. The Open Budget). Are they useful in this context?
 * Review "Developer tools for your computer"
 * Stick Vagrant/Docker/Fig somewhere
-
+* Talk with H about porting some of the perth.govhack.org content over to a sort of GovHack Orientation Thingo (along w/ the top of this doc)
+* Make it easier / more prominent to leave feedback
 
 # Anatomy of GovHack project
 
@@ -355,26 +356,76 @@ You *could* hack together some code yourself to work it out, but really there ar
 
 #### PostGIS
 
-[PostGIS](http://postgis.net/) is an extension for [PostgreSQL](http://www.postgresql.org/) providing spatial capabilities for both vector and raster data. In spatial database-land it is unequalled in the [sheer range of functions](http://postgis.net/docs/reference.html) it makes available, and their ease of use and speed (it's written in C).
+[PostGIS](http://postgis.net/) is an extension for [PostgreSQL](http://www.postgresql.org/) providing spatial capabilities for both vector and raster data. In spatial database-land it is unequalled in the [sheer range of functions](http://postgis.net/docs/reference.html) it makes available, their ease of use, and speed (it's written in C).
 
 [Getting up and running is easy](http://postgis.net/install) on any platform, with installers available for Windows, `brew install` or [Postgres.app](http://postgresapp.com/) on OSX, and packages available for all of the major Linux distros. For those inclined to Docker there are [Dockerfiles available](https://registry.hub.docker.com/search?q=postgis&searchfield=).
 
 If you need more than `psql` on the command-line, [pgAdmin](http://www.pgadmin.org/) is available across all operating systems (and often comes bundled with PostgreSQL anyway).
 
+##### MySQL? SQL Server? et al.
+
+PostgreSQL + PostGIS may be a killer combination, but that's not to say you won't find spatial in your favourite database - though functionality and speed may not be the best. [SQL Server](https://msdn.microsoft.com/en-us/library/bb964712.aspx), [MySQL](http://dev.mysql.com/doc/refman/5.0/en/spatial-extensions.html), [Azure SQL](http://www.sqlskills.com/blogs/bobb/azure-sql-database-v12-preview-spatial-fully-functional/), and [DynamoDB](https://aws.amazon.com/blogs/aws/new-geo-library-for-dynamodb/) all have spatial support of some kind.
+
+Quite [a few words](http://stackoverflow.com/a/22576304) have [been written](http://www.bostongis.com/PrinterFriendly.aspx?content_name=sqlserver2008_postgis_mysql_compare) comparing [spatial databases](http://www.bostongis.com/PrinterFriendly.aspx?content_name=sqlserver2008r2_oracle11gr2_postgis15_compare), so you might want to take a look before committing yourself to one or another.
+
+tl;dr Avoid MySQL for anything spatial!
+
 #### QGIS
 
 PostGIS may give you the heavy lifting power to do analysis, but staring at database rows trying to make sense of your results can be made so much easier by visualising them. Enter [QGIS](http://www2.qgis.org/en/site/) - a free and open source cross-platform Geographic Information System with the ability to create, edit, visualise, analyse, and publish spatial information.
 
-Thanks to being built on top of [GDAL](http://www.gdal.org/ "Geospatial Data Abstraction Library") (amongst others) QGIS is capable of reading in and writing out almost any format of spatial data that you can throw at it - including direct connections to PostGIS databases.
+Thanks to being built on top of [GDAL](http://www.gdal.org/ "Geospatial Data Abstraction Library") (amongst others) QGIS is capable of reading and writing almost any format of spatial data that you can throw at it - including direct connections to PostGIS databases.
 
-#### Language bindings: R (Arrr!), Python, C#, Ruby, et al.
+#### Language bindings: R (Arrr!), Python, .NET, Ruby, et al.
 
 If you need to delve down into working with spatial data at the code-level you've got a really rich set of tools at your disposal.
 
-There are [GDAL](http://www.gdal.org/ "Geospatial Data Abstraction Library") bindings available for [Perl](http://trac.osgeo.org/gdal/wiki/GdalOgrInPerl), [Python](http://trac.osgeo.org/gdal/wiki/GdalOgrInPython), [Java](http://trac.osgeo.org/gdal/wiki/GdalOgrInJava), [C#/.NET](http://trac.osgeo.org/gdal/wiki/GdalOgrInCsharp), [Ruby](http://trac.osgeo.org/gdal/wiki/GdalOgrInRuby), and [R](http://trac.osgeo.org/gdal/wiki/GdalOgrInR).
+[GDAL](http://www.gdal.org/ "Geospatial Data Abstraction Library") has bindings available for [Perl](http://trac.osgeo.org/gdal/wiki/GdalOgrInPerl), [Python](http://trac.osgeo.org/gdal/wiki/GdalOgrInPython), [Java](http://trac.osgeo.org/gdal/wiki/GdalOgrInJava), [C#/.NET](http://trac.osgeo.org/gdal/wiki/GdalOgrInCsharp), [Ruby](http://trac.osgeo.org/gdal/wiki/GdalOgrInRuby), and [R](http://trac.osgeo.org/gdal/wiki/GdalOgrInR).
 
-> @TODO https://www.google.com.au/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=.net%20geospatial
->
+##### Python
+> @TODO Awesome Python GitHub
+
+Python is **the** language for doing anythi
+
+If you're a Pythonista and haven't dipped your toe into the spatial pool yet you're in for a surprise - there's an incredibly rich set of Python libraries out there for manipulating every kind of spatial data under the sun.
+
+And even if you're not particuarly pro-Python it's still worth a look if it fits your workflow. We can't overstate the powerful tools you'll have in your belt in Python spatial-land.
+
+[Shapely](http://toblerity.org/shapely/manual.html) - for manipulation and analysis of geometric objects.
+
+[Fiona](https://github.com/Toblerity/Fiona) - A Python API into GDAL/OGR.
+
+[Rasterio](https://github.com/sgillies/rasterio) - Like Fiona, but for rasters!
+
+[GIS with Python, Shapely, and Fiona](http://www.macwright.org/2012/10/31/gis-with-python-shapely-fiona.html)
+
+[Manipulimization of whatchamacallems?](http://sgillies.net/blog/986/manipulimization-of-whatchamacallems/) - some brief but useful words on working with spatial data in Python.
+
+
+##### R (Arrr!)
+
+> @TODO
+
+##### Java
+
+> @TODO
+
+##### .NET
+
+> @TODO Tidy and add decorating words
+
+[Geo](https://github.com/sibartlett/Geo) - a powerful little .NET 4.0+ library for querying and manipulating vector data.
+
+[NetTopologySuite](https://github.com/NetTopologySuite/NetTopologySuite) - a port of the popular JTS (Java Topology Suite) library to .NET for querying and analysing vector data.
+
+[SharpMap](https://sharpmap.codeplex.com/) - a geo app framework for vector and raster data that includes its own rendering engine.
+
+[MapWindow](http://www.mapwindow.org/) - an all in one desktop GIS tool + an ActiveX control for mapping + a C# library for handling vector data.
+
+##### Ruby
+
+##### Miscellaneous
+
 > @TODO https://www.google.com.au/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=python%20geospatial
 >
 > @TODO https://www.google.com.au/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=java%20geospatial
@@ -382,6 +433,8 @@ There are [GDAL](http://www.gdal.org/ "Geospatial Data Abstraction Library") bin
 > @TODO http://www.r-bloggers.com/starting-analysis-and-visualisation-of-spatial-data-with-r/
 >
 > @TODO http://www.r-bloggers.com/3d-mapping-in-r/
+
+> @TODO Web tools: geojson.io et cetera
 
 ### Visualising your data
 
