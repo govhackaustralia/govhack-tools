@@ -33,6 +33,7 @@ Beyond that, you'll find a range of useful resources from [technical considerati
 * Make it easier / more prominent to leave feedback
 * Run past a couple of participants for feedback on layout, UX, and content.
 * Something about spatial for Android and iOS
+* Loot http://geothought.blogspot.com.au/2015/03/review-of-foss4g-na-2015.html for more shiny spatial tools. Oh so many shiny!
 
 # Anatomy of GovHack project
 
