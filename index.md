@@ -9,11 +9,12 @@ Beyond that, you'll find a range of useful resources from [technical considerati
 > @TODO Links
 
 
-# Document @TODO
+# Document @TODOs
 * GovHack Toolkit or GovHack Guide?
-  * Does it make more sense as two separate documents: One a guide to the GovHack competition, one a list of resources?
+* Loot anything good in the last version that hasn't yet been pulled across
+* Does it make more sense as two separate documents: One a guide to the GovHack competition, one a list of resources?
 * Run it past some participants for input
-  * Helen will also review for writing, consistency, and all of that good stuff
+* Helen will also review for writing, consistency, and all of that good stuff
 * NationalMap, Mashery, and Socrata got junked - they belong on the Data page.
 * Is there a better place / pitch for the Data Scientist section?
 * The Web Application section got junked. Can advise about Bootstrap, Foundation, et al. somewhere else
@@ -33,8 +34,12 @@ Beyond that, you'll find a range of useful resources from [technical considerati
 * Make it easier / more prominent to leave feedback
 * Run past a couple of participants for feedback on layout, UX, and content.
 * Something about spatial for Android and iOS
+* Add http://mapstarter.com/
+* Highcharts et cetera
+* Plot.ly, Create.ly, et cetera
 
-# Anatomy of GovHack project
+
+# Anatomy of a GovHack project
 
 We only have three firm requirements for your GovHack project:
 
@@ -460,7 +465,7 @@ In recent times a few really handy and modern little web tools have popped up fo
 
 [GeoGig](http://geogig.org/) if you want to apply the principles of Git to spatial data.
 
-[epsg.io](http://epsg.io/) if you're (un)fortunate enough to have to care about a non-standard projection for your data.
+[epsg.io](http://epsg.io/) if you've found some data but it's not in a standard projection (e.g. latitude and longitude, web mercator) then find the "EPSG" code and stick it in here to find out more about it.
 
 [GitSpatial](https://github.com/JasonSanford/gitspatial) if you just want to wrap a spatial API around your GitHub-hosted GeoJSON data.
 
@@ -468,23 +473,76 @@ In recent times a few really handy and modern little web tools have popped up fo
 
 And an honourary mention to [Shape2Earth](http://shape2earthengine.com/shape2earth/Home.html) for allowing the easy creation of maps for Google Earth.
 
+
 ### Making maps: In which we play at being cartographers
 
-#### Web mapping libraries
+Righto, so you've got some data and need to provide a map for your users to view and interact with all of your lovely new data. Good news, you're spoilt for choice! (Are you detecting a theme here?)
 
-> @TODO
+Web mapping loosely falls into two categories:
 
-> TileMill, OpenLayers (3), Mapbox, MapboxGL, Turf GIS, CartoDB, Torque, Leaflet, ArcGIS Online, ...
+1. JavaScript libraries that will let you build and customise the map interface (2D and/or 3D) to your heart's content, but require you to host the data, or plug it into other people's web mapping services.
 
-> [From Paper Maps to the Web: A DIY Digital Maps Primer](http://www.nypl.org/blog/2015/01/05/web-maps-primer)
+2. Software as a Service platforms that provide simple and powerful GUIs for the creation of maps and support hosting of all sorts of different data formats.
 
-#### Maps as a Service
+And, of course, there's some grey area between the two - with many libraries supporting standard web mapping protocols like WMS, WMTS, and WFS - and with several of the SaaS platforms providing their own JavaScript client libraries to allow users to craft their own map interfaces.
 
-> @TODO
+These days a lot of the modern libraries and platforms have been optimisied to work well on mobile devices, and in some cases have separate libraries for developing native apps on iOS and Android.
 
-#### Desktop tools
+Oh, and if you're completely new to web mapping check out [mapschool: a free introduction to geo](http://mapschool.io/) to get yourself up to speed on the concepts behing web mapping. The New York Public Library also has a great, and pretty exhaustive runthrough, of making your first web map: [From Paper Maps to the Web: A DIY Digital Maps Primer](http://www.nypl.org/blog/2015/01/05/web-maps-primer).
 
-> @TODO
+#### MaaS (Maps as a Service)
+
+At the moment there are two main players in the SaaS mapping space: [CartoDB](http://cartodb.com/) and [MapBox](https://www.mapbox.com/).
+
+They both do a great job of covering the basics of map building with quick and easy tools for uploading data and push-button interfaces that abstract away alot of the more complex spatial side of spatial data. They both also have generous free usage tiers.
+
+CartoDB tends to focus more on the "make really pretty vector maps" side of the equation, with great visualisation tools like [Torque](http://blog.cartodb.com/torque-is-live-try-it-on-your-cartodb-maps-today/) (beautiful animation with time series data), powerful and [simple push-button styling of data](http://cartodb.com/visualize/), and a wonderful [SQL API](http://docs.cartodb.com/cartodb-platform/sql-api.html) for interacting directly with PostGIS (CartoDB's database backend) from your client. Oh - and they also have [some support for 3D](http://cartodb.com/case-studies/3d-bogota/) and can handle huge datasets, like [colouring every river in the US](http://cartodb.com/gallery/river-direction/).
+
+And lastly, CartoDB comes with a powerful [point-and-click map building GUI](http://docs.cartodb.com/cartodb-editor.html#visualizations) or, if you need more control, the [CartoDB.js](http://docs.cartodb.com/cartodb-platform/cartodb-js.html) library exposes all of the same functionality. Oh, and did we mention that it's open source and you can [run your own CartoDB instance](https://github.com/CartoDB/cartodb)?
+
+[MapBox](https://www.mapbox.com/) focuses slightly more on the traditionally geospatial side with a powerful desktop map designer, [MapBox Studio](https://www.mapbox.com/mapbox-studio/), and lot of work on [tools for processing](https://www.mapbox.com/blog/landsat-live-live/) [satellite imagery](https://www.mapbox.com/blog/processing-landsat-8/) and developing specifications for [vector tiles](https://www.mapbox.com/developers/vector-tiles/) and pushing the boundaries of web mapping with [MapBox GL](https://www.mapbox.com/mapbox-gl/). On top of all of that they also maintain [iOS](https://www.mapbox.com/mapbox-ios-sdk/) and [Android](https://www.mapbox.com/mapbox-android-sdk/) SDKs, the [Mapbox.js](https://www.mapbox.com/mapbox.js/api/) library; and APIs for calculating [surface heights](https://www.mapbox.com/developers/api/surface/), [geocoding](https://www.mapbox.com/developers/api/geocoding/), and [directions](https://www.mapbox.com/developers/api/directions/).
+
+
+
+[GeoServer](http://geoserver.org/) WPC/WCS on the fly advanced stuff
+[OpenGeo Suite](http://boundlessgeo.com/solutions/opengeo-suite/) and [GeoNode](http://geonode.org/)
+
+Honourary mention to [ArcGIS Online](https://www.arcgis.com/home/) subscription-only model, 60-day free trial, lock-in.
+[MapSense](http://www.mapsense.co/) fast and modern tools for performing analysis on big spatial datasets.
+
+Oh, and [Bing Maps](http://www.microsoft.com/maps/) if you're building something specifically for Windows-land.
+
+
+#### JavaScript mapping libraries
+
+> Rich web mapping frameworks that provide a whole user interface framework around the map (e.g. map toolbars, layer trees and controls, advanced feature querying UIs, et cetera).
+
+** JavaScript Libraries
+[OpenLayers](http://openlayers.org/) high-performance rewritten to use modern tech (WebGL, Canvas, HTML5 + CSS3 greatness). Nod to [OL3-Cesium](http://openlayers.org/ol3-cesium/) an optional addon for OpenLayers to integrate [Cesium](https://cesium.agi.com/) into OpenLayers to provide seamless 2D-3D switching.
+[Cesium](https://cesium.agi.com/)
+
+
+[Leaflet](http://leafletjs.com/) a simpler library, with a super developer-friendly API and a large collection of plugins to fill the functionality gap w/ OL.
+[Turf](https://www.mapbox.com/blog/turf-gis-for-web-maps/) fast, compact library for performing many of the common geospatial operations (buffering, contours, et cetera) - but all client-side! Integrates with Leaflet and MapBox.js.
+[ModestMaps](http://modestmaps.com/) an even simpler library for creating maps really quickly without a lot of overhead.
+[Google Maps JavaScript API](https://developers.google.com/maps/documentation/javascript/?csw=1) of course!
+[Highmaps](http://www.highcharts.com/maps/demo) from the team that brought us Highcharts
+
+*** SVGy
+[D3.js](http://d3js.org/) is just awesome at visualisation, and that includes maps too!
+Michael Bowman [Designing Beautiful Maps with D3.js](http://bowmanmc.github.io/designing_maps/)
+[truly exhaustive list](http://bl.ocksplorer.org/#/search/d3.geo) of examples on [bl.ocksplorer.org](http://bl.ocksplorer.org)
+
+[Polymaps](http://polymaps.org/) a straightforward library for creating image and vector maps - it only does a few things, and does them well.
+
+
+** Frameworks
+[map.geo.admin.ch](https://github.com/geoadmin/mf-geoadmin3) The Federal Office for Topography in Switzerland [demo](http://map.geo.admin.ch/)
+[GeoExt](http://geoext.org/)
+[GeoMOOSE](http://www.geomoose.org/)
+[MapBender](http://mapbender3.org
+[MapFish](http://mapfish.org/) (also, separate Java printing module for hardcopy [MapFish Print](http://www.mapfish.org/doc/print/))
+
 
 
 # Working with tabular data
@@ -587,6 +645,17 @@ Beautiful Tools
 
 # Legalese
 The text of this toolkit is open for reuse under a [Creative Commons Attribution](https://creativecommons.org/licenses/by/3.0/au/deed.en) licence and improvements and suggestions are encouraged by submitting them on [GitHub](http://github.com/govhackaustralia/govhack-tools/issues).
+
+
+
+
+
+
+
+
+
+
+
 
 
 
