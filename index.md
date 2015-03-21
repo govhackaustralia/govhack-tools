@@ -37,6 +37,7 @@ Beyond that, you'll find a range of useful resources from [technical considerati
 * Add http://mapstarter.com/
 * Highcharts et cetera
 * Plot.ly, Create.ly, et cetera
+* Loot http://geothought.blogspot.com.au/2015/03/review-of-foss4g-na-2015.html for more shiny spatial tools. Oh so many shiny!
 
 
 # Anatomy of a GovHack project
