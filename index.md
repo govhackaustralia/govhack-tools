@@ -38,6 +38,10 @@ Beyond that, you'll find a range of useful resources from [technical considerati
 * Highcharts et cetera
 * Plot.ly, Create.ly, et cetera
 * Loot http://geothought.blogspot.com.au/2015/03/review-of-foss4g-na-2015.html for more shiny spatial tools. Oh so many shiny!
+* Link the data viz and web mapping sections.
+* Mention https://github.com/sorrycc/awesome-javascript and stuff
+* FME
+* http://community.pentaho.com/projects/data-integration/
 
 
 # Anatomy of a GovHack project
@@ -291,7 +295,19 @@ If you're not sure exactly what tool you're after and like staring at lists of t
 * Drawing By Number's [Visualisation Tools and Resources](https://drawingbynumbers.org/toolsandresources)
 * datavisualisation.ch's [selection of tools for visualisation](http://selection.datavisualization.ch/)
 
-Oh, and if you're a JavaScript ninja check out [D3.js](http://d3js.org/), [jit](http://philogb.github.io/jit/), [three.js](http://threejs.org/), or [PhiloGL](http://www.senchalabs.org/philogl/) for all of your visualisation needs.
+#### Web visualisation libraries
+
+We couldn't mention data vis without giving a nod to [D3.js](http://d3js.org/) (Data Driven Documents) for creating interactive and amazingly detailed visualisations - find out more about [Why D3.js is So Great for Data Visualization](http://blog.visual.ly/why-d3-js-is-so-great-for-data-visualization/). Bewarned though, the learning is quite steep as you're starting out, but the web is full of thousand of D3.js examples that you should have no problems hacking into the shape you want (such as [word clouds](http://www.jasondavies.com/wordcloud/), [real-time filtering of barcharts](http://square.github.com/crossfilter/), and [bubble trees for comparing sizes](https://github.com/okfn/bubbletree), and [many, many more](http://bl.ocksplorer.org)). Check out these couple of great tutorials [Towards Reusable Charts](http://bost.ocks.org/mike/chart/) and [Data-Driven Documents, Defined](http://datadrivenjournalism.net/resources/data_driven_documents_defined).
+
+Beyond D3.js have a look at [Google Charts](https://developers.google.com/chart/), [jit](http://philogb.github.io/jit/), [three.js](http://threejs.org/), [polychart.js](http://www.polychartjs.com/), [PhiloGL](http://www.senchalabs.org/philogl/), and [Flotr2](http://www.humblesoftware.com/flotr2/) for a range of great web vis libraries.
+
+#### Visualisation as a Service
+
+For some quick out-of-the-box charting [plot.lt](https://plot.ly/) and [infogr.am](https://infogr.am/) both offer great charting as a service tools for easy prototyping without having to write any code.
+
+#### Desktop tools
+
+If you're playing with data vis on the desktop you'll find a lot of the tools are commercial in nature, but [Tableau](http://www.tableau.com/) is worth a look (as well as the School of Data tutorial [Analysing Datasets with Tableau Public](http://schoolofdata.org/2013/04/27/ddjschool-tutorial-analysing-datasets-with-tableau-public/)).
 
 ### Bonus: Android native charting libraries
 
@@ -493,124 +509,119 @@ Oh, and if you're completely new to web mapping check out [mapschool: a free int
 
 #### MaaS (Maps as a Service)
 
-At the moment there are two main players in the SaaS mapping space: [CartoDB](http://cartodb.com/) and [MapBox](https://www.mapbox.com/).
+At presents there are two main players in the SaaS mapping space: [CartoDB](http://cartodb.com/) and [MapBox](https://www.mapbox.com/).
 
 They both do a great job of covering the basics of map building with quick and easy tools for uploading data and push-button interfaces that abstract away alot of the more complex spatial side of spatial data. They both also have generous free usage tiers.
 
-CartoDB tends to focus more on the "make really pretty vector maps" side of the equation, with great visualisation tools like [Torque](http://blog.cartodb.com/torque-is-live-try-it-on-your-cartodb-maps-today/) (beautiful animation with time series data), powerful and [simple push-button styling of data](http://cartodb.com/visualize/), and a wonderful [SQL API](http://docs.cartodb.com/cartodb-platform/sql-api.html) for interacting directly with PostGIS (CartoDB's database backend) from your client. Oh - and they also have [some support for 3D](http://cartodb.com/case-studies/3d-bogota/) and can handle huge datasets, like [colouring every river in the US](http://cartodb.com/gallery/river-direction/).
+CartoDB tends to focus more on the "make really pretty vector maps" side of the equation, with great visualisation tools like [Torque](http://blog.cartodb.com/torque-is-live-try-it-on-your-cartodb-maps-today/) (beautiful animations with time series data), powerful and simple [push-button visualisation of data](http://cartodb.com/visualize/), and a wonderful [SQL API](http://docs.cartodb.com/cartodb-platform/sql-api.html) for interacting directly with their PostGIS backend from the client. Oh - and they also have [some support for 3D](http://cartodb.com/case-studies/3d-bogota/) and can handle huge datasets, like [colouring every river in the US](http://cartodb.com/gallery/river-direction/).
 
 And lastly, CartoDB comes with a powerful [point-and-click map building GUI](http://docs.cartodb.com/cartodb-editor.html#visualizations) or, if you need more control, the [CartoDB.js](http://docs.cartodb.com/cartodb-platform/cartodb-js.html) library exposes all of the same functionality. Oh, and did we mention that it's open source and you can [run your own CartoDB instance](https://github.com/CartoDB/cartodb)?
 
-[MapBox](https://www.mapbox.com/) focuses slightly more on the traditionally geospatial side with a powerful desktop map designer, [MapBox Studio](https://www.mapbox.com/mapbox-studio/), and lot of work on [tools for processing](https://www.mapbox.com/blog/landsat-live-live/) [satellite imagery](https://www.mapbox.com/blog/processing-landsat-8/) and developing specifications for [vector tiles](https://www.mapbox.com/developers/vector-tiles/) and pushing the boundaries of web mapping with [MapBox GL](https://www.mapbox.com/mapbox-gl/). On top of all of that they also maintain [iOS](https://www.mapbox.com/mapbox-ios-sdk/) and [Android](https://www.mapbox.com/mapbox-android-sdk/) SDKs, the [Mapbox.js](https://www.mapbox.com/mapbox.js/api/) library; and APIs for calculating [surface heights](https://www.mapbox.com/developers/api/surface/), [geocoding](https://www.mapbox.com/developers/api/geocoding/), and [directions](https://www.mapbox.com/developers/api/directions/).
+[MapBox](https://www.mapbox.com/) focuses slightly more on the traditionally geospatial side of things, with a powerful desktop map designer, [MapBox Studio](https://www.mapbox.com/mapbox-studio/) (which can process raster as well as vector data), some great work on [tools for processing](https://www.mapbox.com/blog/landsat-live-live/) [satellite imagery](https://www.mapbox.com/blog/processing-landsat-8/), developing the  [vector tiling](https://www.mapbox.com/developers/vector-tiles/) standard, and pushing the boundaries of web mapping with [MapBox GL](https://www.mapbox.com/mapbox-gl/). On top of all of that they also maintain [iOS](https://www.mapbox.com/mapbox-ios-sdk/) and [Android](https://www.mapbox.com/mapbox-android-sdk/) SDKs, the [Mapbox.js](https://www.mapbox.com/mapbox.js/api/) library; and APIs for [surface heights](https://www.mapbox.com/developers/api/surface/), [geocoding](https://www.mapbox.com/developers/api/geocoding/), and [directions](https://www.mapbox.com/developers/api/directions/).
 
+And a couple of honorary mentions:
 
+[GeoServer](http://geoserver.org/) is an open source spatial data server that may be worth you're look if you're having to deal with larger or more complex datasets that CartoDB/MapBox can't handle - or can't handle without charging you for the pleasure. GeoServer also has support for more advanced functionality like WCS and WPS for extracting raw data from rasters on-the-fly, or writing proceses to perform geospatial analysis on-the-fly. You can run GeoServer on its own, or in combination with other packages via the [OpenGeo Suite](http://boundlessgeo.com/solutions/opengeo-suite/) or [GeoNode](http://geonode.org/).
 
-[GeoServer](http://geoserver.org/) WPC/WCS on the fly advanced stuff
-[OpenGeo Suite](http://boundlessgeo.com/solutions/opengeo-suite/) and [GeoNode](http://geonode.org/)
-
-Honourary mention to [ArcGIS Online](https://www.arcgis.com/home/) subscription-only model, 60-day free trial, lock-in.
-[MapSense](http://www.mapsense.co/) fast and modern tools for performing analysis on big spatial datasets.
-
-Oh, and [Bing Maps](http://www.microsoft.com/maps/) if you're building something specifically for Windows-land.
+ESRI's ArcGIS software suite is worth a brief mention as the main commercial provider of geospatial software in the world, including its SaaS [ArcGIS Online](https://www.arcgis.com/home/) platform - which provides a 60-day free trial, after which you're required to pay (handsomely).
 
 
 #### JavaScript mapping libraries
 
-> Rich web mapping frameworks that provide a whole user interface framework around the map (e.g. map toolbars, layer trees and controls, advanced feature querying UIs, et cetera).
+These past few years have seen an explosion in the numbers of JavaScript libraries for creating rich web mapping interfaces.
 
-** JavaScript Libraries
-[OpenLayers](http://openlayers.org/) high-performance rewritten to use modern tech (WebGL, Canvas, HTML5 + CSS3 greatness). Nod to [OL3-Cesium](http://openlayers.org/ol3-cesium/) an optional addon for OpenLayers to integrate [Cesium](https://cesium.agi.com/) into OpenLayers to provide seamless 2D-3D switching.
-[Cesium](https://cesium.agi.com/)
+[OpenLayers](http://openlayers.org/) is probably the most mature player on the stage, and has recently undergone a ground-up rewrite of the library to simplify the API and leverage modern web technologies like WebGL, Canvas, and the full capabilities of HTML5 and CSS3. It even has support for true 3D web mapping via its [OL3-Cesium](http://openlayers.org/ol3-cesium/) plugin which seamlessly integrates the [Cesium](https://cesium.agi.com/) WebGL 3D globe library.
 
+[Leaflet](http://leafletjs.com/), the relatively new kid on the block, started as a protest against other web mapping libraries that required a fair amount of knowledge of geopsatial data to use effectively. As such, it is a super simple API and a more limited range of features than the likes of OpenLayers (but has a large library of community-developed plugins that can help address that gap).
 
-[Leaflet](http://leafletjs.com/) a simpler library, with a super developer-friendly API and a large collection of plugins to fill the functionality gap w/ OL.
-[Turf](https://www.mapbox.com/blog/turf-gis-for-web-maps/) fast, compact library for performing many of the common geospatial operations (buffering, contours, et cetera) - but all client-side! Integrates with Leaflet and MapBox.js.
-[ModestMaps](http://modestmaps.com/) an even simpler library for creating maps really quickly without a lot of overhead.
-[Google Maps JavaScript API](https://developers.google.com/maps/documentation/javascript/?csw=1) of course!
-[Highmaps](http://www.highcharts.com/maps/demo) from the team that brought us Highcharts
+[ModestMaps](http://modestmaps.com/) is an even simpler library again than Leaflet, with a simple API and a focus on the core functionality of producing interactive maps easily.
 
-*** SVGy
-[D3.js](http://d3js.org/) is just awesome at visualisation, and that includes maps too!
-Michael Bowman [Designing Beautiful Maps with D3.js](http://bowmanmc.github.io/designing_maps/)
-[truly exhaustive list](http://bl.ocksplorer.org/#/search/d3.geo) of examples on [bl.ocksplorer.org](http://bl.ocksplorer.org)
+[Turf](https://www.mapbox.com/blog/turf-gis-for-web-maps/) has been developed by the MapBox team and bills itself as "GIS for web maps" with support for common geospatial operations like buffering, contours, hexbinning, et cetera performed all in the client. Turf also integrates easily with Leaflet and MapBox.js.
 
-[Polymaps](http://polymaps.org/) a straightforward library for creating image and vector maps - it only does a few things, and does them well.
+##### SVG-powered mapping data visualisations
 
+If you're looking at maps as more of a data visualisation tool then the subcategory of web mapping libraries that play in the SVG space are probably more appropriate for your needs.
 
-** Frameworks
-[map.geo.admin.ch](https://github.com/geoadmin/mf-geoadmin3) The Federal Office for Topography in Switzerland [demo](http://map.geo.admin.ch/)
-[GeoExt](http://geoext.org/)
-[GeoMOOSE](http://www.geomoose.org/)
-[MapBender](http://mapbender3.org
-[MapFish](http://mapfish.org/) (also, separate Java printing module for hardcopy [MapFish Print](http://www.mapfish.org/doc/print/))
+Well we couldn't not mention [D3.js](http://d3js.org/) in talking about data visualisation. Michael Bowman's [Designing Beautiful Maps with D3.js](http://bowmanmc.github.io/designing_maps/) talk is worth a look to familiarise yourself with the topic, and then head on over to this [truly exhaustive list](http://bl.ocksplorer.org/#/search/d3.geo) of examples of using D3 for maps on [bl.ocksplorer.org](http://bl.ocksplorer.org).
+
+The team behind the graphing library Highcharts have a separate [Highmaps](http://www.highcharts.com/maps/demo) library that makes creating mapping data visualisations a breeze.
+
+Lastly [Polymaps](http://polymaps.org/) is a bit of a hybrid library in that it provides image and vector-tiled maps via SVG, so you can mix up your choice of basemap (OpenStreetMap, Bing, et cetera) with your image and vector data easily.
+
+##### Web mapping frameworks
+
+The last sub-category of web mapping library worth a mention are the rich web mapping frameworks that exist to provide a whole UI framework around the map itself (i.e. map toolbars, layer trees and controls, advanced data query UIs, et cetera).
+
+First and foremost is the beautiful, modern, and AngularJS-based framework [map.geo.admin.ch](https://github.com/geoadmin/mf-geoadmin3) that the Swiss Federal Office of Topography has open sourced for all to use - check out [a demo](http://map.geo.admin.ch/).
+
+If you're a Sencha fan the [GeoExt](http://geoext.org/) library is worth a look - though note that there are different versions for ExtJS 3 and ExtJS 4/5. In a similar vein you'll find both [GeoMOOSE](http://www.geomoose.org/) and [MapBender](http://mapbender3.org).
+
+And lastly, [MapFish](http://mapfish.org/), a lighter framework than its cousins, and based on the older version of OpenLayers, but with a standalone Java library for printing web maps in [MapFish Print](http://www.mapfish.org/doc/print/).
 
 
 
 # Working with tabular data
 
-> @TODO
-
-## Finding datasets
-
-> @TODO
+At its simplest tabular data is data that is stored in rows and columns, either in a flat file or a database, and is usually comprised of simple alphanumeric values. CSV/TSV, JSON, XLS(X), and XML are some of the more common formats you'll find tabular data in, though unfortunately it does still often appear in non machine-readable formats like PDF and DOC and most first be extracted and cleaned before being used.
 
 ## Converting between data formats
 
-> @TODO
+There's a good chance that you're going to want to convert your data from the format you've found into something a little more modern and useful (like JSON). [Mr. Data Converter](http://shancarter.github.io/mr-data-converter/) is a simple web-based tool for coverting from Excel, CSV, and TSV to JSON, HTML, MySQL, PHP, Python, Ruby, and more.
+
+For batching up the conversion process to run across many datasets consider the [dataconvert](http://okfnlabs.org/dataconverters/#source-data-formats-supported) command-line tool developed by [OKFN Labs](http://okfnlabs.org/) for converting from CSV, XLS(X), and JSON to CSV.
+
+If you need even more control consider the Python libraries [pandas](http://pandas.pydata.org/) (which provides a whole data analysis and modelling framework as well), [tablib](https://tablib.readthedocs.org/en/latest/), or any of the [Science and Data Analysis](https://github.com/vinta/awesome-python#science-and-data-analysis) libraries listed on [Awesome Python](https://github.com/vinta/awesome-python).
 
 ## Cleaning your data
 
-> @TODO
+If your data has had humans involved in entering it then it's probably fully of all sorts of small variations in how the data have been entered that you'll need to clean up before it becomes machine-readable. Fortunately, there are a couple of great tools.
 
-> @TODO Pandas (tabular)
+[OpenRefine](http://openrefine.org/) (formerly Google Refine) is a powerful desktop tool for cleaning messy data, transforming it between different tabular data formats, and even integrates with web services via some simple connectors so you can, for example, geocode a bunch if addresses using Google direclty in OpenRefine. Check out the School of Data's simple [tutorial on using OpenRefine](http://schoolofdata.org/2013/07/15/openrefinelodrefine-a-power-tool-for-cleaning-data/) to see it in action.
 
-## Analysing your data
+Depending on how badly munged your data is a simple old spreadsheet application may get you most of the way to having clean data - as per the excellent [A Gentle Introduction to Data Cleaning](http://schoolofdata.org/courses/#IntroDataCleaning) series from the School of Data. Their [Cleaning Data with Spreadsheets](http://schoolofdata.org/handbook/recipes/cleaning-data-with-spreadsheets/) walkthrough may also fit the bill.
 
-> @TODO
+If out-of-the-box tools aren't cutting it and you need to dive into code take a look back at some of the Python libraries, like [pandas](http://pandas.pydata.org/), that we recommended in [Converting between data formats](#Converting_between_data_formats). If you're feeling brave take a look at [dedupe](https://github.com/datamade/dedupe), which leverages machine-learning to perform de-duplication and cleansing of data.
+
+And if all else fails you can always fall back to reliable command-line tools like grep, awk, and sed combined with regular expressions. If you need to upskill your regex foo [Debuggex](https://www.debuggex.com/) and [Regexpr](http://regexper.com/) should set you on the right path.
+
+## Analysing tabular data
+
+So you've got a nice clean dataset and now you want to do some analysis on it to understand if reality matches your hypothesis!
 
 ### Spreadsheets
 
-> @TODO
+Sometimes the simplest tools are the best and a spreadsheet is all you need - Excel, afte rall, is the world's most widely used IDE!
+
+The School of Data has an excellent tutorial [Using Excel to do precision data journalism](http://schoolofdata.org/2013/04/24/using-excel-to-do-precision-journalism-an-update-from-the-school-of-data-journalism-in-perugia/). If you really need to get back to first principles their [Data Fundamentals](http://schoolofdata.org/courses/#DataFundamentals) series would be well worth a look.
+
+The Sunlight Foundation has a set of good videos as an intro to [Data Visualisation in Google Docs](http://training.sunlightfoundation.com/module/data-visualizations-google-docs/) which also covers analysis. And finally, check out [this rundown of Excel plugins](http://www.clickz.com/clickz/column/2265548/5-free-excel-addins-to-help-digital-marketers-decipher-big-data) for analysing and visualising data.
 
 ### Databases
 
-> @TODO
+When datasets get larger, or the analysis requirements get more complex, you'll probably find yourself reaching for a database to do the heavy lifting.
+
+The School of Data has a neat little tutorial on [Using SQL for Lightweight Data Analysis](http://schoolofdata.org/2013/03/26/using-sql-for-lightweight-data-analysis/) that'll get you started. If you're playing in PostgreSQL you may find its [window functions](http://www.postgresql.org/docs/9.4/static/tutorial-window.html) of great use to perform calculations across sets within your data.
+
+For a deep dive on data analysis in PostgreSQL, R, and Python check out [this blog post](R, Python, PostgreSQL (and more): A data science workflow example) from Zev Ross.
 
 ### R (Arrr!)
 
-> @TODO
+R provides a platform for advanced data analysis to let you discover and visualise trends even in large datasets. If you're new to R you should start with [The Guerilla Guide to R](http://www.r-bloggers.com/the-guerilla-guide-to-r/), [basic statistics and graphs in R](https://people.ifm.liu.se/marjon/R_intro_solutions.pdf), and the [official Introduction to R](http://cran.r-project.org/doc/manuals/R-intro.html). To ease the learning curve check out some of the IDEs for R - [RStudio](http://www.rstudio.com/), [Rattle](http://rattle.togaware.com/), and [Deducer](http://www.deducer.org/pmwiki/pmwiki.php?n=Main.DeducerManual).
 
-## Visualising your data
+The true value of R lies in its huge array of libraries and addons, such as [bigvis](http://blog.revolutionanalytics.com/2013/04/visualize-large-data-sets-with-the-bigvis-package.html) (visualise up to 10 million data points in mere seconds) and the big list of [10 R packages I wish I knew about earlier](http://blog.yhathq.com/posts/10-R-packages-I-wish-I-knew-about-earlier.html).
 
-> @TODO
+To get started with charting in R check out the handy [Getting Started with Charts in R](http://flowingdata.com/2012/12/17/getting-started-with-charts-in-r/) guide, [Simple charts in R tutorial](http://chartsnthings.tumblr.com/post/36978271916/r-tutorial-simple-charts), or some fun [putting pictures of Pokemon where their power level is on an X/Y axis](http://www.r-bloggers.com/to-plot-them-is-my-real-test/).
 
-### Web viz tools
+When it comes to sharing your analysis with the world check out [Knitr](http://yihui.name/knitr/), for quick and easy report generation, [googleVis](https://github.com/mages/googleVis) for making R and Google Charts talk nicely, and [Shiny](http://shiny.rstudio.com/) for a full-blown web app framework for R to turn your awesome analyses into a shiny interactive web app (such as [this demo](http://blog.ouseful.info/2012/11/28/quick-shiny-demo-exploring-nhs-winter-sit-rep-data/)).
 
-> @TODO
+## Visualising tabular data
 
-### Desktop tools
-
-> @TODO
+We've already touched a little on visualisation in previous section on [Resources for building data visualisations](http://localhost:9000/#data-visualisation-and-infographics-for-fun-and-profit-resources-for-building).
 
 
-# Working with unstructured data
 
-> @TODO
->
-> "Somebody gave us data as a scanned photocopy of a Word doc?!"
 
-## Scraping your data
 
-> @TODO
-> http://blog.ouseful.info/2015/02/09/getting-text-of-anything-docs-pdfs-images-using-apache-tika/
-
-## Analysing your data
-
-> @TODO
-
-## Visualising your data
-
-> @TODO
 
 
 # Advanced analysis
