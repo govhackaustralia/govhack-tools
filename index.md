@@ -6,10 +6,28 @@ If you're new to GovHack (or are just a little unclear on the process involved) 
 
 Beyond that, you'll find a range of useful resources from [technical considerations]() in publishing your entry, resources for working with [geospatial]() or [tabular]() data, to extracting good data from [messy unstructured sources](), and much more besides.
 
-> @TODO Links
-
 
 # Document @TODOs
+* Links in the intro
+* Anatomy: Amusing anatomy image in the sidebar
+* Anatomy: Link to info on open licenses
+* Prepare video: Are there any new (free) tools available?
+* Submit project: Open license links and info
+* Data section: Does it even need to be here? The website features the 2015 Data page pretty prominently
+* The right tools for the job: An Agile image
+* Data Viz: What of "Designing for humans" section?
+* Data Viz: What of "Hone your programming skills" section?
+* Building and designing your own API: Flask?
+* QGIS: Mention ArcGIS, GRASSGIS, uDIG, et cetera?
+* Spatial "Language bindings" section: Rename? Need to fix the link in the "Converting between data formats" section if so.
+* Working with geographic data and maps: GeoJson/TopoJson, GitHub viewing
+* Working with geographic data and maps: Principles of components need for spatial [here](http://georabble.org/2012/05/31/the-boundary-mappers-cookbook/)
+* @TODO Finding geospatial data:
+** Link to relevant spatial section of the GovHack Data page? As per the 'Data section' @TODO
+** Point at the ABS Geography site (asga2pgsql), Census data, GA's Find
+** There are a variety of base layers like [AGRI aerial imagery of Australia](http://agri.openstreetmap.org/) or WMS services like [GIS Lab WMS](http://irs.gis-lab.info/) or the [OSM TMS Service](http://www.gdal.org/frmt_wms_openstreetmap_tms.xml). Check out the [Geoscience Australia Geo Dataset search and preview](http://www.ga.gov.au/search/index.html#/showMap). ASGS from ABS including suburbs/postcodes [Andrew Harvey](https://andrewharvey4.wordpress.com/2012/04/15/loading-the-asgs-into-postgresql-in-preperation-for-the-abs-2011-census-data-release/). You can also get KML layers for various statistical measures on the [ABS TableBuilder tool](http://www.abs.gov.au/websitedbs/censushome.nsf/home/tablebuilder).
+
+
 * GovHack Toolkit or GovHack Guide?
 * Loot anything good in the last version that hasn't yet been pulled across
 * Does it make more sense as two separate documents: One a guide to the GovHack competition, one a list of resources?
@@ -47,6 +65,7 @@ Beyond that, you'll find a range of useful resources from [technical considerati
 * OpenRefine in "Scraping data"
 * High-level link to https://github.com/quozd/awesome-dotnet for various popular languages ("If you can't find..look here"). Orrrrr should we - longer-term - just contribute to those rather than making so many words around them in the toolkit?
 * Ping Nick Evershed re the visualisation sections
+* http://scrapekit.readthedocs.org/en/latest/
 
 
 # Anatomy of a GovHack project
@@ -59,9 +78,6 @@ We only have three firm requirements for your GovHack project:
 
 It's useful to bear in mind that the competition judges will be focused on the tangible outcomes of your project, so making your team page a snazzy and useful resource with information about your project, screenshots, your 3 minute video, and anything else that shows off how *awesome* your project is is actually REALLY important :)
 
-> @TODO Amusing anatomy image in the sidebar
->
-> @TODO Link to info on open licenses
 
 ## Register your project and team
 
@@ -87,8 +103,6 @@ Videos can be hosted wherever you like as long as it's web accessible - but most
 
 And again, if you are unsure about what you need to do, or just need a bit of help with your video, hunt down one of your local GovHack organisers and they'll be happy to help.
 
-> @TODO Are there any new (free) tools available?
-
 
 ## Submit your project
 
@@ -102,14 +116,10 @@ Check out our short video on getting set up with GitHub for GovHack:
 
 <iframe width="420" height="315" src="https://www.youtube.com/embed/gQsC-msLW2E" frameborder="0" allowfullscreen></iframe>
 
-> @TODO Open license links and info
-
 
 # Data
 
 We have a whole page dedicated to the Government (and other) datasets that you'll be using in your project. Check out the [GovHack Data page](http://www.govhack.org/data) for all of the details.
-
-> @TODO Does this even need to be here?
 
 
 # Mentors
@@ -118,7 +128,7 @@ GovHack is supported by an awesome group of mentors from a wide range of discipl
 
 Check out the [GovHack Mentors page](http://www.govhack.org/mentors/) for more information on how to get in touch with your awesome mentors.
 
-> "Help me, Obi Wan Kenobi. You're my only hope." -- Princess Leia
+<!-- "Help me, Obi Wan Kenobi. You're my only hope." -- Princess Leia -->
 
 
 # Technical considerations
@@ -177,7 +187,6 @@ So by now you've got your project idea taking shape, and have probably thought a
 
 Well, given the greatly compressed timespan of GovHack anything that can help keep you as responsive flexible - dare I say, [agile](http://www.allaboutagile.com/what-is-agile-10-key-principles/). Use the physical resources you have to hand - pens, butchers paper, post-it notes, a whiteboard (if you can purloin one) to help give your project planning a tangible, physical presence.
 
-> @TODO An Agile image
 
 ### Source control and issue tracking
 
@@ -205,7 +214,8 @@ With honourary mentions going to [Eclipse](https://eclipse.org/downloads/) and [
 Whilst you're not allowed to actually work on your project until the weekend of GovHack itself that doesn't mean you can't be preparing and learning new skills and tools beforehand.
 
 ## Become a data scientist in an hour
-> "Look at me: still talking when there's [data] science to do!" -- GLaDOS
+
+<!-- "Look at me: still talking when there's [data] science to do!" -- GLaDOS -->
 
 There's so much more to working with data than taking your nicely formatted CSV file and throwing it at a software package that will generate pretty graphs, or widgets, or maps out of it. That's just the easy bit - what does your data **actually** mean?
 
@@ -230,18 +240,16 @@ If you'd like to strengthen your knowledge in any of the facets of data science 
 ### Statistics
 * [Think Stats: Probability and Statistics for Programmers](https://booko.com.au/works/3475110)
 
-> [![](img/How-to-participate-in-GovHack_html_m6a65720f-300x199.gif "Data Journalism Diagram")](img/How-to-participate-in-GovHack_html_m6a65720f.gif)</dt>
-> Illustration from Data Journalism Handbook, CC BY-SA 3.0</dd>
+[![](img/How-to-participate-in-GovHack_html_m6a65720f-300x199.gif "Data Journalism Diagram")](img/How-to-participate-in-GovHack_html_m6a65720f.gif)</dt>
+Illustration from Data Journalism Handbook, CC BY-SA 3.0</dd>
 
 ## Hone your programming skills
 
-> @TODO
-
+Uh...
 
 ## Designing for humans
 
-> @TODO
-
+Uh...
 
 ## On the importance of APIs
 
@@ -256,8 +264,6 @@ Services like [Mashery](http://www.mashery.com/), [Apigee](https://apigee.com/ab
 If you need to dig a little further down and actually build your own API it's worth taking a bit of time to think about the design of your API. There are some great resources are such as the API Evangelist's guide to [Providing and Consuming APIs](http://apievangelist.com/) and Atlassian's [REST API Design Guidelines](https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1).
 
 [apiblueprint](http://apiblueprint.org/) is well worth a look as a tool that provides both a means of quickly designing an API, as well as automatically generating nice looking documentation.
-
-> Flask?
 
 #### Documenting your API
 
@@ -342,18 +348,8 @@ Google Maps [may have popularised mapping](http://www.theguardian.com/technology
 
 If you're new to working with spatial data then we **highly recommend** reading Tom MacWright's truly excellent [mapschool: a free introduction to geo](http://mapschool.io/) site. You can skim through it in about half an hour and get up to speed on the basics of spatial data, learn about the common data types, and likely pick up some knowledge that will save you a lot of frustration down the line.
 
-> @TODO GeoJson/TopoJson, GitHub viewing
-> @TODO Principles of components need for spatial [here](http://georabble.org/2012/05/31/the-boundary-mappers-cookbook/)
-
 ### Finding datasets
 
-> @TODO Link to relevant spatial section of the GovHack Data page
->
-> Point at the ABS Geography site (asga2pgsql), Census
->
-> There are a variety of base layers like [AGRI aerial imagery of Australia](http://agri.openstreetmap.org/) or WMS services like [GIS Lab WMS](http://irs.gis-lab.info/) or the [OSM TMS Service](http://www.gdal.org/frmt_wms_openstreetmap_tms.xml). Check out the [Geoscience Australia Geo Dataset search and preview](http://www.ga.gov.au/search/index.html#/showMap). ASGS from ABS including suburbs/postcodes [Andrew Harvey](https://andrewharvey4.wordpress.com/2012/04/15/loading-the-asgs-into-postgresql-in-preperation-for-the-abs-2011-census-data-release/). You can also get KML layers for various statistical measures on the [ABS TableBuilder tool](http://www.abs.gov.au/websitedbs/censushome.nsf/home/tablebuilder).
->
-> @TODO GA FIND
 
 ### Converting between data formats
 
@@ -415,11 +411,7 @@ PostGIS may give you the heavy lifting power to do analysis, but staring at data
 
 Thanks to being built on top of [GDAL](http://www.gdal.org/ "Geospatial Data Abstraction Library") (amongst others) QGIS is capable of reading and writing almost any format of spatial data that you can throw at it - including direct connections to PostGIS databases.
 
-> @TODO ArcGIS, GRASSGIS, uDIG, et cetera
-
 #### Language bindings: R (Arrr!), Python, .NET, Ruby, et al.
-
-> @TODO Rename? Need to fix the link in the "Converting between data formats" section if so.
 
 If you need to delve down into working with spatial data at the code-level you've got a really rich set of tools at your disposal.
 
