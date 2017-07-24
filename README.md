@@ -8,5 +8,4 @@ One of the tools we have access to is from [BrowserStack](https://www.browsersta
 > govhackbot screenshot me \<url>
 
 With thanks to BrowserStack for making their service available.
-![BrowserStack Logo](/images/browserstack_logo.png)
-Format: ![Alt Text](url)
+![BrowserStack Logo](/img/browserstack_logo.png)
